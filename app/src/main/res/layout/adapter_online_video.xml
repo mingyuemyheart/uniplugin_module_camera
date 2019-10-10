@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip" >
+
+    <ImageView
+        android:id="@+id/ivPortrait"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shawn"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/level_4" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="2016-09-02 16:16:28"
+            android:textColor="@color/text_color4"
+            android:textSize="@dimen/level_5" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUserName"
+            android:layout_marginTop="5dip"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/text_color3"
+            android:textSize="@dimen/level_4" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvComment"
+            android:layout_marginTop="2dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/blue"
+            android:text="删除"
+            android:textSize="@dimen/level_4" />
+    </RelativeLayout>
+
+</LinearLayout>
