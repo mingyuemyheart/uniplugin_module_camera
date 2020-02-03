@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.warning"
-    android:versionCode="58"
-    android:versionName="2.3.8" >
+    android:versionCode="59"
+    android:versionName="2.3.9" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -212,6 +212,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.warning.activity.WebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.warning.activity.ShawnPDFActivity"
             android:screenOrientation="portrait" />
 
         <!-- umeng -->

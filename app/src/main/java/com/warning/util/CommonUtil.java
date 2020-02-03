@@ -45,6 +45,7 @@ import com.umeng.socialize.media.UMImage;
 import com.umeng.socialize.media.UMWeb;
 import com.umeng.socialize.shareboard.SnsPlatform;
 import com.umeng.socialize.utils.ShareBoardlistener;
+import com.warning.R;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -589,7 +590,12 @@ public class CommonUtil {
 				sAction.setPlatform(arg1);
 	        	UMWeb web = new UMWeb(url);
 	            web.setTitle(title);//标题
-	            web.setThumb(new UMImage(activity, imgUrl));  //缩略图
+				if (!TextUtils.isEmpty(imgUrl)) {
+					web.setThumb(new UMImage(activity, imgUrl));  //缩略图
+				} else {
+					Bitmap bitmap = BitmapFactory.decodeResource(activity.getResources(), R.drawable.icon);
+					web.setThumb(new UMImage(activity, bitmap));
+				}
 	            web.setDescription(title);
 	            sAction.withMedia(web);
 		        sAction.share();

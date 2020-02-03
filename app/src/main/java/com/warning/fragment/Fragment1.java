@@ -51,6 +51,7 @@ import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationClientOption.AMapLocationMode;
 import com.amap.api.location.AMapLocationListener;
+import com.amap.api.maps.AMap;
 import com.warning.R;
 import com.warning.activity.MyActivity;
 import com.warning.activity.WarningDetailActivity;
@@ -95,7 +96,7 @@ import okhttp3.Response;
  */
 public class Fragment1 extends Fragment implements OnClickListener {
 
-    private TextView tvNews1,tvPublishTime2,tvPosition,tvWarningName,tvDis,tvCity,tvPro,tvNation,tvWarningTime,tvWarningIntro;
+    private TextView tvNews1,tvPublishTime2,tvPosition,tvWarningName,tvDis,tvCity,tvPro,tvNation,tvWarningTime,tvWarningIntro,tvInfo;
     private TextSwitcher tvNews;
     private List<NewsDto> newsList = new ArrayList<>();
     private RollingThread rollingThread;
@@ -183,7 +184,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
     private void initRefreshLayout(View view) {
         refreshLayout = view.findViewById(R.id.refreshLayout);
         refreshLayout.setColorSchemeResources(CONST.color1, CONST.color2, CONST.color3, CONST.color4);
-        refreshLayout.setProgressViewEndTarget(true, 300);
+        refreshLayout.setProgressViewEndTarget(true, 400);
         refreshLayout.post(new Runnable() {
             @Override
             public void run() {
@@ -224,6 +225,8 @@ public class Fragment1 extends Fragment implements OnClickListener {
         progressBar = view.findViewById(R.id.progressBar);
         llContainer = view.findViewById(R.id.llContainer);
         reMain = view.findViewById(R.id.reMain);
+        tvInfo = view.findViewById(R.id.tvInfo);
+        tvInfo.setOnClickListener(this);
         parentScrollView = view.findViewById(R.id.parentScrollView);
         childScrollView = view.findViewById(R.id.childScrollView);
         parentScrollView.setOnTouchListener(new OnTouchListener() {
@@ -504,6 +507,52 @@ public class Fragment1 extends Fragment implements OnClickListener {
     }
 
     /**
+     * 获取疫情
+     */
+    private void okHttpInfo(final String pro, final String city) {
+        final String url = String.format("http://warn-wx.tianqi.cn/Test/getwhqydata?pro=%s&city=%s", pro, city);
+        OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+            }
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if (!response.isSuccessful()) {
+                    return;
+                }
+                final String result = response.body().string();
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (!TextUtils.isEmpty(result)) {
+                            try {
+                                JSONObject obj = new JSONObject(result);
+                                String proCount = "";
+                                if (!obj.isNull("total_pro")) {
+                                    JSONObject proObj = obj.getJSONObject("total_pro");
+                                    if (!proObj.isNull("confirm")) {
+                                        proCount = proObj.getString("confirm");
+                                    }
+                                }
+                                String cityCount = "";
+                                if (!obj.isNull("total")) {
+                                    JSONObject cityObj = obj.getJSONObject("total");
+                                    if (!cityObj.isNull("confirm")) {
+                                        cityCount = cityObj.getString("confirm");
+                                    }
+                                }
+                                tvInfo.setText(String.format("疫情信息提示：\n%s确诊%s例，\n%s确诊%s例。", city, cityCount, pro, proCount));
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+    /**
      * 开始定位
      */
     private void startLocation() {
@@ -519,8 +568,14 @@ public class Fragment1 extends Fragment implements OnClickListener {
             mLocationClient.setLocationListener(new AMapLocationListener() {
                 @Override
                 public void onLocationChanged(AMapLocation aMapLocation) {
-                    if (aMapLocation != null && aMapLocation.getErrorCode() == 0) {
+                    if (aMapLocation != null && aMapLocation.getErrorCode() == AMapLocation.LOCATION_SUCCESS) {
                         tvPosition.setText(aMapLocation.getDistrict());
+                        String pro = aMapLocation.getProvince();
+                        if (pro.startsWith("北京") || pro.startsWith("天津") || pro.startsWith("上海") || pro.startsWith("重庆")) {
+                            okHttpInfo(aMapLocation.getCity(), aMapLocation.getDistrict());
+                        } else {
+                            okHttpInfo(aMapLocation.getProvince(), aMapLocation.getCity());
+                        }
                         getCityId(aMapLocation.getLongitude(), aMapLocation.getLatitude());
                     }
                 }
@@ -900,7 +955,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                             RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) reWarning.getLayoutParams();
                                             int height1 = 40;//最上面标题栏高度
                                             int height2 = 55;//最下面tab标签高度
-                                            int height3 = 200;//预警详情高度
+                                            int height3 = 250;//预警详情高度
                                             int height4 = 180;//天气实况高度
                                             int totalHeight = height1 + height2 + height3 + height4;
                                             params.topMargin = (int) (height - CommonUtil.dip2px(getActivity(), totalHeight));
@@ -908,7 +963,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                             OkHttpWarningDetail("https://decision-admin.tianqi.cn/Home/work2019/getDetailWarn/identifier/" + disList.get(index).html, disList.get(index).type, disList.get(index).color);
 
                                             addFactWeather(true, content);
-                                            addForecast(true, cityId, cityName, content);
+                                            addForecast(true, true, cityId, cityName, content);
 
                                             RelativeLayout.LayoutParams paramsFact = (RelativeLayout.LayoutParams) reFact.getLayoutParams();
                                             height1 = 40;//最上面标题栏高度
@@ -921,14 +976,14 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                             tvPublishTime2.setVisibility(View.INVISIBLE);
                                         } else {//无预警
                                             addFactWeather(false, content);
-                                            addForecast(true, cityId, cityName, content);
+                                            addForecast(false, true, cityId, cityName, content);
 
                                             RelativeLayout.LayoutParams paramsFact = (RelativeLayout.LayoutParams) reFact.getLayoutParams();
                                             int height1 = 40;//最上面标题栏高度
                                             int height2 = 55;//最下面tab标签高度
                                             int height3 = 200;//天气实况高度
                                             int height4 = 40;//三天预报标题高度
-                                            int height5 = 90;//三天预报内容高度
+                                            int height5 = 205;//三天预报内容高度
                                             int totalHeight = height1 + height2 + height3 + height4 + height5;
                                             paramsFact.topMargin = (int) (height - CommonUtil.dip2px(getActivity(), totalHeight));
                                             reFact.setLayoutParams(paramsFact);
@@ -949,7 +1004,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                         if (tempList.size() > 0) {//有预警
                                             addWarning(tempList, cityName);
                                         } else {//无预警
-                                            addForecast(false, cityId, cityName, content);
+                                            addForecast(false, false, cityId, cityName, content);
                                         }
                                     }
 
@@ -1064,7 +1119,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
                         if (tempList.size() > 0) {//有预警
                             addWarning(tempList, cityName);
                         } else {//无预警
-                            addForecast(false, cityId, cityName, content);
+                            addForecast(false, false, cityId, cityName, content);
                         }
 
                         //发送广播刷新关注列表信息
@@ -1100,14 +1155,14 @@ public class Fragment1 extends Fragment implements OnClickListener {
         } else {
             fView = inflater.inflate(R.layout.layout_fact_detail1, null);
         }
-        TextView tvPublishTime = (TextView) fView.findViewById(R.id.tvPublishTime);
-        TextView tvTemp = (TextView) fView.findViewById(R.id.tvTemp);
-        ImageView ivPhe = (ImageView) fView.findViewById(R.id.ivPhe);
-        TextView tvPhe = (TextView) fView.findViewById(R.id.tvPhe);
-        TextView tvBodyTemp = (TextView) fView.findViewById(R.id.tvBodyTemp);
-        TextView tvHumidity = (TextView) fView.findViewById(R.id.tvHumidity);
-        TextView tvWind = (TextView) fView.findViewById(R.id.tvWind);
-        TextView tvAqi = (TextView) fView.findViewById(R.id.tvAqi);
+        TextView tvPublishTime = fView.findViewById(R.id.tvPublishTime);
+        TextView tvTemp = fView.findViewById(R.id.tvTemp);
+        ImageView ivPhe = fView.findViewById(R.id.ivPhe);
+        TextView tvPhe = fView.findViewById(R.id.tvPhe);
+        TextView tvBodyTemp = fView.findViewById(R.id.tvBodyTemp);
+        TextView tvHumidity = fView.findViewById(R.id.tvHumidity);
+        TextView tvWind = fView.findViewById(R.id.tvWind);
+        TextView tvAqi = fView.findViewById(R.id.tvAqi);
 
         JSONObject object = content.getWeatherFactInfo();
         try {
@@ -1180,7 +1235,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
     /**
      * 动态添加三天预报
      */
-    private void addForecast(boolean isLocation, String cityId, String cityName, Weather content) {
+    private void addForecast(boolean isHaveWarning, boolean isLocation, String cityId, String cityName, Weather content) {
         if (content == null) {
             return;
         }
@@ -1190,10 +1245,15 @@ public class Fragment1 extends Fragment implements OnClickListener {
             llMain.setBackgroundColor(0x05ffffff);
             LinearLayout llForecast = new LinearLayout(getActivity());//装载预报信息容器
             LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View titleView = inflater.inflate(R.layout.attention_forecast_layout, null);
-            TextView tvCityName = (TextView) titleView.findViewById(R.id.tvCityName);
-            TextView tvWarningCount = (TextView) titleView.findViewById(R.id.tvWarningCount);
-            TextView tvPublishTime = (TextView) titleView.findViewById(R.id.tvPublishTime);
+            View titleView;
+            if (isHaveWarning) {
+                titleView = inflater.inflate(R.layout.attention_forecast_layout2, null);
+            } else {
+                titleView = inflater.inflate(R.layout.attention_forecast_layout1, null);
+            }
+            TextView tvCityName = titleView.findViewById(R.id.tvCityName);
+            TextView tvWarningCount = titleView.findViewById(R.id.tvWarningCount);
+            TextView tvPublishTime = titleView.findViewById(R.id.tvPublishTime);
 
             if (isLocation) {
                 tvCityName.setText(getActivity().getString(R.string.forecast));
@@ -1271,7 +1331,12 @@ public class Fragment1 extends Fragment implements OnClickListener {
                     dto.highTemp = Integer.valueOf(weeklyObj.getString("fc"));
                 }
 
-                View view = inflater.inflate(R.layout.weekly_layout, null);
+                View view;
+                if (isHaveWarning) {
+                    view = inflater.inflate(R.layout.weekly_layout2, null);
+                } else {
+                    view = inflater.inflate(R.layout.weekly_layout1, null);
+                }
                 LinearLayout llWeek = (LinearLayout) view.findViewById(R.id.llWeek);
                 TextView tvWeek = (TextView) view.findViewById(R.id.tvWeek);
                 ImageView ivPheHigh = (ImageView) view.findViewById(R.id.ivPheHigh);
@@ -1608,6 +1673,16 @@ public class Fragment1 extends Fragment implements OnClickListener {
                     intent.putExtras(bundle);
                     startActivity(intent);
                 }
+                break;
+            case R.id.tvInfo:
+                NewsDto data = new NewsDto();
+                data.title = "实时更新：新型冠状病毒肺炎疫情实时大数据报告";
+                data.url = "https://voice.baidu.com/act/newpneumonia/newpneumonia?fraz=partner&paaz=gjyj";
+                intent = new Intent(getActivity(), WebviewActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putParcelable("data", data);
+                intent.putExtras(bundle);
+                startActivity(intent);
                 break;
 
             default:

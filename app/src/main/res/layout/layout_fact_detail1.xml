@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp" >
 
@@ -40,11 +40,11 @@
 
     <ImageView
         android:id="@+id/ivPhe"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_below="@+id/reTime"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginBottom="20dp" />
 
     <TextView
         android:id="@+id/tvPhe"
@@ -52,9 +52,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ivPhe"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         android:textColor="@color/white"
-        android:textSize="@dimen/level_2" />
+        android:textSize="@dimen/level_1" />
 
     <LinearLayout
         android:id="@+id/llTemp"
@@ -62,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvPhe"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         android:gravity="bottom" >
 
         <TextView
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:includeFontPadding="false"
             android:textColor="@color/white"
-            android:textSize="40dp" />
+            android:textSize="45dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -95,8 +95,8 @@
             android:gravity="center_vertical|center" >
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:src="@drawable/iv_body" />
 
             <TextView
@@ -104,7 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="@dimen/level_5" />
+                android:textSize="@dimen/level_4" />
         </LinearLayout>
 
         <TextView
@@ -119,8 +119,8 @@
             android:gravity="center_vertical|center" >
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:src="@drawable/iv_humidity" />
 
             <TextView
@@ -128,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="@dimen/level_5" />
+                android:textSize="@dimen/level_4" />
         </LinearLayout>
 
         <TextView
@@ -143,8 +143,8 @@
             android:gravity="center_vertical|center" >
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:src="@drawable/iv_wind" />
 
             <TextView
@@ -152,7 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="@dimen/level_5" />
+                android:textSize="@dimen/level_4" />
         </LinearLayout>
 
         <TextView
@@ -167,8 +167,8 @@
             android:gravity="center_vertical|center" >
 
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:src="@drawable/iv_aqi" />
 
             <TextView
@@ -176,7 +176,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:textSize="@dimen/level_5" />
+                android:textSize="@dimen/level_4" />
         </LinearLayout>
     </LinearLayout>
 

@@ -6,6 +6,7 @@ package com.warning.activity;
  */
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
@@ -16,21 +17,30 @@ import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.warning.R;
+import com.warning.adapter.PdfAdapter;
 import com.warning.common.CONST;
+import com.warning.dto.NewsDto;
 import com.warning.manager.DBManager;
 import com.warning.util.CommonUtil;
 import com.warning.util.OkHttpUtil;
+import com.warning.view.ScrollviewListview;
 
+import org.jetbrains.annotations.NotNull;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -52,6 +62,10 @@ public class WarningDetailActivity extends BaseActivity implements OnClickListen
 	private ImageView ivShare = null;
 	private SwipeRefreshLayout refreshLayout = null;//下拉刷新布局
 
+	private TextView tvPdf;
+	private PdfAdapter mAdapter;
+	private List<NewsDto> pdfList = new ArrayList<>();
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -59,6 +73,7 @@ public class WarningDetailActivity extends BaseActivity implements OnClickListen
 		mContext = this;
 		initRefreshLayout();
 		initWidget();
+		initListView();
 	}
 	
 	/**
@@ -94,11 +109,36 @@ public class WarningDetailActivity extends BaseActivity implements OnClickListen
 		ivShare = (ImageView) findViewById(R.id.ivShare);
 		ivShare.setOnClickListener(this);
 		ivShare.setVisibility(View.GONE);
+		tvPdf = findViewById(R.id.tvPdf);
 
 		if (getIntent().hasExtra("url")) {
 			html = getIntent().getStringExtra("url");
 			refresh();
 		}
+	}
+
+	private void initListView() {
+		ScrollviewListview listView = findViewById(R.id.listView);
+		mAdapter = new PdfAdapter(this, pdfList);
+		listView.setAdapter(mAdapter);
+		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+				NewsDto data = pdfList.get(i);
+				Intent intent;
+				if (TextUtils.equals(data.show_type, "pdf")) {
+					intent = new Intent(mContext, ShawnPDFActivity.class);
+					intent.putExtra(CONST.ACTIVITY_NAME, data.title);
+					intent.putExtra(CONST.WEB_URL, data.url);
+				} else {
+					intent = new Intent(mContext, WebviewActivity.class);
+				}
+				Bundle bundle = new Bundle();
+				bundle.putParcelable("data", data);
+				intent.putExtras(bundle);
+				startActivity(intent);
+			}
+		});
 	}
 	
 	private void refresh() {
@@ -148,9 +188,7 @@ public class WarningDetailActivity extends BaseActivity implements OnClickListen
 				OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
 					@Override
 					public void onFailure(Call call, IOException e) {
-
 					}
-
 					@Override
 					public void onResponse(Call call, Response response) throws IOException {
 						if (!response.isSuccessful()) {
@@ -210,6 +248,11 @@ public class WarningDetailActivity extends BaseActivity implements OnClickListen
 											scrollView.setVisibility(View.VISIBLE);
 											ivShare.setVisibility(View.VISIBLE);
 											refreshLayout.setRefreshing(false);
+
+											if (!object.isNull("identifier")) {
+												String identifier = object.getString("identifier");
+												okHttpPdf(identifier);
+											}
 										}
 									} catch (JSONException e) {
 										e.printStackTrace();
@@ -218,6 +261,61 @@ public class WarningDetailActivity extends BaseActivity implements OnClickListen
 							}
 						});
 
+					}
+				});
+			}
+		}).start();
+	}
+
+	private void okHttpPdf(final String identifier) {
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				String url = "http://warn-wx.tianqi.cn/Test/getWarnAnnex?identifier="+identifier;
+				OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
+					@Override
+					public void onFailure(@NotNull Call call, @NotNull IOException e) {
+					}
+					@Override
+					public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+						if (!response.isSuccessful()) {
+							return;
+						}
+						final String result = response.body().string();
+						runOnUiThread(new Runnable() {
+							@Override
+							public void run() {
+								if (!TextUtils.isEmpty(result)) {
+									try {
+										JSONObject obj = new JSONObject(result);
+										if (!obj.isNull("data")) {
+											pdfList.clear();
+											JSONArray array = obj.getJSONArray("data");
+											for (int i = 0; i < array.length(); i++) {
+												JSONObject itemObj = array.getJSONObject(i);
+												NewsDto dto = new NewsDto();
+												if (!itemObj.isNull("title")) {
+													dto.title = itemObj.getString("title");
+												}
+												if (!itemObj.isNull("url")) {
+													dto.url = itemObj.getString("url");
+												}
+												if (!itemObj.isNull("type")) {
+													dto.show_type = itemObj.getString("type");
+												}
+												pdfList.add(dto);
+											}
+											if (mAdapter != null) {
+												mAdapter.notifyDataSetChanged();
+											}
+											tvPdf.setVisibility(View.VISIBLE);
+										}
+									} catch (JSONException e) {
+										e.printStackTrace();
+									}
+								}
+							}
+						});
 					}
 				});
 			}

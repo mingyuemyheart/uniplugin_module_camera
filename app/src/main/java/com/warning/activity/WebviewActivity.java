@@ -103,7 +103,7 @@ public class WebviewActivity extends BaseActivity implements OnClickListener{
 				Log.e("itemUrl", itemUrl);
 				return true;
 			}
-			
+
 			@Override
 			public void onPageFinished(WebView view, String url) {
 				super.onPageFinished(view, url);
@@ -132,7 +132,7 @@ public class WebviewActivity extends BaseActivity implements OnClickListener{
 			finish();
 			break;
 		case R.id.ivShare:
-			CommonUtil.share(this, data.title, data.title, data.url);
+			CommonUtil.share(this, data.title, "", data.url);
 			break;
 
 		default:

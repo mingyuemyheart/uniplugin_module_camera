@@ -12,6 +12,13 @@ public class CONST {
 	public static final String APP_UID = "2521";
 	public static final String imageSuffix = ".png";//图标后缀名
 
+	//intent传值的标示
+	public static final String WEB_URL = "web_Url";//网页地址的标示
+	public static final String COLUMN_ID = "column_id";//栏目id
+	public static final String ACTIVITY_NAME = "activity_name";//界面名称
+	public static final String IMG_URL = "img_url";//图片地址
+	public static final String DATA_TIME = "data_time";//数据时间
+
 	//预警颜色对应规则
 	public static String[] blue = {"01", "_blue"};
 	public static String[] yellow = {"02", "_yellow"};

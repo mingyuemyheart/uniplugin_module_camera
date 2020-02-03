@@ -1,0 +1,9 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+}
+
+dependencies {
+    implementation 'com.github.barteksc:pdfium-android:1.5.0'
+}

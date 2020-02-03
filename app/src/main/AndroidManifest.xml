@@ -185,6 +185,9 @@
         <activity
             android:name="com.warning.activity.WebviewActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.warning.activity.ShawnPDFActivity"
+            android:screenOrientation="portrait" />
 
 
         <!--umeng-->
