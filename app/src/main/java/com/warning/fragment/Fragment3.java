@@ -46,7 +46,7 @@ public class Fragment3 extends Fragment implements OnRefreshListener{
 	private ListView listView1 = null;
 	private NewsAdapter mAdapter1 = null;
 	private List<NewsDto> zixunList = new ArrayList<>();
-	private String ZIXUNURL = "http://new.12379.tianqi.cn/infomes/data/12379/tzgg/tfsj.json";//资讯请求地址
+	private String ZIXUNURL = "http://new.12379.tianqi.cn/Extra/get_tfsj";//资讯请求地址
 	private SwipeRefreshLayout refreshLayout = null;//下拉刷新布局
 	private MyBroadCastReceiver mReceiver = null;
 

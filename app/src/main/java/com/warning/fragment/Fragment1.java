@@ -55,6 +55,7 @@ import com.warning.R;
 import com.warning.activity.MyActivity;
 import com.warning.activity.WarningDetailActivity;
 import com.warning.activity.ShawnWarningListActivity;
+import com.warning.activity.WebviewActivity;
 import com.warning.activity.ZixunDetailActivity;
 import com.warning.common.CONST;
 import com.warning.common.PgyApplication;
@@ -320,7 +321,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
      * 获取天气咨询
      */
     private void OkhttpZixun() {
-        final String url = "http://new.12379.tianqi.cn/infomes/data/12379/tzgg/tfsj.json";
+        final String url = "http://new.12379.tianqi.cn/Extra/get_tfsj_1";
         OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
@@ -356,6 +357,9 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                     }
                                     if (!obj.isNull("img")) {
                                         newsDto.imgUrl = obj.getString("img");
+                                    }
+                                    if (!obj.isNull("show_type")) {
+                                        newsDto.show_type = obj.getString("show_type");
                                     }
 
                                     try {
@@ -396,7 +400,12 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                     tvNews1.setOnClickListener(new OnClickListener() {
                                         @Override
                                         public void onClick(View arg0) {
-                                            Intent intent = new Intent(getActivity(), ZixunDetailActivity.class);
+                                            Intent intent;
+                                            if (TextUtils.equals(newsList.get(0).show_type, "web")) {
+                                                intent = new Intent(getActivity(), WebviewActivity.class);
+                                            } else {
+                                                intent = new Intent(getActivity(), ZixunDetailActivity.class);
+                                            }
                                             Bundle bundle = new Bundle();
                                             bundle.putParcelable("data", newsList.get(0));
                                             intent.putExtras(bundle);
@@ -424,7 +433,12 @@ public class Fragment1 extends Fragment implements OnClickListener {
             tvNews.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View arg0) {
-                    Intent intent = new Intent(getActivity(), ZixunDetailActivity.class);
+                    Intent intent;
+                    if (TextUtils.equals(newsList.get(index).show_type, "web")) {
+                        intent = new Intent(getActivity(), WebviewActivity.class);
+                    } else {
+                        intent = new Intent(getActivity(), ZixunDetailActivity.class);
+                    }
                     Bundle bundle = new Bundle();
                     bundle.putParcelable("data", newsList.get(index));
                     intent.putExtras(bundle);

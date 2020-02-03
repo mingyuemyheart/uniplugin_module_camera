@@ -14,6 +14,7 @@ public class NewsDto implements Parcelable{
 	public String lat;
 	public String lng;
 	public boolean isTop = false;//是否显示大图
+	public String show_type;
 
 	public NewsDto() {
 	}
@@ -34,6 +35,7 @@ public class NewsDto implements Parcelable{
 		dest.writeString(this.lat);
 		dest.writeString(this.lng);
 		dest.writeByte(this.isTop ? (byte) 1 : (byte) 0);
+		dest.writeString(this.show_type);
 	}
 
 	protected NewsDto(Parcel in) {
@@ -46,6 +48,7 @@ public class NewsDto implements Parcelable{
 		this.lat = in.readString();
 		this.lng = in.readString();
 		this.isTop = in.readByte() != 0;
+		this.show_type = in.readString();
 	}
 
 	public static final Creator<NewsDto> CREATOR = new Creator<NewsDto>() {

@@ -11,15 +11,15 @@ INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getu
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:74:13-67
 category#com.warning
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:257:17-61
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:260:17-61
 	android:name
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:257:27-58
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:260:27-58
 manifest
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-264:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-264:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-264:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-264:12
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-267:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-267:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-267:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-267:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9656a42503e1338de03ace09a50a7ad0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/2ab704e592a4659cae65b5334608e372/AndroidManifest.xml:17:1-22:12
 MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:2:1-165:12
@@ -52,20 +52,20 @@ MERGED from [com.android.support:interpolator:28.0.0] /Users/sunxiaoming/.gradle
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/5fe30fa8ceaf91dd5abd8114b9975a49/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c40a6113d16b4e8e80068f5faa0fc2f0/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/139ebdada885c75a6e3602bc752c4d6a/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-264:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-264:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-264:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-267:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-267:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-267:12
 	package
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:3:5-26
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-264:12
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-267:12
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-264:12
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-267:12
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:11-69
@@ -264,7 +264,7 @@ MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transfo
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:49:22-72
 application
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:53:5-262:19
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:53:5-265:19
 MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:27:5-163:19
 MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:27:5-163:19
 MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:11:5-22:19
@@ -511,122 +511,128 @@ ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/a
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:184:13-49
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:183:13-62
-activity#com.tencent.tauth.AuthActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:188:9-200:20
-	android:launchMode
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:190:13-44
-	android:noHistory
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:191:13-37
-	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:189:13-58
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tencent1106871193
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:192:13-199:29
-action#android.intent.action.VIEW
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:193:17-69
-	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:193:25-66
-category#android.intent.category.DEFAULT
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:195:17-76
-	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:195:27-73
-category#android.intent.category.BROWSABLE
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:196:17-78
-	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:196:27-75
-data
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:198:17-60
-	android:scheme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:198:23-57
-activity#com.tencent.connect.common.AssistActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:201:9-204:75
-	android:configChanges
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:203:13-74
-	android:theme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:204:13-72
-	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:202:13-69
-activity#com.warning.wxapi.WXEntryActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:206:9-210:75
-	android:exported
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:209:13-36
-	android:configChanges
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:208:13-74
-	android:theme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:210:13-72
-	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:207:13-50
-activity#com.umeng.socialize.media.WBShareCallBackActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:212:9-218:75
+activity#com.warning.activity.WebviewActivity
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:185:9-187:52
 	android:screenOrientation
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:217:13-49
-	android:launchMode
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:216:13-44
-	android:exported
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:215:13-37
-	android:configChanges
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:214:13-63
-	android:theme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:218:13-72
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:187:13-49
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:213:13-77
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:186:13-64
+activity#com.tencent.tauth.AuthActivity
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:191:9-203:20
+	android:launchMode
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:193:13-44
+	android:noHistory
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:194:13-37
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:192:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tencent1106871193
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:195:13-202:29
+action#android.intent.action.VIEW
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:196:17-69
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:196:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:198:17-76
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:198:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:199:17-78
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:199:27-75
+data
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:201:17-60
+	android:scheme
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:201:23-57
+activity#com.tencent.connect.common.AssistActivity
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:204:9-207:75
+	android:configChanges
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:206:13-74
+	android:theme
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:207:13-72
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:205:13-69
+activity#com.warning.wxapi.WXEntryActivity
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:209:9-213:75
+	android:exported
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:212:13-36
+	android:configChanges
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:211:13-74
+	android:theme
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:213:13-72
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:210:13-50
+activity#com.umeng.socialize.media.WBShareCallBackActivity
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:215:9-221:75
+	android:screenOrientation
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:220:13-49
+	android:launchMode
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:219:13-44
+	android:exported
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:218:13-37
+	android:configChanges
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:217:13-63
+	android:theme
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:221:13-72
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:216:13-77
 activity#com.sina.weibo.sdk.web.WeiboSdkWebActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:219:9-225:20
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:222:9-228:20
 	android:windowSoftInputMode
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:223:13-55
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:226:13-55
 	android:exported
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:222:13-37
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:225:13-37
 	android:configChanges
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:221:13-63
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:224:13-63
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:220:13-70
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:223:13-70
 activity#com.sina.weibo.sdk.share.WbShareTransActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:226:9-235:20
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:229:9-238:20
 	android:launchMode
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:228:13-44
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:231:13-44
 	android:theme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:229:13-83
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:232:13-83
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:227:13-73
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:230:13-73
 intent-filter#action:name:com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY+category:name:android.intent.category.DEFAULT
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:230:13-233:29
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:233:13-236:29
 action#com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:231:17-92
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:234:17-92
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:231:25-89
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:234:25-89
 activity#com.umeng.socialize.editorpage.ShareActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:237:9-240:63
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:240:9-243:63
 	android:excludeFromRecents
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:239:13-46
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:242:13-46
 	android:theme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:240:13-60
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:243:13-60
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:238:13-72
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:241:13-72
 receiver#com.warning.MeizuPushReceiver
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:245:9-259:20
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:248:9-262:20
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:245:19-63
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:248:19-63
 intent-filter#action:name:com.meizu.c2dm.intent.RECEIVE+action:name:com.meizu.c2dm.intent.REGISTRATION+action:name:com.meizu.flyme.push.intent.MESSAGE+action:name:com.meizu.flyme.push.intent.REGISTER.FEEDBACK+action:name:com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK+category:name:com.warning
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:246:13-258:29
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:249:13-261:29
 action#com.meizu.flyme.push.intent.MESSAGE
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:248:17-78
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:251:17-78
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:248:25-75
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:251:25-75
 action#com.meizu.flyme.push.intent.REGISTER.FEEDBACK
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:250:17-88
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:253:17-88
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:250:25-85
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:253:25-85
 action#com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:252:17-90
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:255:17-90
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:252:25-87
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:255:25-87
 action#com.meizu.c2dm.intent.REGISTRATION
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:254:17-77
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:257:17-77
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:254:25-74
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:257:25-74
 action#com.meizu.c2dm.intent.RECEIVE
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:255:17-72
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:258:17-72
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:255:25-69
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:258:25-69
 uses-sdk
 INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml

@@ -182,6 +182,9 @@
         <activity
             android:name="com.warning.activity.MyMsgActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.warning.activity.WebviewActivity"
+            android:screenOrientation="portrait" />
 
 
         <!--umeng-->

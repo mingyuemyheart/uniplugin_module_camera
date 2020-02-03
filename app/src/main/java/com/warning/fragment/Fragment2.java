@@ -261,7 +261,7 @@ OnMarkerClickListener, InfoWindowAdapter, OnCameraChangeListener{
 		ivRefresh.startAnimation(animation);
 		checkAuthority();
 		OkhttpWarning();
-		OkhttpZixun("http://new.12379.tianqi.cn/infomes/data/12379/tzgg/tfsj.json");
+		OkhttpZixun("http://new.12379.tianqi.cn/Extra/get_tfsj");
 //		OkhttpZhibao("http://new.12379.tianqi.cn/Work/getlist?flag=1");
 		OkhttpZhibao("http://new.12379.tianqi.cn/Work/getlist");
 		StatisticUtil.submitClickCount("2", "预警地图");
