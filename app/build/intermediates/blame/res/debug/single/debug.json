@@ -680,6 +680,10 @@
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9656a42503e1338de03ace09a50a7ad0/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/debug/drawable_corner_red.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/corner_red.xml"
+    },
+    {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/debug/drawable-hdpi_iv_add_main.png.flat",
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/iv_add_main.png"
     },
@@ -2258,6 +2262,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9656a42503e1338de03ace09a50a7ad0/res/drawable-xhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/debug/drawable_corner_info_top.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/corner_info_top.xml"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",

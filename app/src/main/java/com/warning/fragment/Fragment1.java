@@ -28,7 +28,6 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -51,11 +50,10 @@ import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationClientOption.AMapLocationMode;
 import com.amap.api.location.AMapLocationListener;
-import com.amap.api.maps.AMap;
 import com.warning.R;
 import com.warning.activity.MyActivity;
-import com.warning.activity.WarningDetailActivity;
 import com.warning.activity.ShawnWarningListActivity;
+import com.warning.activity.WarningDetailActivity;
 import com.warning.activity.WebviewActivity;
 import com.warning.activity.ZixunDetailActivity;
 import com.warning.common.CONST;
@@ -294,7 +292,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                 JSONArray tempArray = jsonArray.getJSONArray(i);
                                 WarningDto dto = new WarningDto();
                                 dto.html = tempArray.optString(1);
-                                Log.e("html", dto.html);
                                 String[] array = dto.html.split("-");
                                 String item0 = array[0];
                                 String item1 = array[1];
@@ -541,7 +538,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                         cityCount = cityObj.getString("confirm");
                                     }
                                 }
-                                tvInfo.setText(String.format("疫情信息提示：\n%s确诊%s例，\n%s确诊%s例。", city, cityCount, pro, proCount));
+                                tvInfo.setText(String.format("%s确诊%s例\n%s确诊%s例", city, cityCount, pro, proCount));
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
@@ -973,7 +970,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                             paramsFact.topMargin = (int) (height - CommonUtil.dip2px(getActivity(), totalHeight));
                                             reFact.setLayoutParams(paramsFact);
 
-                                            tvPublishTime2.setVisibility(View.INVISIBLE);
+                                            tvPublishTime2.setVisibility(View.GONE);
                                         } else {//无预警
                                             addFactWeather(false, content);
                                             addForecast(false, true, cityId, cityName, content);
