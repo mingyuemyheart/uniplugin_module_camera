@@ -94,11 +94,11 @@ import okhttp3.Response;
  */
 public class Fragment1 extends Fragment implements OnClickListener {
 
-    private TextView tvNews1,tvPublishTime2,tvPosition,tvWarningName,tvDis,tvCity,tvPro,tvNation,tvWarningTime,tvWarningIntro,tvInfo;
+    private TextView tvNews1Title, tvNews1,tvPublishTime2,tvPosition,tvWarningName,tvDis,tvCity,tvPro,tvNation,tvWarningTime,tvWarningIntro;
     private TextSwitcher tvNews;
     private List<NewsDto> newsList = new ArrayList<>();
     private RollingThread rollingThread;
-    private RelativeLayout reMain,reFact,reWarning;
+    private RelativeLayout reNews,reMain,reFact,reWarning;
     private ImageView ivWarning = null;
     private List<WarningDto> warningList = new ArrayList<>();
     private List<WarningDto> disList = new ArrayList<>();//定位城市预警信息列表
@@ -117,6 +117,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
     private int height = 0;
     private ScrollView parentScrollView,childScrollView;
     private String locationId;//定位城市id
+    private String infoCode = "0";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -202,6 +203,8 @@ public class Fragment1 extends Fragment implements OnClickListener {
         ivMenu.setOnClickListener(this);
         ImageView ivMy = view.findViewById(R.id.ivMy);
         ivMy.setOnClickListener(this);
+        reNews = view.findViewById(R.id.reNews);
+        tvNews1Title = view.findViewById(R.id.tvNews1Title);
         tvNews1 = view.findViewById(R.id.tvNews1);
         tvNews = view.findViewById(R.id.tvNews);
         tvPublishTime2 = view.findViewById(R.id.tvPublishTime2);
@@ -223,8 +226,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
         progressBar = view.findViewById(R.id.progressBar);
         llContainer = view.findViewById(R.id.llContainer);
         reMain = view.findViewById(R.id.reMain);
-        tvInfo = view.findViewById(R.id.tvInfo);
-        tvInfo.setOnClickListener(this);
         parentScrollView = view.findViewById(R.id.parentScrollView);
         childScrollView = view.findViewById(R.id.childScrollView);
         parentScrollView.setOnTouchListener(new OnTouchListener() {
@@ -259,8 +260,8 @@ public class Fragment1 extends Fragment implements OnClickListener {
         new Thread(new Runnable() {
             @Override
             public void run() {
+                okHttpCode();
                 OkhttpWarning();
-                OkhttpZixun();
                 checkAuthority();
             }
         }).start();
@@ -270,7 +271,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
      * 获取预警信息
      */
     private void OkhttpWarning() {
-//        final String url = "http://decision-admin.tianqi.cn/Home/extra/getwarns?order=1";
         final String url = "https://decision-admin.tianqi.cn/Home/work2019/getwarns";
         OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
             @Override
@@ -318,10 +318,39 @@ public class Fragment1 extends Fragment implements OnClickListener {
     }
 
     /**
+     * 获取消息显示样式，code=1为疫情显示，code=0为之前的显示
+     */
+    private void okHttpCode() {
+        final String url = "http://warn-wx.tianqi.cn/Test/whyq_flag";
+        OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+            }
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                if (!response.isSuccessful()) {
+                    return;
+                }
+                String result = response.body().string();
+                if (!TextUtils.isEmpty(result)) {
+                    try {
+                        JSONObject obj = new JSONObject(result);
+                        if (!obj.isNull("code")) {
+                            infoCode = obj.getString("code");
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+    }
+
+    /**
      * 获取天气咨询
      */
-    private void OkhttpZixun() {
-        final String url = "http://new.12379.tianqi.cn/Extra/get_tfsj_1";
+    private void OkhttpZixun(final String pro, final String city, final double lat, final double lng) {
+        final String url = String.format("http://warn-wx.tianqi.cn/Test/get_tfsj_1?pro=%s&city=%s&lat=%s&lon=%s", pro, city, lat, lng);
         OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
@@ -343,8 +372,11 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                 for (int i = 0; i < array.length(); i++) {
                                     JSONObject obj = array.getJSONObject(i);
                                     NewsDto newsDto = new NewsDto();
-                                    if (!obj.isNull("title")) {
-                                        newsDto.title = obj.getString("title");
+                                    if (!obj.isNull("tip_txt")) {
+                                        newsDto.tipTxt = obj.getString("tip_txt");
+                                    }
+                                    if (!obj.isNull("title_1")) {
+                                        newsDto.title = obj.getString("title_1");
                                     }
                                     if (!obj.isNull("time")) {
                                         newsDto.time = obj.getString("time");
@@ -388,14 +420,25 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                 });
                                 if (newsList.size() >= 2) {
                                     tvNews.setVisibility(View.VISIBLE);
+                                    tvNews1Title.setVisibility(View.GONE);
                                     tvNews1.setVisibility(View.GONE);
 
                                     removeThread();
                                     rollingThread = new RollingThread();
                                     rollingThread.start();
                                 } else if (newsList.size() == 1) {
+                                    if (TextUtils.equals(infoCode, "1")) {//疫情
+                                        tvNews1Title.setVisibility(View.VISIBLE);
+                                        if (!TextUtils.isEmpty(newsList.get(0).title)) {
+                                            tvNews1Title.setText(newsList.get(0).tipTxt);
+                                        }
+                                        reNews.setBackgroundColor(getResources().getColor(R.color.red));
+                                    } else {
+                                        tvNews1Title.setVisibility(View.GONE);
+                                        reNews.setBackgroundColor(0x10ffffff);
+                                    }
                                     tvNews.setVisibility(View.GONE);
-                                    tvNews1.setText(newsList.get(0).title);
+                                    tvNews1.setText(newsList.get(0).title+" >>");
                                     tvNews1.setVisibility(View.VISIBLE);
                                     tvNews1.setOnClickListener(new OnClickListener() {
                                         @Override
@@ -429,7 +472,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
         @Override
         public void handleMessage(Message msg) {
             final int index = msg.arg1;
-            tvNews.setText(newsList.get(index).title);
+            tvNews.setText(newsList.get(index).title+" >>");
             tvNews.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View arg0) {
@@ -504,52 +547,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
     }
 
     /**
-     * 获取疫情
-     */
-    private void okHttpInfo(final String pro, final String city) {
-        final String url = String.format("http://warn-wx.tianqi.cn/Test/getwhqydata?pro=%s&city=%s", pro, city);
-        OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
-            @Override
-            public void onFailure(Call call, IOException e) {
-            }
-            @Override
-            public void onResponse(Call call, Response response) throws IOException {
-                if (!response.isSuccessful()) {
-                    return;
-                }
-                final String result = response.body().string();
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        if (!TextUtils.isEmpty(result)) {
-                            try {
-                                JSONObject obj = new JSONObject(result);
-                                String proCount = "";
-                                if (!obj.isNull("total_pro")) {
-                                    JSONObject proObj = obj.getJSONObject("total_pro");
-                                    if (!proObj.isNull("confirm")) {
-                                        proCount = proObj.getString("confirm");
-                                    }
-                                }
-                                String cityCount = "";
-                                if (!obj.isNull("total")) {
-                                    JSONObject cityObj = obj.getJSONObject("total");
-                                    if (!cityObj.isNull("confirm")) {
-                                        cityCount = cityObj.getString("confirm");
-                                    }
-                                }
-                                tvInfo.setText(String.format("%s确诊%s例\n%s确诊%s例", city, cityCount, pro, proCount));
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                        }
-                    }
-                });
-            }
-        });
-    }
-
-    /**
      * 开始定位
      */
     private void startLocation() {
@@ -569,9 +566,9 @@ public class Fragment1 extends Fragment implements OnClickListener {
                         tvPosition.setText(aMapLocation.getDistrict());
                         String pro = aMapLocation.getProvince();
                         if (pro.startsWith("北京") || pro.startsWith("天津") || pro.startsWith("上海") || pro.startsWith("重庆")) {
-                            okHttpInfo(aMapLocation.getCity(), aMapLocation.getDistrict());
+                            OkhttpZixun(aMapLocation.getCity(), aMapLocation.getDistrict(), aMapLocation.getLatitude(), aMapLocation.getLongitude());
                         } else {
-                            okHttpInfo(aMapLocation.getProvince(), aMapLocation.getCity());
+                            OkhttpZixun(aMapLocation.getProvince(), aMapLocation.getCity(), aMapLocation.getLatitude(), aMapLocation.getLongitude());
                         }
                         getCityId(aMapLocation.getLongitude(), aMapLocation.getLatitude());
                     }
@@ -949,41 +946,43 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                                 }
                                             }
 
-                                            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) reWarning.getLayoutParams();
-                                            int height1 = 40;//最上面标题栏高度
-                                            int height2 = 55;//最下面tab标签高度
-                                            int height3 = 250;//预警详情高度
-                                            int height4 = 180;//天气实况高度
-                                            int totalHeight = height1 + height2 + height3 + height4;
-                                            params.topMargin = (int) (height - CommonUtil.dip2px(getActivity(), totalHeight));
-                                            reWarning.setLayoutParams(params);
+//                                            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) reWarning.getLayoutParams();
+//                                            int height1 = 40;//最上面标题栏高度
+//                                            int height2 = 55;//最下面tab标签高度
+//                                            int height3 = 250;//预警详情高度
+//                                            int height4 = 180;//天气实况高度
+//                                            int totalHeight = height1 + height2 + height3 + height4;
+//                                            params.topMargin = (int) (height - CommonUtil.dip2px(getActivity(), totalHeight));
+//                                            reWarning.setLayoutParams(params);
+                                            reWarning.setVisibility(View.VISIBLE);
                                             OkHttpWarningDetail("https://decision-admin.tianqi.cn/Home/work2019/getDetailWarn/identifier/" + disList.get(index).html, disList.get(index).type, disList.get(index).color);
 
                                             addFactWeather(true, content);
                                             addForecast(true, true, cityId, cityName, content);
 
-                                            RelativeLayout.LayoutParams paramsFact = (RelativeLayout.LayoutParams) reFact.getLayoutParams();
-                                            height1 = 40;//最上面标题栏高度
-                                            height2 = 55;//最下面tab标签高度
-                                            height3 = 180;//天气实况高度
-                                            totalHeight = height1 + height2 + height3;
-                                            paramsFact.topMargin = (int) (height - CommonUtil.dip2px(getActivity(), totalHeight));
-                                            reFact.setLayoutParams(paramsFact);
+//                                            RelativeLayout.LayoutParams paramsFact = (RelativeLayout.LayoutParams) reFact.getLayoutParams();
+//                                            height1 = 40;//最上面标题栏高度
+//                                            height2 = 55;//最下面tab标签高度
+//                                            height3 = 180;//天气实况高度
+//                                            totalHeight = height1 + height2 + height3;
+//                                            paramsFact.topMargin = (int) (height - CommonUtil.dip2px(getActivity(), totalHeight));
+//                                            reFact.setLayoutParams(paramsFact);
 
                                             tvPublishTime2.setVisibility(View.GONE);
                                         } else {//无预警
                                             addFactWeather(false, content);
                                             addForecast(false, true, cityId, cityName, content);
 
-                                            RelativeLayout.LayoutParams paramsFact = (RelativeLayout.LayoutParams) reFact.getLayoutParams();
-                                            int height1 = 40;//最上面标题栏高度
-                                            int height2 = 55;//最下面tab标签高度
-                                            int height3 = 200;//天气实况高度
-                                            int height4 = 40;//三天预报标题高度
-                                            int height5 = 205;//三天预报内容高度
-                                            int totalHeight = height1 + height2 + height3 + height4 + height5;
-                                            paramsFact.topMargin = (int) (height - CommonUtil.dip2px(getActivity(), totalHeight));
-                                            reFact.setLayoutParams(paramsFact);
+//                                            RelativeLayout.LayoutParams paramsFact = (RelativeLayout.LayoutParams) reFact.getLayoutParams();
+//                                            int height1 = 40;//最上面标题栏高度
+//                                            int height2 = 55;//最下面tab标签高度
+//                                            int height3 = 200;//天气实况高度
+//                                            int height4 = 40;//三天预报标题高度
+//                                            int height5 = 205;//三天预报内容高度
+//                                            int totalHeight = height1 + height2 + height3 + height4 + height5;
+//                                            paramsFact.topMargin = (int) (height - CommonUtil.dip2px(getActivity(), totalHeight));
+//                                            reFact.setLayoutParams(paramsFact);
+                                            reWarning.setVisibility(View.GONE);
 
                                             tvPublishTime2.setVisibility(View.VISIBLE);
                                             progressBar.setVisibility(View.GONE);
@@ -1670,16 +1669,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
                     intent.putExtras(bundle);
                     startActivity(intent);
                 }
-                break;
-            case R.id.tvInfo:
-                NewsDto data = new NewsDto();
-                data.title = "实时更新：新型冠状病毒肺炎疫情实时大数据报告";
-                data.url = "https://voice.baidu.com/act/newpneumonia/newpneumonia?fraz=partner&paaz=gjyj";
-                intent = new Intent(getActivity(), WebviewActivity.class);
-                Bundle bundle = new Bundle();
-                bundle.putParcelable("data", data);
-                intent.putExtras(bundle);
-                startActivity(intent);
                 break;
 
             default:

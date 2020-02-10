@@ -5,6 +5,7 @@ import android.os.Parcelable;
 
 public class NewsDto implements Parcelable{
 
+	public String tipTxt;
 	public String title;
 	public String time;
 	public String content;
@@ -26,6 +27,7 @@ public class NewsDto implements Parcelable{
 
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
+		dest.writeString(this.tipTxt);
 		dest.writeString(this.title);
 		dest.writeString(this.time);
 		dest.writeString(this.content);
@@ -39,6 +41,7 @@ public class NewsDto implements Parcelable{
 	}
 
 	protected NewsDto(Parcel in) {
+		this.tipTxt = in.readString();
 		this.title = in.readString();
 		this.time = in.readString();
 		this.content = in.readString();
