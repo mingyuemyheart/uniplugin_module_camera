@@ -270,6 +270,7 @@ OnMarkerClickListener, InfoWindowAdapter, OnCameraChangeListener{
 	//需要申请的所有权限
 	public static String[] allPermissions = new String[] {
 			Manifest.permission.ACCESS_COARSE_LOCATION,
+			Manifest.permission.ACCESS_FINE_LOCATION
 	};
 
 	//拒绝的权限集合

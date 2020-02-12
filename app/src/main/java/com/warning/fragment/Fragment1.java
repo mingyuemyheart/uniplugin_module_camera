@@ -795,7 +795,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
         String tempTags = sp.getString("tags", "");
 //		String tags = tag1+tag2+tag3+tag4+tag5+tag6+tag7+tag8+"test_android_shawn,";
         String tags = tag1 + tag2 + tag3 + tag4 + tag5 + tag6 + tag7 + tag8;
-        if (!TextUtils.isEmpty(tags) && TextUtils.equals(tags.substring(tags.length() - 1, tags.length()), ",")) {
+        if (!TextUtils.isEmpty(tags) && TextUtils.equals(tags.substring(tags.length() - 1), ",")) {
             tags = tags.substring(0, tags.length() - 1);
             if (TextUtils.equals(tags, tempTags)) {
                 return;
@@ -1333,11 +1333,11 @@ public class Fragment1 extends Fragment implements OnClickListener {
                 } else {
                     view = inflater.inflate(R.layout.weekly_layout1, null);
                 }
-                LinearLayout llWeek = (LinearLayout) view.findViewById(R.id.llWeek);
-                TextView tvWeek = (TextView) view.findViewById(R.id.tvWeek);
-                ImageView ivPheHigh = (ImageView) view.findViewById(R.id.ivPheHigh);
-                ImageView ivPheLow = (ImageView) view.findViewById(R.id.ivPheLow);
-                TextView tvTemp = (TextView) view.findViewById(R.id.tvTemp);
+                LinearLayout llWeek = view.findViewById(R.id.llWeek);
+                TextView tvWeek = view.findViewById(R.id.tvWeek);
+                ImageView ivPheHigh = view.findViewById(R.id.ivPheHigh);
+                ImageView ivPheLow = view.findViewById(R.id.ivPheLow);
+                TextView tvTemp = view.findViewById(R.id.tvTemp);
 
                 DisplayMetrics dm = new DisplayMetrics();
                 getActivity().getWindowManager().getDefaultDisplay().getMetrics(dm);
@@ -1349,7 +1349,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
                 if (i == 1) {
                     tvWeek.setText(getString(R.string.today));
                 } else {
-                    String weekStr = getActivity().getString(R.string.week) + dto.week.substring(dto.week.length() - 1, dto.week.length());
+                    String weekStr = getActivity().getString(R.string.week) + dto.week.substring(dto.week.length() - 1);
                     tvWeek.setText(weekStr);
                 }
                 Drawable hd = getActivity().getResources().getDrawable(R.drawable.phenomenon_drawable);
@@ -1538,6 +1538,21 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                                     tvWarningName.setText(array[1].substring(0, array[1].indexOf("[")));
                                                 }
                                             }
+                                            String warningName = tvWarningName.getText().toString();
+                                            if (!TextUtils.isEmpty(warningName)) {
+                                                if (warningName.length() >= 40) {
+                                                    warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24, 32)+"\n"+warningName.substring(32, 40)+"\n"+warningName.substring(40);
+                                                } else if (warningName.length() >= 32) {
+                                                    warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24, 32)+"\n"+warningName.substring(32);
+                                                } else if (warningName.length() >= 24) {
+                                                    warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24);
+                                                } else if (warningName.length() >= 16) {
+                                                    warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16);
+                                                } else if (warningName.length() >= 8) {
+                                                    warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8);
+                                                }
+                                                tvWarningName.setText(warningName);
+                                            }
                                             if (array[0] != null) {
                                                 tvWarningTime.setText(tvWarningTime.getText().toString()+"  "+array[0] + "发布");
                                             }
@@ -1679,6 +1694,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
     //需要申请的所有权限
     public static String[] allPermissions = new String[] {
             Manifest.permission.ACCESS_COARSE_LOCATION,
+            Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.READ_PHONE_STATE
     };
 

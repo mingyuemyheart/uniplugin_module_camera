@@ -430,6 +430,7 @@ public class Fragment4 extends Fragment implements OnRefreshListener, OnClickLis
 	//需要申请的所有权限
 	public static String[] allPermissions = new String[] {
 			Manifest.permission.ACCESS_COARSE_LOCATION,
+			Manifest.permission.ACCESS_FINE_LOCATION,
 			Manifest.permission.CAMERA,
 			Manifest.permission.RECORD_AUDIO,
 			Manifest.permission.WRITE_EXTERNAL_STORAGE

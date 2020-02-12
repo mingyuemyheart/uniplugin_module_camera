@@ -1,6 +1,8 @@
 package com.warning.activity;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -99,9 +101,17 @@ public class WebviewActivity extends BaseActivity implements OnClickListener{
 		webView.setWebViewClient(new WebViewClient() {
 			@Override
 			public boolean shouldOverrideUrlLoading(WebView view, String itemUrl) {
-				webView.loadUrl(itemUrl);
-				Log.e("itemUrl", itemUrl);
-				return true;
+				if (itemUrl.startsWith("http:") || itemUrl.startsWith("https:")) {
+					webView.loadUrl(itemUrl);
+					return false;
+				} else {
+					try {
+						startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(itemUrl)));
+					} catch (ActivityNotFoundException e) {
+						e.printStackTrace();
+					}
+					return true;
+				}
 			}
 
 			@Override
