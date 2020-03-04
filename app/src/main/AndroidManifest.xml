@@ -49,7 +49,6 @@
     <uses-permission android:name="android.permission.RESTART_PACKAGES" />
     <!-- umeng -->
 
-
     <application
         android:name="com.warning.common.PgyApplication"
         android:allowBackup="true"
@@ -61,7 +60,9 @@
         android:usesCleartextTraffic="true">
 
         <!--解决android28以后无法使用apache http协议-->
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <!-- 自动更新下载完成广播 -->
         <receiver android:name="com.warning.util.AutoUpdateBroadcastReceiver">
@@ -73,8 +74,8 @@
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
-            android:grantUriPermissions="true"
-            android:exported="false">
+            android:exported="false"
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
@@ -89,16 +90,15 @@
             android:value="32aae14b28a5f7c48931bb1701c6be66" />
 
         <activity
-            android:name="com.warning.activity.ShawnWelcomeActivity"
+            android:name="com.warning.activity.WelcomeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.warning.activity.ShawnLoginActivity"
+            android:name="com.warning.activity.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name="com.warning.activity.ShawnMainActivity"
@@ -189,7 +189,6 @@
             android:name="com.warning.activity.ShawnPDFActivity"
             android:screenOrientation="portrait" />
 
-
         <!--umeng-->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
@@ -208,13 +207,11 @@
             android:name="com.tencent.connect.common.AssistActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
         <activity
             android:name=".wxapi.WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
         <activity
             android:name="com.umeng.socialize.media.WBShareCallBackActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -226,9 +223,7 @@
             android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
             android:configChanges="keyboardHidden|orientation"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize">
-
-        </activity>
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name="com.sina.weibo.sdk.share.WbShareTransActivity"
             android:launchMode="singleTask"
@@ -237,14 +232,11 @@
                 <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
         </activity>
-
         <activity
             android:name="com.umeng.socialize.editorpage.ShareActivity"
             android:excludeFromRecents="true"
             android:theme="@android:style/Theme.NoTitleBar" />
-
         <!--umeng-->
 
         <!--魅族push应用定义消息receiver声明 -->
@@ -263,7 +255,6 @@
                 <category android:name="${applicationId}" />
             </intent-filter>
         </receiver>
-
 
     </application>
 

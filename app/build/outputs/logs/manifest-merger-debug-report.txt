@@ -1,86 +1,87 @@
 -- Merging decision tree log ---
 provider#android.support.v4.content.FileProvider
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:73:9-81:20
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:74:9-82:20
 	android:grantUriPermissions
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:76:13-47
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:78:13-47
 	android:authorities
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:75:13-64
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:76:13-64
 	android:exported
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:77:13-37
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:74:13-67
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:75:13-67
 category#com.warning
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:263:17-61
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:255:17-61
 	android:name
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:263:27-58
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:255:27-58
 manifest
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-270:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-270:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-270:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-270:12
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9656a42503e1338de03ace09a50a7ad0/AndroidManifest.xml:17:1-22:12
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-261:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-261:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-261:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-261:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5c125fd85ff678ea407d7b8a391f0b96/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/AndroidManifest.xml:17:1-22:12
 MERGED from [:android-pdf-viewer] /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/android-pdf-viewer/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-5:12
-MERGED from [com.github.barteksc:pdfium-android:1.5.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.5.0.aar/13c79ac5dbd19dd3e22ef16c0fcdcf87/AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:support-v4:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/2ab704e592a4659cae65b5334608e372/AndroidManifest.xml:17:1-22:12
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:2:1-165:12
-MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:2:1-24:12
-MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:2:1-40:12
-MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:2:1-32:12
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/61ce96f4cc664732fa70deb9f925b7a4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/b15408528a391e65fd1b719a66971908/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/cacd96ce5a994caef1997ea1727c8813/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/fcad4c600031509138e35db1b66bd5c8/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b983d1b6b2681f4d65fe1fd452b8ba7e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:loader:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0e5e762081e3c89ed67299dac7479944/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:viewpager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/aece3ed0d7da9d511ccc26f416a2278f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/d726f50646b4204bf67aa6bef9d655d9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/18e1151727eb4f1de5b6e2345d413d4a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/af6d69d120e1848afdb1bf291821be8c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customview:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/c8f1bbf5fa5d9579876275df07073ae6/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/64a2bb9d0cb744a585616b979dd86ba3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ae2bc488b04dfe18292ec8fc12c81568/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/72047dcd6034d0ca220cf9f3fb46e6f0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/90122f14b355878a63d3cfcdb95839f2/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/81011b519e35b76f0bfc5808fc588a9a/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/8f2f652eb7cd08416b075c2f3f1d637d/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f34e8ef0365627861985eaa28367cd47/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:documentfile:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/a3e57e47be1c36c00577fd30a0eba0f2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/7e3ed29bdf537dc6b320985cc7b96ed2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:print:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/e376d0fa56f276214eb692f1b1ec03d5/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7839e66b73eda69486a0d74c5258134e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:interpolator:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/1eea132ef5078091e8992c4bdeb97221/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/5fe30fa8ceaf91dd5abd8114b9975a49/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c40a6113d16b4e8e80068f5faa0fc2f0/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/139ebdada885c75a6e3602bc752c4d6a/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-270:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-270:12
-INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-270:12
+MERGED from [com.github.barteksc:pdfium-android:1.5.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.5.0.aar/def6a2fa2e9747eef8047d028bef7fb2/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/42b997719d3b93e61cd6ff68faf068db/AndroidManifest.xml:17:1-22:12
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:2:1-165:12
+MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:2:1-24:12
+MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:2:1-40:12
+MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:2:1-32:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/af5be746f885ebee2fe399e1809c694c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bfee90f167642e001c870d9ad98fd928/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d71c6a5b9c00d412bc44c1ddf5ad2adc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/7277459d09a21c9a38e798d14dbcdee5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b688fd237e81eac2329f0c342d658bc0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/58a8b606153ffe7acf22c98a58229a96/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f6e67a26dec4ed316b6bf94bf9343784/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/ae2603a79d89d6611a8b9dd64712214e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/0014147c4d1ba58925b038f4b4ffcbc1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/63f4b573f8abb3be1cba1c5a7a6e82e4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/6bc79204108cfa23d657a2f5f43b1acf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/f2e5e9dd824c153483803a28c1415c8e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/7673956ca3254f40537dc9836944a88b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/b1fb6f0f4a927c95b027f09153c53d2b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/95e2a2acabd2892976e952b63596aac3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/fe5a4558d93327e77913cffaaf58b136/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/1d09207870f9dc3945ef6dfde8eb6ccb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/56d576de779846e50b01ea8f306172f7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/765c92b5223b0dd6ccef5e4c8f3149cc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/796f8879b2588821b24c99bd67db9bfc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/352a8864aa122c8d15167ddb21488ce7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2c00aabfd6e624bfb4e4ca375d0f82e2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/c13a652b4868ce531e2781e2ae9f3d6e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/725ef320d3a80e834a7dca63788c9166/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/65d7bfab193cf0fd679533516743d9da/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d74f7d4c31de229e4b0eed4167aec523/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-261:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-261:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-261:12
 	package
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:3:5-26
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-270:12
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-261:12
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-270:12
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:1-261:12
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:5:5-67
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:11:5-67
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:11:5-67
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:11:5-67
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:6:5-81
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:14:5-81
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:14:5-81
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:14:5-81
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:14:5-81
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:6:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
@@ -93,8 +94,8 @@ ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/a
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:8:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:9:5-79
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:12:5-79
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:12:5-79
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:12:5-79
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:12:5-79
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:9:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
@@ -103,20 +104,20 @@ ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/a
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:10:22-76
 uses-permission#android.permission.READ_PHONE_STATE
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:11:5-75
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:16:5-75
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:16:5-75
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:16:5-75
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:16:5-75
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:11:22-72
 uses-permission#android.permission.CHANGE_WIFI_STATE
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:12:5-76
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:25:5-76
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:25:5-76
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:25:5-76
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:25:5-76
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:12:22-73
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:13:5-76
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:13:5-76
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:13:5-76
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:13:5-76
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:13:5-76
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:13:22-73
 uses-permission#android.permission.CHANGE_CONFIGURATION
@@ -125,8 +126,8 @@ ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/a
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:14:22-76
 uses-permission#android.permission.WAKE_LOCK
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:15:5-68
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:15:5-68
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:15:5-68
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:15:5-68
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:15:5-68
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:15:22-65
 uses-permission#android.permission.WRITE_SETTINGS
@@ -139,8 +140,8 @@ ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/a
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:17:22-66
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:18:5-81
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:23:5-81
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:23:5-81
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:23:5-81
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:23:5-81
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:18:22-78
 uses-permission#android.permission.BLUETOOTH
@@ -173,14 +174,14 @@ ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/a
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:25:22-72
 uses-permission#android.permission.CHANGE_NETWORK_STATE
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:26:5-79
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:24:5-79
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:24:5-79
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:24:5-79
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:24:5-79
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:26:22-76
 uses-permission#android.permission.GET_TASKS
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:27:5-68
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:22:5-68
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:22:5-68
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:22:5-68
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:22:5-68
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:27:22-65
 uses-permission#android.permission.CAMERA
@@ -237,118 +238,120 @@ ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/a
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:44:22-71
 uses-permission#android.permission.BROADCAST_PACKAGE_ADDED
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:45:5-82
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:17:5-82
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:17:5-82
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:17:5-82
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:17:5-82
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:45:22-79
 uses-permission#android.permission.BROADCAST_PACKAGE_CHANGED
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:46:5-84
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:18:5-84
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:18:5-84
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:18:5-84
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:18:5-84
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:46:22-81
 uses-permission#android.permission.BROADCAST_PACKAGE_INSTALL
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:47:5-84
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:19:5-84
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:19:5-84
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:19:5-84
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:19:5-84
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:47:22-81
 uses-permission#android.permission.BROADCAST_PACKAGE_REPLACED
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:48:5-85
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:20:5-85
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:20:5-85
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:20:5-85
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:20:5-85
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:48:22-82
 uses-permission#android.permission.RESTART_PACKAGES
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:49:5-75
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:21:5-75
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:21:5-75
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:21:5-75
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:21:5-75
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:49:22-72
 application
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:53:5-268:19
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:27:5-163:19
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:27:5-163:19
-MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:11:5-22:19
-MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:11:5-22:19
-MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:17:5-38:19
-MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:17:5-38:19
-MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:29:5-30:19
-MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:29:5-30:19
-MERGED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/90122f14b355878a63d3cfcdb95839f2/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/90122f14b355878a63d3cfcdb95839f2/AndroidManifest.xml:22:5-94
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/81011b519e35b76f0bfc5808fc588a9a/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/81011b519e35b76f0bfc5808fc588a9a/AndroidManifest.xml:22:5-23:19
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:52:5-259:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5c125fd85ff678ea407d7b8a391f0b96/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5c125fd85ff678ea407d7b8a391f0b96/AndroidManifest.xml:9:5-20
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:27:5-163:19
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:27:5-163:19
+MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:11:5-22:19
+MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:11:5-22:19
+MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:17:5-38:19
+MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:17:5-38:19
+MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:29:5-30:19
+MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:29:5-30:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/95e2a2acabd2892976e952b63596aac3/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/95e2a2acabd2892976e952b63596aac3/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/fe5a4558d93327e77913cffaaf58b136/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/fe5a4558d93327e77913cffaaf58b136/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/90122f14b355878a63d3cfcdb95839f2/AndroidManifest.xml:22:18-91
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/95e2a2acabd2892976e952b63596aac3/AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:59:9-35
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:58:9-35
 	android:label
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:57:9-41
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:56:9-41
 	android:icon
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:56:9-38
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:55:9-38
 	android:allowBackup
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:55:9-35
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:54:9-35
 	android:theme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:60:9-40
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:59:9-40
 	android:networkSecurityConfig
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:58:9-69
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:57:9-69
 	android:usesCleartextTraffic
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:61:9-44
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:60:9-44
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:54:9-57
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:53:9-57
 uses-library#org.apache.http.legacy
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:64:9-87
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:63:9-65:40
 	android:required
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:64:61-85
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:65:13-37
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:64:23-60
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:64:13-50
 receiver#com.warning.util.AutoUpdateBroadcastReceiver
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:67:9-72:20
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:68:9-73:20
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:67:19-78
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:68:19-78
 intent-filter#action:name:android.intent.action.DOWNLOAD_COMPLETE+action:name:android.intent.action.PACKAGE_INSTALL
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:68:13-71:29
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:69:13-72:29
 action#android.intent.action.DOWNLOAD_COMPLETE
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:69:17-82
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:70:17-82
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:69:25-79
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:70:25-79
 action#android.intent.action.PACKAGE_INSTALL
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:70:17-80
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:71:17-80
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:70:25-77
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:71:25-77
 service#com.amap.api.location.APSService
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:84:9-68
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:85:9-68
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:84:18-65
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:85:18-65
 meta-data#com.amap.api.v2.apikey
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:87:9-89:64
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:88:9-90:64
 	android:value
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:89:13-61
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:90:13-61
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:88:13-50
-activity#com.warning.activity.ShawnWelcomeActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:91:9-99:20
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:89:13-50
+activity#com.warning.activity.WelcomeActivity
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:92:9-99:20
 	android:screenOrientation
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:93:13-49
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:94:13-49
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:92:13-69
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:93:13-64
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:94:13-98:29
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:95:13-98:29
 action#android.intent.action.MAIN
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:95:17-69
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:96:17-69
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:95:25-66
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:96:25-66
 category#android.intent.category.LAUNCHER
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:97:17-77
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:97:27-74
-activity#com.warning.activity.ShawnLoginActivity
+activity#com.warning.activity.LoginActivity
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:100:9-102:52
 	android:screenOrientation
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:102:13-49
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:101:13-67
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:101:13-62
 activity#com.warning.activity.ShawnMainActivity
 ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:103:9-105:52
 	android:screenOrientation
@@ -526,191 +529,193 @@ ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/a
 	android:name
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:189:13-65
 activity#com.tencent.tauth.AuthActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:194:9-206:20
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:193:9-205:20
 	android:launchMode
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:196:13-44
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:195:13-44
 	android:noHistory
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:197:13-37
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:196:13-37
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:195:13-58
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:194:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:tencent1106871193
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:198:13-205:29
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:197:13-204:29
 action#android.intent.action.VIEW
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:199:17-69
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:198:17-69
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:199:25-66
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:198:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:201:17-76
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:200:17-76
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:201:27-73
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:200:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:202:17-78
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:201:17-78
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:202:27-75
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:201:27-75
 data
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:204:17-60
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:203:17-60
 	android:scheme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:204:23-57
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:203:23-57
 activity#com.tencent.connect.common.AssistActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:207:9-210:75
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:206:9-209:75
 	android:configChanges
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:209:13-74
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:208:13-74
 	android:theme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:210:13-72
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:209:13-72
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:208:13-69
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:207:13-69
 activity#com.warning.wxapi.WXEntryActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:212:9-216:75
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:210:9-214:75
 	android:exported
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:215:13-36
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:213:13-36
 	android:configChanges
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:214:13-74
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:212:13-74
 	android:theme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:216:13-72
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:214:13-72
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:213:13-50
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:211:13-50
 activity#com.umeng.socialize.media.WBShareCallBackActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:218:9-224:75
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:215:9-221:75
 	android:screenOrientation
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:223:13-49
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:220:13-49
 	android:launchMode
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:222:13-44
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:219:13-44
 	android:exported
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:221:13-37
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:218:13-37
 	android:configChanges
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:220:13-63
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:217:13-63
 	android:theme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:224:13-72
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:221:13-72
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:219:13-77
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:216:13-77
 activity#com.sina.weibo.sdk.web.WeiboSdkWebActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:225:9-231:20
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:222:9-226:57
 	android:windowSoftInputMode
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:229:13-55
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:226:13-55
 	android:exported
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:228:13-37
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:225:13-37
 	android:configChanges
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:227:13-63
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:224:13-63
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:226:13-70
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:223:13-70
 activity#com.sina.weibo.sdk.share.WbShareTransActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:232:9-241:20
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:227:9-235:20
 	android:launchMode
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:234:13-44
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:229:13-44
 	android:theme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:235:13-83
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:230:13-83
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:233:13-73
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:228:13-73
 intent-filter#action:name:com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY+category:name:android.intent.category.DEFAULT
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:236:13-239:29
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:231:13-234:29
 action#com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:237:17-92
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:232:17-92
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:237:25-89
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:232:25-89
 activity#com.umeng.socialize.editorpage.ShareActivity
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:243:9-246:63
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:236:9-239:63
 	android:excludeFromRecents
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:245:13-46
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:238:13-46
 	android:theme
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:246:13-60
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:239:13-60
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:244:13-72
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:237:13-72
 receiver#com.warning.MeizuPushReceiver
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:251:9-265:20
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:243:9-257:20
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:251:19-63
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:243:19-63
 intent-filter#action:name:com.meizu.c2dm.intent.RECEIVE+action:name:com.meizu.c2dm.intent.REGISTRATION+action:name:com.meizu.flyme.push.intent.MESSAGE+action:name:com.meizu.flyme.push.intent.REGISTER.FEEDBACK+action:name:com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK+category:name:com.warning
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:252:13-264:29
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:244:13-256:29
 action#com.meizu.flyme.push.intent.MESSAGE
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:254:17-78
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:246:17-78
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:254:25-75
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:246:25-75
 action#com.meizu.flyme.push.intent.REGISTER.FEEDBACK
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:256:17-88
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:248:17-88
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:256:25-85
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:248:25-85
 action#com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:258:17-90
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:250:17-90
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:258:25-87
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:250:25-87
 action#com.meizu.c2dm.intent.REGISTRATION
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:260:17-77
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:252:17-77
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:260:25-74
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:252:25-74
 action#com.meizu.c2dm.intent.RECEIVE
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:261:17-72
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:253:17-72
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:261:25-69
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:253:25-69
 uses-sdk
 INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9656a42503e1338de03ace09a50a7ad0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/9656a42503e1338de03ace09a50a7ad0/AndroidManifest.xml:20:5-44
-MERGED from [com.github.barteksc:pdfium-android:1.5.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.5.0.aar/13c79ac5dbd19dd3e22ef16c0fcdcf87/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.barteksc:pdfium-android:1.5.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.5.0.aar/13c79ac5dbd19dd3e22ef16c0fcdcf87/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/2ab704e592a4659cae65b5334608e372/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/2ab704e592a4659cae65b5334608e372/AndroidManifest.xml:20:5-44
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:7:5-9:41
-MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:7:5-9:41
-MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:7:5-9:41
-MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:7:5-9:41
-MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:7:5-9:41
-MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:7:5-9:41
-MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:7:5-9:41
-MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/61ce96f4cc664732fa70deb9f925b7a4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/61ce96f4cc664732fa70deb9f925b7a4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/b15408528a391e65fd1b719a66971908/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/b15408528a391e65fd1b719a66971908/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/cacd96ce5a994caef1997ea1727c8813/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/cacd96ce5a994caef1997ea1727c8813/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/fcad4c600031509138e35db1b66bd5c8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/fcad4c600031509138e35db1b66bd5c8/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b983d1b6b2681f4d65fe1fd452b8ba7e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b983d1b6b2681f4d65fe1fd452b8ba7e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0e5e762081e3c89ed67299dac7479944/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:loader:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/0e5e762081e3c89ed67299dac7479944/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/aece3ed0d7da9d511ccc26f416a2278f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:viewpager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/aece3ed0d7da9d511ccc26f416a2278f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/d726f50646b4204bf67aa6bef9d655d9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/d726f50646b4204bf67aa6bef9d655d9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/18e1151727eb4f1de5b6e2345d413d4a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:drawerlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/18e1151727eb4f1de5b6e2345d413d4a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/af6d69d120e1848afdb1bf291821be8c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/af6d69d120e1848afdb1bf291821be8c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/c8f1bbf5fa5d9579876275df07073ae6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customview:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/c8f1bbf5fa5d9579876275df07073ae6/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/64a2bb9d0cb744a585616b979dd86ba3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/64a2bb9d0cb744a585616b979dd86ba3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ae2bc488b04dfe18292ec8fc12c81568/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/ae2bc488b04dfe18292ec8fc12c81568/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/72047dcd6034d0ca220cf9f3fb46e6f0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/72047dcd6034d0ca220cf9f3fb46e6f0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/90122f14b355878a63d3cfcdb95839f2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/90122f14b355878a63d3cfcdb95839f2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/81011b519e35b76f0bfc5808fc588a9a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/81011b519e35b76f0bfc5808fc588a9a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/8f2f652eb7cd08416b075c2f3f1d637d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cursoradapter:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/8f2f652eb7cd08416b075c2f3f1d637d/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f34e8ef0365627861985eaa28367cd47/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/f34e8ef0365627861985eaa28367cd47/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/a3e57e47be1c36c00577fd30a0eba0f2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:documentfile:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/a3e57e47be1c36c00577fd30a0eba0f2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/7e3ed29bdf537dc6b320985cc7b96ed2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/7e3ed29bdf537dc6b320985cc7b96ed2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/e376d0fa56f276214eb692f1b1ec03d5/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:print:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/e376d0fa56f276214eb692f1b1ec03d5/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7839e66b73eda69486a0d74c5258134e/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/7839e66b73eda69486a0d74c5258134e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/1eea132ef5078091e8992c4bdeb97221/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:interpolator:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/1eea132ef5078091e8992c4bdeb97221/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/5fe30fa8ceaf91dd5abd8114b9975a49/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/5fe30fa8ceaf91dd5abd8114b9975a49/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c40a6113d16b4e8e80068f5faa0fc2f0/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/c40a6113d16b4e8e80068f5faa0fc2f0/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/139ebdada885c75a6e3602bc752c4d6a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/139ebdada885c75a6e3602bc752c4d6a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5c125fd85ff678ea407d7b8a391f0b96/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/5c125fd85ff678ea407d7b8a391f0b96/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/AndroidManifest.xml:20:5-44
+MERGED from [com.github.barteksc:pdfium-android:1.5.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.5.0.aar/def6a2fa2e9747eef8047d028bef7fb2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.barteksc:pdfium-android:1.5.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/pdfium-android-1.5.0.aar/def6a2fa2e9747eef8047d028bef7fb2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/42b997719d3b93e61cd6ff68faf068db/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/42b997719d3b93e61cd6ff68faf068db/AndroidManifest.xml:20:5-44
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:7:5-9:41
+MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:7:5-9:41
+MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:7:5-9:41
+MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:7:5-9:41
+MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:7:5-9:41
+MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:7:5-9:41
+MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/af5be746f885ebee2fe399e1809c694c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/af5be746f885ebee2fe399e1809c694c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bfee90f167642e001c870d9ad98fd928/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/bfee90f167642e001c870d9ad98fd928/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d71c6a5b9c00d412bc44c1ddf5ad2adc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d71c6a5b9c00d412bc44c1ddf5ad2adc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/7277459d09a21c9a38e798d14dbcdee5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/7277459d09a21c9a38e798d14dbcdee5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b688fd237e81eac2329f0c342d658bc0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b688fd237e81eac2329f0c342d658bc0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/58a8b606153ffe7acf22c98a58229a96/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/58a8b606153ffe7acf22c98a58229a96/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f6e67a26dec4ed316b6bf94bf9343784/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/f6e67a26dec4ed316b6bf94bf9343784/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/ae2603a79d89d6611a8b9dd64712214e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/ae2603a79d89d6611a8b9dd64712214e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/0014147c4d1ba58925b038f4b4ffcbc1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/0014147c4d1ba58925b038f4b4ffcbc1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/63f4b573f8abb3be1cba1c5a7a6e82e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/63f4b573f8abb3be1cba1c5a7a6e82e4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/6bc79204108cfa23d657a2f5f43b1acf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/6bc79204108cfa23d657a2f5f43b1acf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/f2e5e9dd824c153483803a28c1415c8e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/f2e5e9dd824c153483803a28c1415c8e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/7673956ca3254f40537dc9836944a88b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/7673956ca3254f40537dc9836944a88b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/b1fb6f0f4a927c95b027f09153c53d2b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/b1fb6f0f4a927c95b027f09153c53d2b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/95e2a2acabd2892976e952b63596aac3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/95e2a2acabd2892976e952b63596aac3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/fe5a4558d93327e77913cffaaf58b136/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/fe5a4558d93327e77913cffaaf58b136/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/1d09207870f9dc3945ef6dfde8eb6ccb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/1d09207870f9dc3945ef6dfde8eb6ccb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/56d576de779846e50b01ea8f306172f7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/56d576de779846e50b01ea8f306172f7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/765c92b5223b0dd6ccef5e4c8f3149cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/765c92b5223b0dd6ccef5e4c8f3149cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/796f8879b2588821b24c99bd67db9bfc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/796f8879b2588821b24c99bd67db9bfc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/352a8864aa122c8d15167ddb21488ce7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/352a8864aa122c8d15167ddb21488ce7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2c00aabfd6e624bfb4e4ca375d0f82e2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/2c00aabfd6e624bfb4e4ca375d0f82e2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/c13a652b4868ce531e2781e2ae9f3d6e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/c13a652b4868ce531e2781e2ae9f3d6e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/725ef320d3a80e834a7dca63788c9166/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/725ef320d3a80e834a7dca63788c9166/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/65d7bfab193cf0fd679533516743d9da/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/65d7bfab193cf0fd679533516743d9da/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d74f7d4c31de229e4b0eed4167aec523/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d74f7d4c31de229e4b0eed4167aec523/AndroidManifest.xml:20:5-44
 INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -722,346 +727,346 @@ INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getu
 		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:78:13-80:54
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:79:13-81:54
 	android:resource
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:80:17-51
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:81:17-51
 	android:name
-		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:79:17-67
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/AndroidManifest.xml:80:17-67
 service#com.taobao.accs.ChannelService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:28:9-38:19
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:28:9-38:19
 	android:process
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:31:13-39
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:31:13-39
 	android:exported
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:30:13-36
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:29:13-58
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:29:13-58
 intent-filter#action:name:com.taobao.accs.intent.action.SERVICE
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:32:13-34:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:32:13-34:29
 action#com.taobao.accs.intent.action.SERVICE
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:33:17-80
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:33:17-80
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:33:25-77
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:33:25-77
 intent-filter#action:name:com.taobao.accs.intent.action.ELECTION
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:35:13-37:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:35:13-37:29
 action#com.taobao.accs.intent.action.ELECTION
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:36:17-81
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:36:17-81
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:36:25-78
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:36:25-78
 service#com.taobao.accs.data.MsgDistributeService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:39:9-45:19
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:39:9-45:19
 	android:exported
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:41:13-36
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:41:13-36
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:40:13-69
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:40:13-69
 intent-filter#action:name:com.taobao.accs.intent.action.RECEIVE
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:42:13-44:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:42:13-44:29
 action#com.taobao.accs.intent.action.RECEIVE
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:43:17-80
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:43:17-80
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:43:25-77
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:43:25-77
 receiver#com.taobao.accs.EventReceiver
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:47:9-64:20
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:47:9-64:20
 	android:process
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:49:13-39
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:49:13-39
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:48:13-57
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:48:13-57
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:50:13-52:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:50:13-52:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:51:17-79
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:51:17-79
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:51:25-76
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:51:25-76
 intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:53:13-55:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:53:13-55:29
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:54:17-79
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:54:17-79
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:54:25-76
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:54:25-76
 intent-filter#action:name:android.intent.action.PACKAGE_REMOVED+data:scheme:package
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:56:13-60:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:56:13-60:29
 action#android.intent.action.PACKAGE_REMOVED
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:57:17-80
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:57:17-80
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:57:25-77
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:57:25-77
 intent-filter#action:name:android.intent.action.USER_PRESENT
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:61:13-63:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:61:13-63:29
 action#android.intent.action.USER_PRESENT
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:62:17-77
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:62:17-77
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:62:25-74
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:62:25-74
 receiver#com.taobao.accs.ServiceReceiver
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:65:9-74:20
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:65:9-74:20
 	android:process
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:67:13-39
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:67:13-39
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:66:13-59
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:66:13-59
 intent-filter#action:name:com.taobao.accs.intent.action.COMMAND
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:68:13-70:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:68:13-70:29
 action#com.taobao.accs.intent.action.COMMAND
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:69:17-80
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:69:17-80
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:69:25-77
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:69:25-77
 intent-filter#action:name:com.taobao.accs.intent.action.START_FROM_AGOO
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:71:13-73:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:71:13-73:29
 action#com.taobao.accs.intent.action.START_FROM_AGOO
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:72:17-88
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:72:17-88
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:72:25-85
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:72:25-85
 service#com.taobao.accs.internal.AccsJobService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:76:9-79:42
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:76:9-79:42
 	android:process
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:79:13-39
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:79:13-39
 	android:permission
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:78:13-69
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:78:13-69
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:77:13-67
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:77:13-67
 service#com.taobao.accs.ChannelService$KernelService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:80:9-82:42
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:80:9-82:42
 	android:process
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:82:13-39
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:82:13-39
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:81:13-72
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:81:13-72
 service#org.android.agoo.accs.AgooService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:83:9-89:19
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:83:9-89:19
 	android:exported
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:85:13-36
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:85:13-36
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:84:13-61
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:84:13-61
 service#com.umeng.message.UmengIntentService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:90:9-97:19
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:90:9-97:19
 	android:process
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:93:13-39
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:93:13-39
 	android:exported
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:92:13-36
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:92:13-36
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:91:13-64
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:91:13-64
 intent-filter#action:name:org.agoo.android.intent.action.RECEIVE
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:94:13-96:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:94:13-96:29
 action#org.agoo.android.intent.action.RECEIVE
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:95:17-81
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:95:17-81
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:95:25-78
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:95:25-78
 service#com.umeng.message.XiaomiIntentService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:98:9-105:19
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:98:9-105:19
 	android:process
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:101:13-39
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:101:13-39
 	android:exported
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:100:13-36
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:100:13-36
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:99:13-65
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:99:13-65
 receiver#com.taobao.agoo.AgooCommondReceiver
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:107:9-119:20
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:107:9-119:20
 	android:process
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:110:13-39
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:110:13-39
 	android:exported
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:109:13-36
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:109:13-36
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:108:13-63
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:108:13-63
 intent-filter#action:name:${applicationId}.intent.action.COMMAND
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:111:13-113:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:111:13-113:29
 intent-filter#action:name:com.warning.intent.action.COMMAND
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:111:13-113:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:111:13-113:29
 action#${applicationId}.intent.action.COMMAND
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:112:17-81
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:112:17-81
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:112:25-78
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:112:25-78
 action#com.warning.intent.action.COMMAND
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:112:17-81
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:112:17-81
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:112:25-78
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:112:25-78
 service#com.umeng.message.UmengMessageIntentReceiverService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:121:9-128:19
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:121:9-128:19
 	android:process
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:124:13-39
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:124:13-39
 	android:exported
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:123:13-36
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:123:13-36
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:122:13-79
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:122:13-79
 intent-filter#action:name:org.android.agoo.client.MessageReceiverService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:125:13-127:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:125:13-127:29
 action#org.android.agoo.client.MessageReceiverService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:126:17-89
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:126:17-89
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:126:25-86
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:126:25-86
 receiver#com.umeng.message.NotificationProxyBroadcastReceiver
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:130:9-132:40
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:130:9-132:40
 	android:exported
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:132:13-37
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:132:13-37
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:131:13-80
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:131:13-80
 service#com.umeng.message.UmengMessageCallbackHandlerService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:134:9-152:19
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:134:9-152:19
 	android:exported
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:136:13-37
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:136:13-37
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:135:13-80
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:135:13-80
 intent-filter#action:name:com.umeng.messge.registercallback.action
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:137:13-139:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:137:13-139:29
 action#com.umeng.messge.registercallback.action
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:138:17-83
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:138:17-83
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:138:25-80
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:138:25-80
 intent-filter#action:name:com.umeng.message.enablecallback.action
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:140:13-142:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:140:13-142:29
 action#com.umeng.message.enablecallback.action
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:141:17-82
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:141:17-82
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:141:25-79
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:141:25-79
 intent-filter#action:name:com.umeng.message.disablecallback.action
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:143:13-145:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:143:13-145:29
 action#com.umeng.message.disablecallback.action
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:144:17-83
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:144:17-83
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:144:25-80
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:144:25-80
 intent-filter#action:name:com.umeng.message.message.handler.action
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:146:13-148:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:146:13-148:29
 action#com.umeng.message.message.handler.action
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:147:17-83
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:147:17-83
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:147:25-80
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:147:25-80
 intent-filter#action:name:com.umeng.message.message.sendmessage.action
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:149:13-151:29
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:149:13-151:29
 action#com.umeng.message.message.sendmessage.action
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:150:17-87
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:150:17-87
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:150:25-84
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:150:25-84
 service#com.umeng.message.UmengDownloadResourceService
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:153:9-155:40
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:153:9-155:40
 	android:exported
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:155:13-37
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:155:13-37
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:154:13-74
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:154:13-74
 provider#com.umeng.message.provider.MessageProvider
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:157:9-162:20
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:157:9-162:20
 	android:authorities
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:159:13-65
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:159:13-65
 	android:exported
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:160:13-37
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:160:13-37
 	android:name
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:158:13-70
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:158:13-70
 grant-uri-permission
-ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:161:13-62
+ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:161:13-62
 	android:pathPattern
-		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/975f07c556cb60fa8cf6bd7f1b5d7cfd/AndroidManifest.xml:161:35-59
+		ADDED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-4.2.0.aar/905ab0c3741ffd978adb4b1402f36800/AndroidManifest.xml:161:35-59
 receiver#org.android.agoo.huawei.HuaWeiReceiver
-ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:14:9-21:20
+ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:14:9-21:20
 	android:name
-		ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:14:19-72
+		ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:14:19-72
 intent-filter#action:name:com.huawei.android.push.intent.RECEIVE+action:name:com.huawei.android.push.intent.REGISTRATION+action:name:com.huawei.intent.action.PUSH+action:name:com.huawei.intent.action.PUSH_STATE
-ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:15:13-20:29
+ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:15:13-20:29
 action#com.huawei.android.push.intent.REGISTRATION
-ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:16:17-86
+ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:16:17-86
 	android:name
-		ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:16:25-83
+		ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:16:25-83
 action#com.huawei.android.push.intent.RECEIVE
-ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:17:17-81
+ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:17:17-81
 	android:name
-		ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:17:25-78
+		ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:17:25-78
 action#com.huawei.intent.action.PUSH
-ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:18:17-72
+ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:18:17-72
 	android:name
-		ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:18:25-69
+		ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:18:25-69
 action#com.huawei.intent.action.PUSH_STATE
-ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:19:17-78
+ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:19:17-78
 	android:name
-		ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/05febfae669284790d70848caceb510b/AndroidManifest.xml:19:25-75
+		ADDED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-huawei-1.0.0.aar/fd6af9ad4fb6ec6c10cb01b8e4a4d145/AndroidManifest.xml:19:25-75
 permission#${applicationId}.permission.MIPUSH_RECEIVE
-ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:11:5-13:55
+ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:11:5-13:55
 	android:protectionLevel
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:13:9-52
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:13:9-52
 	android:name
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:12:9-66
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:12:9-66
 permission#com.warning.permission.MIPUSH_RECEIVE
-ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:11:5-13:55
+ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:11:5-13:55
 	android:protectionLevel
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:13:9-52
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:13:9-52
 	android:name
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:12:9-66
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:12:9-66
 uses-permission#${applicationId}.permission.MIPUSH_RECEIVE
-ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:15:5-82
+ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:15:5-82
 	android:name
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:15:22-79
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:15:22-79
 uses-permission#com.warning.permission.MIPUSH_RECEIVE
-ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:15:5-82
+ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:15:5-82
 	android:name
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:15:22-79
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:15:22-79
 service#com.xiaomi.mipush.sdk.PushMessageHandler
-ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:20:9-23:39
+ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:20:9-23:39
 	android:enabled
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:22:13-35
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:22:13-35
 	android:exported
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:23:13-36
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:21:13-68
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:21:13-68
 service#com.xiaomi.mipush.sdk.MessageHandleService
-ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:24:9-26:38
+ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:24:9-26:38
 	android:enabled
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:26:13-35
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:26:13-35
 	android:name
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:25:13-70
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:25:13-70
 receiver#org.android.agoo.xiaomi.MiPushBroadcastReceiver
-ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:28:9-37:20
+ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:28:9-37:20
 	android:exported
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:30:13-36
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:29:13-75
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:29:13-75
 intent-filter#action:name:com.xiaomi.mipush.RECEIVE_MESSAGE
-ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:31:13-33:29
+ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:31:13-33:29
 action#com.xiaomi.mipush.RECEIVE_MESSAGE
-ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:32:17-76
+ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:32:17-76
 	android:name
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:32:25-73
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:32:25-73
 intent-filter#action:name:com.xiaomi.mipush.ERROR
-ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:34:13-36:29
+ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:34:13-36:29
 action#com.xiaomi.mipush.ERROR
-ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:35:17-66
+ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:35:17-66
 	android:name
-		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/AndroidManifest.xml:35:25-63
+		ADDED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/AndroidManifest.xml:35:25-63
 uses-permission#com.meizu.flyme.push.permission.RECEIVE
-ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:12:5-79
+ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:12:22-76
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:12:22-76
 permission#${applicationId}.push.permission.MESSAGE
-ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:14:5-16:47
+ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:14:5-16:47
 	android:protectionLevel
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:16:9-44
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:16:9-44
 	android:name
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:15:9-64
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:15:9-64
 permission#com.warning.push.permission.MESSAGE
-ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:14:5-16:47
+ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:14:5-16:47
 	android:protectionLevel
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:16:9-44
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:16:9-44
 	android:name
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:15:9-64
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:15:9-64
 uses-permission#${applicationId}.push.permission.MESSAGE
-ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:18:5-80
+ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:18:5-80
 	android:name
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:18:22-77
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:18:22-77
 uses-permission#com.warning.push.permission.MESSAGE
-ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:18:5-80
+ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:18:5-80
 	android:name
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:18:22-77
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:18:22-77
 uses-permission#com.meizu.c2dm.permission.RECEIVE
-ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:21:5-73
+ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:21:5-73
 	android:name
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:21:22-70
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:21:22-70
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:23:5-25:47
+ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:23:5-25:47
 	android:protectionLevel
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:25:9-44
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:25:9-44
 	android:name
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:24:9-63
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:24:9-63
 permission#com.warning.permission.C2D_MESSAGE
-ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:23:5-25:47
+ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:23:5-25:47
 	android:protectionLevel
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:25:9-44
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:25:9-44
 	android:name
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:24:9-63
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:24:9-63
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:27:5-79
+ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:27:5-79
 	android:name
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:27:22-76
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:27:22-76
 uses-permission#com.warning.permission.C2D_MESSAGE
-ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:27:5-79
+ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:27:5-79
 	android:name
-		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/77c768e5a6dd945c0e7e1bff9dcba030/AndroidManifest.xml:27:22-76
+		ADDED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/push-meizu-1.0.0.aar/73907e0326cb9100d256c39a9cabced8/AndroidManifest.xml:27:22-76

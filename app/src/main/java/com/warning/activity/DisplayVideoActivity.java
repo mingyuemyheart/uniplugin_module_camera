@@ -758,7 +758,7 @@ OnVideoSizeChangedListener, OnCompletionListener, OnClickListener{
 	 */
 	private void deleteVideoDialog() {
 		LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View view = inflater.inflate(R.layout.shawn_dialog_delete, null);
+		View view = inflater.inflate(R.layout.dialog_delete, null);
 		TextView tvMessage = (TextView) view.findViewById(R.id.tvMessage);
 		LinearLayout llNegative = (LinearLayout) view.findViewById(R.id.llNegative);
 		LinearLayout llPositive = (LinearLayout) view.findViewById(R.id.llPositive);

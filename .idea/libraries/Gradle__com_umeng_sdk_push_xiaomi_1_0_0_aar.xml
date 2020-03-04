@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.umeng.sdk:push-xiaomi:1.0.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/7b76aa97a3634589621921b6104c1a0b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/push-xiaomi-1.0.0.aar/c412a87f46b8bbabb008c38a169b03ec/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -33,7 +33,7 @@ import android.widget.TextView;
 
 import com.warning.R;
 import com.warning.activity.CameraActivity;
-import com.warning.activity.ShawnLoginActivity;
+import com.warning.activity.LoginActivity;
 import com.warning.activity.OnlinePictureActivity;
 import com.warning.activity.OnlineVideoActivity;
 import com.warning.adapter.VideoWallAdapter;
@@ -444,7 +444,7 @@ public class Fragment4 extends Fragment implements OnRefreshListener, OnClickLis
 	private void checkAuthority() {
 		if (Build.VERSION.SDK_INT < 23) {
 			if (TextUtils.isEmpty(TOKEN)) {
-				startActivityForResult(new Intent(getActivity(), ShawnLoginActivity.class), 1);
+				startActivityForResult(new Intent(getActivity(), LoginActivity.class), 1);
 			}else {
 				startActivity(new Intent(getActivity(), CameraActivity.class));
 			}
@@ -457,7 +457,7 @@ public class Fragment4 extends Fragment implements OnRefreshListener, OnClickLis
 			}
 			if (deniedList.isEmpty()) {//所有权限都授予
 				if (TextUtils.isEmpty(TOKEN)) {
-					startActivityForResult(new Intent(getActivity(), ShawnLoginActivity.class), 1);
+					startActivityForResult(new Intent(getActivity(), LoginActivity.class), 1);
 				}else {
 					startActivity(new Intent(getActivity(), CameraActivity.class));
 				}
@@ -483,7 +483,7 @@ public class Fragment4 extends Fragment implements OnRefreshListener, OnClickLis
 					}
 					if (isAllGranted) {//所有权限都授予
 						if (TextUtils.isEmpty(TOKEN)) {
-							startActivityForResult(new Intent(getActivity(), ShawnLoginActivity.class), 1);
+							startActivityForResult(new Intent(getActivity(), LoginActivity.class), 1);
 						}else {
 							startActivity(new Intent(getActivity(), CameraActivity.class));
 						}

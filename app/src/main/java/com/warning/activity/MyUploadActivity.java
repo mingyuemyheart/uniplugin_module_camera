@@ -585,7 +585,7 @@ public class MyUploadActivity extends BaseActivity implements OnClickListener, S
 	 */
 	private void deleteLocalFileDialog(String message, String content) {
 		LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View view = inflater.inflate(R.layout.shawn_dialog_delete, null);
+		View view = inflater.inflate(R.layout.dialog_delete, null);
 		TextView tvMessage = (TextView) view.findViewById(R.id.tvMessage);
 		TextView tvContent = (TextView) view.findViewById(R.id.tvContent);
 		LinearLayout llNegative = (LinearLayout) view.findViewById(R.id.llNegative);

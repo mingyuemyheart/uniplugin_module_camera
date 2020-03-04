@@ -862,7 +862,7 @@ OnCompletionListener, OnClickListener{
 			break;
 		case R.id.ivPraise:
 			if (TextUtils.isEmpty(BaseActivity.TOKEN)) {
-				startActivityForResult(new Intent(mContext, ShawnLoginActivity.class), 1);
+				startActivityForResult(new Intent(mContext, LoginActivity.class), 1);
 			}else {
 				if (isPraise == false) {
 					OkhttpPraise("http://new.12379.tianqi.cn/Work/setincZan");
@@ -882,7 +882,7 @@ OnCompletionListener, OnClickListener{
 			break;
 		case R.id.tvSubmit:
 			if (TextUtils.isEmpty(BaseActivity.TOKEN)) {
-				startActivityForResult(new Intent(mContext, ShawnLoginActivity.class), 2);
+				startActivityForResult(new Intent(mContext, LoginActivity.class), 2);
 			}else {
 				if (!TextUtils.isEmpty(etComment.getText().toString())) {
 					OkhttpAddComment("http://new.12379.tianqi.cn/Work/addpinglun");

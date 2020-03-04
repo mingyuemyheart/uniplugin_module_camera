@@ -419,7 +419,7 @@ public class MyActivity extends BaseActivity implements OnClickListener{
 	 */
 	private void deleteDialog(final boolean flag, String message, String content, final TextView textView) {
 		LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View view = inflater.inflate(R.layout.shawn_dialog_delete, null);
+		View view = inflater.inflate(R.layout.dialog_delete, null);
 		TextView tvMessage = (TextView) view.findViewById(R.id.tvMessage);
 		TextView tvContent = (TextView) view.findViewById(R.id.tvContent);
 		LinearLayout llNegative = (LinearLayout) view.findViewById(R.id.llNegative);
@@ -471,7 +471,7 @@ public class MyActivity extends BaseActivity implements OnClickListener{
 	private void dialPhone(String message, final String content, String positive) {
 		dialNumber = content;
 		LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View view = inflater.inflate(R.layout.shawn_dialog_delete, null);
+		View view = inflater.inflate(R.layout.dialog_delete, null);
 		TextView tvMessage = (TextView) view.findViewById(R.id.tvMessage);
 		TextView tvContent = (TextView) view.findViewById(R.id.tvContent);
 		LinearLayout llNegative = (LinearLayout) view.findViewById(R.id.llNegative);
@@ -509,7 +509,7 @@ public class MyActivity extends BaseActivity implements OnClickListener{
 	 */
 	private void logout(String message, String content) {
 		LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		View view = inflater.inflate(R.layout.shawn_dialog_delete, null);
+		View view = inflater.inflate(R.layout.dialog_delete, null);
 		TextView tvMessage = (TextView) view.findViewById(R.id.tvMessage);
 		TextView tvContent = (TextView) view.findViewById(R.id.tvContent);
 		LinearLayout llNegative = (LinearLayout) view.findViewById(R.id.llNegative);
@@ -552,7 +552,7 @@ public class MyActivity extends BaseActivity implements OnClickListener{
 		case R.id.ivPortrait:
 		case R.id.tvUserName:
 			if (TextUtils.isEmpty(TOKEN)) {
-				startActivityForResult(new Intent(mContext, ShawnLoginActivity.class), 1);
+				startActivityForResult(new Intent(mContext, LoginActivity.class), 1);
 			}else {
 				startActivityForResult(new Intent(mContext, PersonInfoActivity.class), 2);
 			}

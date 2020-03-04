@@ -262,7 +262,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
             public void run() {
                 okHttpCode();
                 OkhttpWarning();
-                checkAuthority();
             }
         }).start();
     }
@@ -275,6 +274,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
         OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
+                checkAuthority();
             }
             @Override
             public void onResponse(Call call, Response response) throws IOException {
@@ -313,6 +313,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
                         e.printStackTrace();
                     }
                 }
+                checkAuthority();
             }
         });
     }

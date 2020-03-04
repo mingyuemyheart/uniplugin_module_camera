@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EFEFEF"
-    android:orientation="vertical" >
+    android:background="@color/white"
+    android:orientation="vertical">
 
     <include
         android:id="@+id/reTitle"
@@ -13,63 +14,54 @@
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/reTitle"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/reTitle">
 
         <ScrollView
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#EFEFEF"
             android:scrollbars="none"
-            android:visibility="invisible" >
+            android:visibility="invisible">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/tvName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:orientation="vertical" >
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/level_3" />
 
-                    <TextView
-                        android:id="@+id/tvName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:padding="5dp"
-                        android:textColor="@color/text_color4"
-                        android:textSize="@dimen/level_3" />
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/level_5" />
 
-                    <TextView
-                        android:id="@+id/tvTime"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:textColor="@color/text_color4"
-                        android:textSize="@dimen/level_5" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="120dip"
+                    android:layout_height="120dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
 
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="120dip"
-                        android:layout_height="120dip"
-                        android:layout_gravity="center"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginTop="10dp" />
-
-                    <TextView
-                        android:id="@+id/tvIntro"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:lineSpacingExtra="5dp"
-                        android:padding="10dp"
-                        android:textColor="@color/text_color4"
-                        android:textSize="@dimen/level_4" />
-
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvIntro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:padding="10dp"
+                    android:textColor="@color/text_color4"
+                    android:textSize="@dimen/level_4" />
 
                 <TextView
                     android:id="@+id/tvGuide"
@@ -88,10 +80,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:text="附件："
-                    android:lineSpacingExtra="5dp"
                     android:paddingStart="10dp"
                     android:paddingEnd="10dp"
+                    android:text="附件："
                     android:textColor="@color/text_color3"
                     android:textSize="@dimen/level_4"
                     android:visibility="gone" />
@@ -100,15 +91,14 @@
                     android:id="@+id/listView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:padding="5dp"
                     android:cacheColorHint="@color/transparent"
                     android:divider="@color/light_gray"
                     android:dividerHeight="0.5dp"
                     android:listSelector="@color/transparent"
+                    android:padding="5dp"
                     android:scrollbars="none" />
             </LinearLayout>
         </ScrollView>
     </android.support.v4.widget.SwipeRefreshLayout>
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
