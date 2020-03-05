@@ -84,6 +84,10 @@
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/day14_mini.png"
     },
     {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_fragment1.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/fragment1.xml"
+    },
+    {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-v21_abc_edit_text_material.xml.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/drawable-v21/abc_edit_text_material.xml"
     },
@@ -628,10 +632,6 @@
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/color/switch_thumb_material_light.xml"
     },
     {
-        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_shawn_fragment1.xml.flat",
-        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/shawn_fragment1.xml"
-    },
-    {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_activity_my_score.xml.flat",
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/activity_my_score.xml"
     },
@@ -738,6 +738,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_notification_template_big_media_narrow_custom.xml.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/b1fb6f0f4a927c95b027f09153c53d2b/res/layout/notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_yiqing_circle5.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/yiqing_circle5.xml"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -882,6 +886,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_yiqing_circle6.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/yiqing_circle6.xml"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_selector_item.xml.flat",
@@ -1030,6 +1038,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_abc_list_menu_item_icon.xml.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_adapter_yiqing.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/adapter_yiqing.xml"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -1404,6 +1416,10 @@
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/95e2a2acabd2892976e952b63596aac3/res/drawable/notification_icon_background.xml"
     },
     {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_fragment5.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/fragment5.xml"
+    },
+    {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_abc_ic_clear_material.xml.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/drawable/abc_ic_clear_material.xml"
     },
@@ -1446,6 +1462,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-v21_abc_list_divider_material.xml.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/drawable-v21/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi_iv_fragment5.png.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/iv_fragment5.png"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -1840,6 +1860,14 @@
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/b1fb6f0f4a927c95b027f09153c53d2b/res/layout/notification_template_big_media_narrow.xml"
     },
     {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi_iv_fragment5_press.png.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/iv_fragment5_press.png"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_yiqing_marker_info.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/yiqing_marker_info.xml"
+    },
+    {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_btn_send_press.xml.flat",
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/btn_send_press.xml"
     },
@@ -1912,6 +1940,10 @@
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/iv_rain_unselected.png"
     },
     {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_layout_yiqing_marker.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/layout_yiqing_marker.xml"
+    },
+    {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/anim_abc_slide_in_bottom.xml.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/anim/abc_slide_in_bottom.xml"
     },
@@ -1950,6 +1982,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_yiqing_circle3.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/yiqing_circle3.xml"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/color_abc_tint_btn_checkable.xml.flat",
@@ -2170,6 +2206,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_corner_left_black.xml.flat",
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/corner_left_black.xml"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_bg_yiqing_button.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/bg_yiqing_button.xml"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_umeng_socialize_qzone.png.flat",
@@ -2596,6 +2636,10 @@
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/iv_video_logo.png"
     },
     {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_yiqing_circle4.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/yiqing_circle4.xml"
+    },
+    {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
@@ -2706,6 +2750,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi_iv_arrow_black_up.png.flat",
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/iv_arrow_black_up.png"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_yiqing_circle2.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/yiqing_circle2.xml"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_activity_city.xml.flat",
@@ -2948,6 +2996,14 @@
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
     },
     {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_yiqing_circle1.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/yiqing_circle1.xml"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi_iv_legend_yiqing.png.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/iv_legend_yiqing.png"
+    },
+    {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_abc_search_dropdown_item_icons_2line.xml.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
@@ -3002,6 +3058,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi_iv_yiqing_info.jpg.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/iv_yiqing_info.jpg"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_marker_temp_5.xml.flat",
@@ -3118,6 +3178,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_point_white.xml.flat",
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/point_white.xml"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_activity_yiqing_list.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/activity_yiqing_list.xml"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi_iv_legend_temp.png.flat",

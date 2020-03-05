@@ -14,10 +14,10 @@ public final class R {
         public static final int sb_indicatorTextColor = 0x7f030102;
     }
     public static final class drawable {
-        public static final int default_scroll_handle_bottom = 0x7f070092;
-        public static final int default_scroll_handle_left = 0x7f070093;
-        public static final int default_scroll_handle_right = 0x7f070094;
-        public static final int default_scroll_handle_top = 0x7f070095;
+        public static final int default_scroll_handle_bottom = 0x7f070093;
+        public static final int default_scroll_handle_left = 0x7f070094;
+        public static final int default_scroll_handle_right = 0x7f070095;
+        public static final int default_scroll_handle_top = 0x7f070096;
     }
     public static final class string {
         public static final int app_name = 0x7f0c0037;

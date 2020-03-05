@@ -31,6 +31,7 @@ public class CONST {
 	public static String BROADCAST_ADD = "broadcast_add";//添加关注城市的预警、天气信息
 	public static String BROADCAST_REMOVE = "broadcast_remove";//清除已经添加的预警、天气信息
 	public static String BROADCAST_DRAWER = "broadcast_drawer";//打开或关闭侧拉页面
+	public static String BROADCAST_FRAGMENT1TOFRAGMENT2 = "broadcast_fragment1tofragment2";//fragment1跳转到fragment2
 
 	//下拉刷新progresBar四种颜色
 	public static final int color1 = R.color.title_bg;

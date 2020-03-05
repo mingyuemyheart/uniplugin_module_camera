@@ -33,6 +33,7 @@ import com.warning.fragment.Fragment1;
 import com.warning.fragment.Fragment2;
 import com.warning.fragment.Fragment3;
 import com.warning.fragment.Fragment4;
+import com.warning.fragment.Fragment5;
 import com.warning.util.AutoUpdateUtil;
 import com.warning.util.CommonUtil;
 import com.warning.util.StatisticUtil;
@@ -49,8 +50,8 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 	private Context mContext;
 	private MainViewPager viewPager;
 	private List<Fragment> fragments = new ArrayList<>();
-	private TextView tv1, tv2, tv3, tv4;
-	private ImageView iv1, iv2, iv3, iv4;
+	private TextView tv1, tv2, tv3, tv4, tv5;
+	private ImageView iv1, iv2, iv3, iv4, iv5;
 	private long mExitTime;//记录点击完返回按钮后的long型时间
 	private MyBroadCastReceiver mReceiver;
 	private String locationId;
@@ -79,6 +80,7 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 		IntentFilter intentFilter = new IntentFilter();
 		intentFilter.addAction(CONST.BROADCAST_DRAWER);
 		intentFilter.addAction(CONST.REFRESH_ATTENTION_LIST);
+		intentFilter.addAction(CONST.BROADCAST_FRAGMENT1TOFRAGMENT2);
 		registerReceiver(mReceiver, intentFilter);
 	}
 	
@@ -108,6 +110,10 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 				}
 				saveCitysToLocal();
 				cancelDialog();
+			} else if (TextUtils.equals(arg1.getAction(), CONST.BROADCAST_FRAGMENT1TOFRAGMENT2)) {//fragment1跳转到fragment2
+				if (viewPager != null) {
+					viewPager.setCurrentItem(1, true);
+				}
 			}
 		}
 	}
@@ -126,19 +132,23 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 		LinearLayout ll1 = findViewById(R.id.ll1);
 		ll1.setOnClickListener(new MyOnClickListener(0));
 		LinearLayout ll2 = findViewById(R.id.ll2);
-		ll2.setOnClickListener(new MyOnClickListener(1));
+		ll2.setOnClickListener(new MyOnClickListener(2));
 		LinearLayout ll3 = findViewById(R.id.ll3);
-		ll3.setOnClickListener(new MyOnClickListener(2));
+		ll3.setOnClickListener(new MyOnClickListener(3));
 		LinearLayout ll4 = findViewById(R.id.ll4);
-		ll4.setOnClickListener(new MyOnClickListener(3));
+		ll4.setOnClickListener(new MyOnClickListener(4));
+		LinearLayout ll5 = findViewById(R.id.ll5);
+		ll5.setOnClickListener(new MyOnClickListener(1));
 		tv1 = findViewById(R.id.tv1);
 		tv2 = findViewById(R.id.tv2);
 		tv3 = findViewById(R.id.tv3);
 		tv4 = findViewById(R.id.tv4);
+		tv5 = findViewById(R.id.tv5);
 		iv1 = findViewById(R.id.iv1);
 		iv2 = findViewById(R.id.iv2);
 		iv3 = findViewById(R.id.iv3);
 		iv4 = findViewById(R.id.iv4);
+		iv5 = findViewById(R.id.iv5);
 		
 		drawerlayout = findViewById(R.id.drawerlayout);
 		drawerlayout.setVisibility(View.VISIBLE);
@@ -161,13 +171,15 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 	private void initViewPager() {
 		Fragment fragment1 = new Fragment1();
 		fragments.add(fragment1);
+		Fragment fragment5 = new Fragment5();
+		fragments.add(fragment5);
 		Fragment fragment2 = new Fragment2();
 		fragments.add(fragment2);
 		Fragment fragment3 = new Fragment3();
 		fragments.add(fragment3);
 		Fragment fragment4 = new Fragment4();
 		fragments.add(fragment4);
-			
+
 		viewPager = findViewById(R.id.viewPager);
 		MyPagerAdapter pagerAdapter = new MyPagerAdapter(this, fragments);
 		viewPager.setAdapter(pagerAdapter);
@@ -188,11 +200,31 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 					iv2.setImageResource(R.drawable.iv_fragment2);
 					iv3.setImageResource(R.drawable.iv_fragment3);
 					iv4.setImageResource(R.drawable.iv_fragment4);
+					iv5.setImageResource(R.drawable.iv_fragment5);
 					tv1.setTextColor(getResources().getColor(R.color.white));
 					tv2.setTextColor(getResources().getColor(R.color.text_color1));
 					tv3.setTextColor(getResources().getColor(R.color.text_color1));
 					tv4.setTextColor(getResources().getColor(R.color.text_color1));
+					tv5.setTextColor(getResources().getColor(R.color.text_color1));
 				}else if (arg0 == 1) {
+					if (!BROADCAST_ACTION_NAME.contains(Fragment5.class.getName())) {
+						Intent intent = new Intent();
+						intent.setAction(Fragment5.class.getName());
+						sendBroadcast(intent);
+						BROADCAST_ACTION_NAME += Fragment5.class.getName();
+					}
+					drawerlayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+					iv1.setImageResource(R.drawable.iv_fragment1);
+					iv2.setImageResource(R.drawable.iv_fragment2);
+					iv3.setImageResource(R.drawable.iv_fragment3);
+					iv4.setImageResource(R.drawable.iv_fragment4);
+					iv5.setImageResource(R.drawable.iv_fragment5_press);
+					tv1.setTextColor(getResources().getColor(R.color.text_color1));
+					tv2.setTextColor(getResources().getColor(R.color.text_color1));
+					tv3.setTextColor(getResources().getColor(R.color.text_color1));
+					tv4.setTextColor(getResources().getColor(R.color.text_color1));
+					tv5.setTextColor(getResources().getColor(R.color.white));
+				}else if (arg0 == 2) {
 					if (!BROADCAST_ACTION_NAME.contains(Fragment2.class.getName())) {
 						Intent intent = new Intent();
 						intent.setAction(Fragment2.class.getName());
@@ -204,11 +236,13 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 					iv2.setImageResource(R.drawable.iv_fragment2_press);
 					iv3.setImageResource(R.drawable.iv_fragment3);
 					iv4.setImageResource(R.drawable.iv_fragment4);
+					iv5.setImageResource(R.drawable.iv_fragment5);
 					tv1.setTextColor(getResources().getColor(R.color.text_color1));
 					tv2.setTextColor(getResources().getColor(R.color.white));
 					tv3.setTextColor(getResources().getColor(R.color.text_color1));
 					tv4.setTextColor(getResources().getColor(R.color.text_color1));
-				}else if (arg0 == 2) {
+					tv5.setTextColor(getResources().getColor(R.color.text_color1));
+				}else if (arg0 == 3) {
 					if (!BROADCAST_ACTION_NAME.contains(Fragment3.class.getName())) {
 						Intent intent = new Intent();
 						intent.setAction(Fragment3.class.getName());
@@ -220,11 +254,13 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 					iv2.setImageResource(R.drawable.iv_fragment2);
 					iv3.setImageResource(R.drawable.iv_fragment3_press);
 					iv4.setImageResource(R.drawable.iv_fragment4);
+					iv5.setImageResource(R.drawable.iv_fragment5);
 					tv1.setTextColor(getResources().getColor(R.color.text_color1));
 					tv2.setTextColor(getResources().getColor(R.color.text_color1));
 					tv3.setTextColor(getResources().getColor(R.color.white));
 					tv4.setTextColor(getResources().getColor(R.color.text_color1));
-				}else if (arg0 == 3) {
+					tv5.setTextColor(getResources().getColor(R.color.text_color1));
+				}else if (arg0 == 4) {
 					if (!BROADCAST_ACTION_NAME.contains(Fragment4.class.getName())) {
 						Intent intent = new Intent();
 						intent.setAction(Fragment4.class.getName());
@@ -236,10 +272,12 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 					iv2.setImageResource(R.drawable.iv_fragment2);
 					iv3.setImageResource(R.drawable.iv_fragment3);
 					iv4.setImageResource(R.drawable.iv_fragment4_press);
+					iv5.setImageResource(R.drawable.iv_fragment5);
 					tv1.setTextColor(getResources().getColor(R.color.text_color1));
 					tv2.setTextColor(getResources().getColor(R.color.text_color1));
 					tv3.setTextColor(getResources().getColor(R.color.text_color1));
 					tv4.setTextColor(getResources().getColor(R.color.white));
+					tv5.setTextColor(getResources().getColor(R.color.text_color1));
 				}
 			}
 			@Override

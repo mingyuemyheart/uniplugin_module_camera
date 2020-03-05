@@ -188,6 +188,9 @@
         <activity
             android:name="com.warning.activity.ShawnPDFActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.warning.activity.YiqingListActivity"
+            android:screenOrientation="portrait" />
 
         <!--umeng-->
         <activity

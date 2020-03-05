@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.warning"
-    android:versionCode="68"
-    android:versionName="2.4.8" >
+    android:versionCode="72"
+    android:versionName="2.5.1" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -214,6 +214,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.warning.activity.ShawnPDFActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.warning.activity.YiqingListActivity"
             android:screenOrientation="portrait" />
 
         <!-- umeng -->

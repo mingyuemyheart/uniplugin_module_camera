@@ -121,7 +121,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.shawn_fragment1, null);
+        return inflater.inflate(R.layout.fragment1, null);
     }
 
     @Override
@@ -203,6 +203,8 @@ public class Fragment1 extends Fragment implements OnClickListener {
         ivMenu.setOnClickListener(this);
         ImageView ivMy = view.findViewById(R.id.ivMy);
         ivMy.setOnClickListener(this);
+        TextView tvYiqing = view.findViewById(R.id.tvYiqing);
+        tvYiqing.setOnClickListener(this);
         reNews = view.findViewById(R.id.reNews);
         tvNews1Title = view.findViewById(R.id.tvNews1Title);
         tvNews1 = view.findViewById(R.id.tvNews1);
@@ -1685,6 +1687,11 @@ public class Fragment1 extends Fragment implements OnClickListener {
                     intent.putExtras(bundle);
                     startActivity(intent);
                 }
+                break;
+            case R.id.tvYiqing:
+                intent = new Intent();
+                intent.setAction(CONST.BROADCAST_FRAGMENT1TOFRAGMENT2);
+                getActivity().sendBroadcast(intent);
                 break;
 
             default:
