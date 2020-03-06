@@ -118,6 +118,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
     private ScrollView parentScrollView,childScrollView;
     private String locationId;//定位城市id
     private String infoCode = "0";
+    private String adCode;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -566,6 +567,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
                 @Override
                 public void onLocationChanged(AMapLocation aMapLocation) {
                     if (aMapLocation != null && aMapLocation.getErrorCode() == AMapLocation.LOCATION_SUCCESS) {
+                        adCode = aMapLocation.getAdCode();
                         tvPosition.setText(aMapLocation.getDistrict());
                         String pro = aMapLocation.getProvince();
                         if (pro.startsWith("北京") || pro.startsWith("天津") || pro.startsWith("上海") || pro.startsWith("重庆")) {
@@ -645,7 +647,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                 editor.putString("locationId", locationId);
                                 editor.apply();
 
-                                String warningId = queryWarningIdByCityId(cityId);
+                                String warningId = !TextUtils.isEmpty(adCode) ? adCode : queryWarningIdByCityId(cityId);
                                 if (!TextUtils.isEmpty(warningId)) {
                                     setPushTags(warningId);
                                     //获取定位城市id和关注列表城市id，存放在cityidList里
@@ -684,7 +686,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
                 SharedPreferences sharedID = getActivity().getSharedPreferences("LOCATIONID", Context.MODE_PRIVATE);
                 locationId = sharedID.getString("locationId", null);
 
-                String warningId = queryWarningIdByCityId(locationId);
+                String warningId = !TextUtils.isEmpty(adCode) ? adCode : queryWarningIdByCityId(locationId);
                 if (!TextUtils.isEmpty(warningId)) {
                     setPushTags(warningId);
                     //获取定位城市id和关注列表城市id，存放在cityidList里

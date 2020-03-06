@@ -996,6 +996,10 @@
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/iv_zixun_selected.png"
     },
     {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_fragment_warning.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/fragment_warning.xml"
+    },
+    {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_bg_item_press.xml.flat",
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/bg_item_press.xml"
     },

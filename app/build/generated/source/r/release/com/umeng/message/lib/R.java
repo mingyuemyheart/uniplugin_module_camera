@@ -17,7 +17,7 @@ public final class R {
         public static final int upush_notification2 = 0x7f0801da;
     }
     public static final class layout {
-        public static final int upush_bar_image_notification = 0x7f0a0086;
-        public static final int upush_notification = 0x7f0a0087;
+        public static final int upush_bar_image_notification = 0x7f0a0087;
+        public static final int upush_notification = 0x7f0a0088;
     }
 }

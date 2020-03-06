@@ -47,25 +47,54 @@
         android:textColor="#6990A9"
         android:textSize="@dimen/level_5" />
 
+    <RelativeLayout
+        android:id="@+id/reWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reTitle">
+
+        <com.warning.view.MainViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/viewGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_alignBottom="@+id/viewPager"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:layout_below="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray"/>
+
+    </RelativeLayout>
+
     <LinearLayout
         android:id="@+id/llPrompt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/reTitle"
+        android:layout_below="@+id/reWarning"
         android:background="@color/white"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
         android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
         android:visibility="gone">
 
         <TextView
             android:id="@+id/tvPrompt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginEnd="10dp"
+            android:layout_weight="1"
             android:textColor="@color/text_color3"
             android:textSize="@dimen/level_4" />
 
@@ -80,14 +109,14 @@
     </LinearLayout>
 
     <ImageView
-        android:visibility="gone"
         android:id="@+id/ivYiqingLegend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:src="@drawable/iv_legend_yiqing"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/iv_legend_yiqing"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/ivYiqingInfo"
@@ -95,8 +124,8 @@
         android:layout_height="40dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:src="@drawable/iv_yiqing_info"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/iv_yiqing_info" />
 
 </RelativeLayout>

@@ -1,13 +1,22 @@
 package com.warning.fragment;
 
+import android.annotation.SuppressLint;
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.os.Parcelable;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
+import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -35,8 +44,10 @@ import com.warning.R;
 import com.warning.activity.WebviewActivity;
 import com.warning.activity.YiqingListActivity;
 import com.warning.dto.NewsDto;
+import com.warning.dto.WarningDto;
 import com.warning.dto.YiqingDto;
 import com.warning.util.OkHttpUtil;
+import com.warning.view.MainViewPager;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
@@ -74,6 +85,12 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 	private SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd", Locale.CHINA);
 	private long confirmCount, deathCount;
 	private MyBroadCastReceiver mReceiver = null;
+
+	private List<WarningDto> warningList = new ArrayList<>();
+	private MainViewPager viewPager;
+	private List<Fragment> fragments = new ArrayList<>();
+	private ImageView[] ivTips;//装载点的数组
+	private ViewGroup viewGroup;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -118,6 +135,10 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 		ivYiqingInfo.setOnClickListener(this);
 		TextView tvList = view.findViewById(R.id.tvList);
 		tvList.setOnClickListener(this);
+		viewGroup = view.findViewById(R.id.viewGroup);
+        viewPager = view.findViewById(R.id.viewPager);
+
+		OkhttpWarning();
     }
 	
 	private void refresh() {
@@ -194,7 +215,26 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 										ivRefresh.clearAnimation();
 										if (yiqingList.size() > 0) {
 											llPrompt.setVisibility(View.VISIBLE);
-											tvPrompt.setText(sdf1.format(new Date())+"，全球新冠肺炎确诊病例"+df.format(confirmCount)+"例，死亡"+df.format(deathCount)+"例。");
+
+											String str1 = sdf1.format(new Date())+"，全球新冠肺炎确诊病例";
+											String str2 = df.format(confirmCount);
+											String str3 = "例，死亡";
+											String str4 = df.format(deathCount);
+											String str5 = "例。";
+											String warningInfo = str1+str2+str3+str4+str5;
+											SpannableStringBuilder builder = new SpannableStringBuilder(warningInfo);
+											ForegroundColorSpan builderSpan1 = new ForegroundColorSpan(getResources().getColor(R.color.text_color3));
+											ForegroundColorSpan builderSpan2 = new ForegroundColorSpan(getResources().getColor(R.color.red));
+											ForegroundColorSpan builderSpan3 = new ForegroundColorSpan(getResources().getColor(R.color.text_color3));
+											ForegroundColorSpan builderSpan4 = new ForegroundColorSpan(getResources().getColor(R.color.red));
+											ForegroundColorSpan builderSpan5 = new ForegroundColorSpan(getResources().getColor(R.color.text_color3));
+											builder.setSpan(builderSpan1, 0, str1.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+											builder.setSpan(builderSpan2, str1.length(), str1.length()+str2.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+											builder.setSpan(builderSpan3, str1.length()+str2.length(), str1.length()+str2.length()+str3.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+											builder.setSpan(builderSpan4, str1.length()+str2.length()+str3.length(), str1.length()+str2.length()+str3.length()+str4.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+											builder.setSpan(builderSpan5, str1.length()+str2.length()+str3.length()+str4.length(), str1.length()+str2.length()+str3.length()+str4.length()+str5.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+											tvPrompt.setText(builder);
+
 											ivYiqingLegend.setVisibility(View.VISIBLE);
 											removeMarkers(yiqingMarkerList);
 											addYiqingMarkers();
@@ -394,6 +434,190 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 
 		default:
 			break;
+		}
+	}
+
+	/**
+	 * 获取预警
+	 */
+	private void OkhttpWarning() {
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				final String url = "https://decision-admin.tianqi.cn/Home/work2019/getwarns?areaid=000000";
+				OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
+					@Override
+					public void onFailure(Call call, IOException e) {
+					}
+					@Override
+					public void onResponse(Call call, Response response) throws IOException {
+						if (!response.isSuccessful()) {
+							return;
+						}
+						final String result = response.body().string();
+						getActivity().runOnUiThread(new Runnable() {
+							@Override
+							public void run() {
+								if (!TextUtils.isEmpty(result)) {
+									warningList.clear();
+									try {
+										final JSONObject object = new JSONObject(result);
+										if (!object.isNull("data")) {
+											JSONArray jsonArray = object.getJSONArray("data");
+											for (int i = 0; i < jsonArray.length(); i++) {
+												JSONArray tempArray = jsonArray.getJSONArray(i);
+												WarningDto dto = new WarningDto();
+												dto.html = tempArray.optString(1);
+												String[] array = dto.html.split("-");
+												String item0 = array[0];
+												String item1 = array[1];
+												String item2 = array[2];
+
+												dto.item0 = item0;
+												dto.provinceId = item0.substring(0, 2);
+												dto.type = item2.substring(0, 5);
+												dto.color = item2.substring(5, 7);
+												dto.time = item1;
+												dto.lng = tempArray.optString(2);
+												dto.lat = tempArray.optString(3);
+												dto.name = tempArray.optString(0);
+
+												if (dto.name.contains("国家卫生健康委员会") || dto.name.contains("文化和旅游部")) {
+													warningList.add(dto);
+												}
+											}
+
+											initViewPager();
+										}
+									} catch (JSONException e) {
+										e.printStackTrace();
+									}
+								}
+							}
+						});
+					}
+				});
+			}
+		}).start();
+	}
+
+	/**
+	 * 初始化viewPager
+	 */
+	private void initViewPager() {
+		mHandler.removeMessages(AUTO_PLUS);
+		ivTips = new ImageView[warningList.size()];
+		viewGroup.removeAllViews();
+		fragments.clear();
+		for (int i = 0; i < warningList.size(); i++) {
+			WarningDto data = warningList.get(i);
+			Fragment fragment = new WarningFragment();
+			Bundle bundle = new Bundle();
+			bundle.putParcelable("data", data);
+			fragment.setArguments(bundle);
+			fragments.add(fragment);
+
+			ImageView imageView = new ImageView(getActivity());
+			imageView.setLayoutParams(new ViewGroup.LayoutParams(5, 5));
+			ivTips[i] = imageView;
+			if(i == 0){
+				ivTips[i].setBackgroundResource(R.drawable.point_white);
+			}else{
+				ivTips[i].setBackgroundResource(R.drawable.point_gray);
+			}
+			LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+			layoutParams.leftMargin = 10;
+			layoutParams.rightMargin = 10;
+			viewGroup.addView(imageView, layoutParams);
+		}
+
+		if (warningList.size() == 0) {
+			viewPager.setVisibility(View.GONE);
+			viewGroup.setVisibility(View.GONE);
+		}
+		viewPager.setSlipping(true);//设置ViewPager是否可以滑动
+		viewPager.setOffscreenPageLimit(fragments.size());
+		viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+			@Override
+			public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+			}
+			@Override
+			public void onPageSelected(int position) {
+				for (int i = 0; i < warningList.size(); i++) {
+					if(i == position){
+						ivTips[i].setBackgroundResource(R.drawable.point_white);
+					}else{
+						ivTips[i].setBackgroundResource(R.drawable.point_gray);
+					}
+				}
+			}
+			@Override
+			public void onPageScrollStateChanged(int state) {
+			}
+		});
+		viewPager.setAdapter(new MyPagerAdapter());
+
+		if (fragments.size() > 1) {
+			mHandler.sendEmptyMessageDelayed(AUTO_PLUS, PHOTO_CHANGE_TIME);
+		}
+	}
+
+	private final int AUTO_PLUS = 1001;
+	private static final int PHOTO_CHANGE_TIME = 3000;//定时变量
+	private int index_plus = 0;
+	@SuppressLint("HandlerLeak")
+	private Handler mHandler = new Handler() {
+		public void handleMessage(Message msg) {
+			switch (msg.what) {
+				case AUTO_PLUS:
+					viewPager.setCurrentItem(index_plus++);//收到消息后设置当前要显示的图片
+					mHandler.sendEmptyMessageDelayed(AUTO_PLUS, PHOTO_CHANGE_TIME);
+					if (index_plus >= fragments.size()) {
+						index_plus = 0;
+					}
+					break;
+				default:
+					break;
+			}
+		};
+	};
+
+	private class MyPagerAdapter extends PagerAdapter {
+		@Override
+		public boolean isViewFromObject(View arg0, Object arg1) {
+			return arg0 == arg1;
+		}
+
+		@Override
+		public int getCount() {
+			return fragments.size();
+		}
+
+		@Override
+		public void destroyItem(View container, int position, Object object) {
+			((ViewPager) container).removeView(fragments.get(position).getView());
+		}
+
+		@Override
+		public Object instantiateItem(ViewGroup container, int position) {
+			Fragment fragment = fragments.get(position);
+			if (!fragment.isAdded()) { // 如果fragment还没有added
+				FragmentTransaction ft = getFragmentManager().beginTransaction();
+				ft.add(fragment, fragment.getClass().getSimpleName());
+				ft.commit();
+				/**
+				 * 在用FragmentTransaction.commit()方法提交FragmentTransaction对象后
+				 * 会在进程的主线程中,用异步的方式来执行。
+				 * 如果想要立即执行这个等待中的操作,就要调用这个方法(只能在主线程中调用)。
+				 * 要注意的是,所有的回调和相关的行为都会在这个调用中被执行完成,因此要仔细确认这个方法的调用位置。
+				 */
+				getFragmentManager().executePendingTransactions();
+			}
+
+			if (fragment.getView().getParent() == null) {
+				container.addView(fragment.getView()); // 为viewpager增加布局
+			}
+			return fragment.getView();
 		}
 	}
 
