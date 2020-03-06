@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:background="@color/title_bg"
+        android:background="#204A6A"
         android:orientation="horizontal">
 
         <TextView

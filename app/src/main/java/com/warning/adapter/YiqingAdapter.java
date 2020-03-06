@@ -1,6 +1,7 @@
 package com.warning.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -66,6 +67,12 @@ public class YiqingAdapter extends BaseAdapter{
 		}
 
 		YiqingDto dto = mArrayList.get(position);
+
+		if (position % 2 == 0) {
+			convertView.setBackgroundColor(Color.WHITE);
+		} else {
+			convertView.setBackgroundColor(0xff9FCFF7);
+		}
 
 		if (!TextUtils.isEmpty(dto.nameZn)) {
 			mHolder.tvNameZn.setText(dto.nameZn);
