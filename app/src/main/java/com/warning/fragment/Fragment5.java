@@ -482,7 +482,7 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 												dto.lat = tempArray.optString(3);
 												dto.name = tempArray.optString(0);
 
-												if (dto.name.contains("国家卫生健康委员会") || dto.name.contains("文化和旅游部")) {
+												if (dto.name.contains("外交部") || dto.name.contains("文化和旅游部")) {
 													warningList.add(dto);
 												}
 											}

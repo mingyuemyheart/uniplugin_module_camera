@@ -30,7 +30,7 @@ class WarningFragment : Fragment() {
     }
 
     private fun initWidget() {
-        val dto : WarningDto = arguments.getParcelable("data")
+        val dto : WarningDto = arguments!!.getParcelable("data")
         if (!TextUtils.isEmpty(dto.name)) {
             tvTitle.text = dto.name
         }
