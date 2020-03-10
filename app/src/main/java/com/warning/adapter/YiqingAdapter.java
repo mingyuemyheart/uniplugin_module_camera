@@ -76,18 +76,26 @@ public class YiqingAdapter extends BaseAdapter{
 
 		if (!TextUtils.isEmpty(dto.nameZn)) {
 			mHolder.tvNameZn.setText(dto.nameZn);
+		} else {
+			mHolder.tvNameZn.setText("");
 		}
 
 		if (!TextUtils.isEmpty(dto.nameEn)) {
 			mHolder.tvNameEn.setText(dto.nameEn);
+		} else {
+			mHolder.tvNameEn.setText("");
 		}
 
 		if (!TextUtils.isEmpty(dto.count)) {
 			mHolder.tvCount.setText(df.format(Long.valueOf(dto.count)));
+		} else {
+			mHolder.tvCount.setText("");
 		}
 
 		if (!TextUtils.isEmpty(dto.death_count)) {
 			mHolder.tvDeathCount.setText(df.format(Long.valueOf(dto.death_count)));
+		} else {
+			mHolder.tvDeathCount.setText("");
 		}
 
 		return convertView;

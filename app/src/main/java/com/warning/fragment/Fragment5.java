@@ -7,6 +7,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -17,6 +18,7 @@ import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.text.style.ForegroundColorSpan;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -25,27 +27,36 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.amap.api.maps.AMap;
 import com.amap.api.maps.AMap.InfoWindowAdapter;
 import com.amap.api.maps.AMap.OnMapClickListener;
 import com.amap.api.maps.AMap.OnMarkerClickListener;
+import com.amap.api.maps.AMapUtils;
+import com.amap.api.maps.CameraUpdate;
 import com.amap.api.maps.CameraUpdateFactory;
 import com.amap.api.maps.MapView;
 import com.amap.api.maps.model.BitmapDescriptorFactory;
 import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.Marker;
 import com.amap.api.maps.model.MarkerOptions;
+import com.amap.api.maps.model.Polygon;
+import com.amap.api.maps.model.PolygonOptions;
+import com.amap.api.maps.model.PolylineOptions;
 import com.amap.api.maps.model.animation.Animation;
 import com.amap.api.maps.model.animation.Animation.AnimationListener;
 import com.amap.api.maps.model.animation.ScaleAnimation;
+import com.autonavi.ae.gmap.gloverlay.GLRctRouteOverlay;
 import com.warning.R;
 import com.warning.activity.WebviewActivity;
 import com.warning.activity.YiqingListActivity;
 import com.warning.dto.NewsDto;
 import com.warning.dto.WarningDto;
 import com.warning.dto.YiqingDto;
+import com.warning.util.CommonUtil;
 import com.warning.util.OkHttpUtil;
 import com.warning.view.MainViewPager;
 
@@ -59,8 +70,12 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -78,13 +93,16 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 	private AMap aMap = null;//高德地图
 	private ImageView ivRefresh, ivYiqingLegend;
 	private LinearLayout llPrompt = null;
-	private List<YiqingDto> yiqingList = new ArrayList<>();
+	private Map<String, YiqingDto> yiqingList = new LinkedHashMap<>();
 	private List<Marker> yiqingMarkerList = new ArrayList<>();
 	private Marker sMarker = null;
 	private DecimalFormat df = new DecimalFormat("###,###,###");
 	private SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd", Locale.CHINA);
 	private long confirmCount, deathCount;
 	private MyBroadCastReceiver mReceiver = null;
+	private RelativeLayout reWarning;
+	private Map<String, List<Polygon>> mapData = new HashMap<>();//mapid为key
+	private String sMapId;
 
 	private List<WarningDto> warningList = new ArrayList<>();
 	private MainViewPager viewPager;
@@ -137,6 +155,7 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 		tvList.setOnClickListener(this);
 		viewGroup = view.findViewById(R.id.viewGroup);
         viewPager = view.findViewById(R.id.viewPager);
+		reWarning = view.findViewById(R.id.reWarning);
 
 		OkhttpWarning();
     }
@@ -173,6 +192,10 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 											YiqingDto dto = new YiqingDto();
 											JSONObject itemObj = array.getJSONObject(i);
 
+											if (!itemObj.isNull("mapid")) {
+												dto.mapid = itemObj.getString("mapid");
+											}
+
 											dto.count = "0";
 											if (!itemObj.isNull("count")) {
 												String count = itemObj.getString("count");
@@ -207,7 +230,7 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 													String[] location = latlon.split(",");
 													dto.lat = Double.parseDouble(location[0]);
 													dto.lng = Double.parseDouble(location[1]);
-													yiqingList.add(dto);
+													yiqingList.put(dto.mapid, dto);
 												}
 											}
 										}
@@ -236,8 +259,9 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 											tvPrompt.setText(builder);
 
 											ivYiqingLegend.setVisibility(View.VISIBLE);
-											removeMarkers(yiqingMarkerList);
-											addYiqingMarkers();
+//											removeMarkers(yiqingMarkerList);
+//											addYiqingMarkers();
+											drawWorld();
 										}
 
 									} catch (JSONException e) {
@@ -248,6 +272,73 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 						});
 					}
 				});
+			}
+		}).start();
+	}
+
+	private void drawWorld() {
+		if (aMap == null) {
+			return;
+		}
+		mapData.clear();
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				Iterator<Map.Entry<String, YiqingDto>> entries = yiqingList.entrySet().iterator();
+				while(entries.hasNext()){
+					Map.Entry<String, YiqingDto> entry = entries.next();
+					YiqingDto dto = entry.getValue();
+					long count = Long.valueOf(dto.count);
+					int fillColor = 0;
+					if (count >= 2000) {
+						fillColor = 0xff912a2d;
+					} else if (count >= 1000) {
+						fillColor = 0xffe23e49;
+					} else if (count>= 100) {
+						fillColor = 0xffeb6830;
+					} else if (count >= 10) {
+						fillColor = 0xffef8a46;
+					} else if (count >= 1) {
+						fillColor = 0xfffdbe31;
+					} else {
+						fillColor = 0xffdcdcdc;
+					}
+					String result = CommonUtil.getJson(getActivity(), "world_geo/"+dto.mapid+".json");
+					if (!TextUtils.isEmpty(result)) {
+						try {
+							JSONObject obj = new JSONObject(result);
+							if (!obj.isNull("geometry")) {
+								JSONObject geometry = obj.getJSONObject("geometry");
+								List<Polygon> polygons = new ArrayList<>();
+								if (!geometry.isNull("coordinates")) {
+									JSONArray coordinates = geometry.getJSONArray("coordinates");
+									for (int i = 0; i < coordinates.length(); i++) {
+										JSONArray array1 = coordinates.getJSONArray(i);
+										for (int j = 0; j < array1.length(); j++) {
+											JSONArray array2 = array1.getJSONArray(j);
+											PolygonOptions polylineOption = new PolygonOptions();
+											polylineOption.fillColor(fillColor);
+											polylineOption.strokeColor(0xcc000000).strokeWidth(3);
+											for (int k = 0; k < array2.length(); k++) {
+												JSONArray array3 = array2.getJSONArray(k);
+												double lat = array3.getDouble(1);
+												double lng = array3.getDouble(0);
+												if (lng < 179) {
+													polylineOption.add(new LatLng(lat, lng));
+												}
+											}
+											Polygon polygon = aMap.addPolygon(polylineOption);
+											polygons.add(polygon);
+										}
+									}
+								}
+								mapData.put(dto.mapid, polygons);
+							}
+						} catch (JSONException e) {
+							e.printStackTrace();
+						}
+					}
+				}
 			}
 		}).start();
 	}
@@ -267,13 +358,13 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 			View mView = inflater.inflate(R.layout.layout_yiqing_marker, null);
 			ImageView ivMarker = (ImageView) mView.findViewById(R.id.ivMarker);
 			long count = Long.valueOf(dto.count);
-			if (count >= 50000) {
+			if (count >= 2000) {
 				ivMarker.setImageResource(R.drawable.yiqing_circle6);
-			} else if (count >= 5000) {
+			} else if (count >= 1000) {
 				ivMarker.setImageResource(R.drawable.yiqing_circle5);
-			} else if (count>= 500) {
+			} else if (count>= 100) {
 				ivMarker.setImageResource(R.drawable.yiqing_circle4);
-			} else if (count >= 50) {
+			} else if (count >= 10) {
 				ivMarker.setImageResource(R.drawable.yiqing_circle3);
 			} else if (count >= 1) {
 				ivMarker.setImageResource(R.drawable.yiqing_circle2);
@@ -320,6 +411,36 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 				sMarker.hideInfoWindow();
 			}
 		}
+		final LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		Iterator<Map.Entry<String, List<Polygon>>> entries = mapData.entrySet().iterator();
+		while(entries.hasNext()) {
+			Map.Entry<String, List<Polygon>> entry = entries.next();
+			List<Polygon> polygons = entry.getValue();
+			for (Polygon polygon : polygons) {
+				if (polygon != null && polygon.contains(arg0)) {
+					if (TextUtils.equals(sMapId, entry.getKey())) {
+						return;
+					}
+					sMapId = entry.getKey();
+					YiqingDto dto = yiqingList.get(sMapId);
+					MarkerOptions optionsTemp = new MarkerOptions();
+					optionsTemp.anchor(0.5f, 1.0f);
+					optionsTemp.position(new LatLng(dto.lat, dto.lng));
+					View mView = inflater.inflate(R.layout.yiqing_marker_info, null);
+					TextView tvNameZn = mView.findViewById(R.id.tvNameZn);
+					TextView tvCount = mView.findViewById(R.id.tvCount);
+					tvNameZn.setText(dto.nameZn);
+					tvCount.setText("确诊"+df.format(Float.valueOf(dto.count))+"例，死亡"+df.format(Float.valueOf(dto.death_count))+"例");
+					optionsTemp.icon(BitmapDescriptorFactory.fromView(mView));
+					if (sMarker != null) {
+						sMarker.remove();
+					}
+					sMarker = aMap.addMarker(optionsTemp);
+					aMap.animateCamera(CameraUpdateFactory.newLatLng(new LatLng(dto.lat, dto.lng)));
+					break;
+				}
+			}
+		}
 	}
 
 	@Override
@@ -327,7 +448,7 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 		if (marker != null) {
 			sMarker = marker;
 		}
-		return false;
+		return true;
 	}
 	
 	@Override
@@ -417,12 +538,10 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 				refresh();
 				break;
 			case R.id.tvList:
-				Intent intent = new Intent(getActivity(), YiqingListActivity.class);
-				intent.putParcelableArrayListExtra("dataList", (ArrayList<? extends Parcelable>) yiqingList);
-				startActivity(intent);
+				startActivity(new Intent(getActivity(), YiqingListActivity.class));
 				break;
 			case R.id.ivYiqingInfo:
-				intent = new Intent(getActivity(), WebviewActivity.class);
+				Intent intent = new Intent(getActivity(), WebviewActivity.class);
 				Bundle bundle = new Bundle();
 				NewsDto data = new NewsDto();
 				data.title = "数据免责声明";
@@ -448,6 +567,12 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 				OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
 					@Override
 					public void onFailure(Call call, IOException e) {
+						getActivity().runOnUiThread(new Runnable() {
+							@Override
+							public void run() {
+								reWarning.setVisibility(View.GONE);
+							}
+						});
 					}
 					@Override
 					public void onResponse(Call call, Response response) throws IOException {
@@ -487,6 +612,7 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 												}
 											}
 
+											reWarning.setVisibility(View.VISIBLE);
 											initViewPager();
 										}
 									} catch (JSONException e) {
