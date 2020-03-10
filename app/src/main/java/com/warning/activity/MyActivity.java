@@ -30,6 +30,7 @@ import android.widget.Toast;
 
 import com.warning.R;
 import com.warning.common.CONST;
+import com.warning.dto.NewsDto;
 import com.warning.manager.DataCleanManager;
 import com.warning.util.AuthorityUtil;
 import com.warning.util.AutoUpdateUtil;
@@ -71,6 +72,7 @@ public class MyActivity extends BaseActivity implements OnClickListener{
 	private TextView tvHotline2 = null;
 	private String dialNumber = null;
 
+	private LinearLayout llRecommend;
 	private LinearLayout llUpload = null;
 	private LinearLayout llCheck = null;
 	private RelativeLayout reCheck = null;
@@ -129,6 +131,8 @@ public class MyActivity extends BaseActivity implements OnClickListener{
 		llMsg.setOnClickListener(this);
 		reMsg = (RelativeLayout) findViewById(R.id.reMsg);
 		tvMsg = (TextView) findViewById(R.id.tvMsg);
+		llRecommend = findViewById(R.id.llRecommend);
+		llRecommend.setOnClickListener(this);
 		
 		refreshUserInfo();
 		
@@ -584,6 +588,16 @@ public class MyActivity extends BaseActivity implements OnClickListener{
 			break;
 		case R.id.llIntro:
 			startActivity(new Intent(mContext, IntroduceActivity.class));
+			break;
+		case R.id.llRecommend:
+			Intent intent = new Intent(mContext, WebviewActivity.class);
+			NewsDto dto = new NewsDto();
+			dto.title = getString(R.string.setting_recmmend);
+			dto.url = "http://decision-admin.tianqi.cn/Public/share/12379.html";
+			Bundle bundle = new Bundle();
+			bundle.putParcelable("data", dto);
+			intent.putExtras(bundle);
+			startActivity(intent);
 			break;
 		case R.id.llHotline1:
 			dialPhone(getString(R.string.setting_hotline1), tvHotline1.getText().toString(), getString(R.string.dial));

@@ -375,6 +375,36 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/llRecommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0.5dp"
+                    android:background="@drawable/selector_setting_item"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/iv_recommend" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="@string/setting_recmmend"
+                        android:textColor="@color/text_color3"
+                        android:textSize="@dimen/level_4" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/iv_arrow" />
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/llHotline1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

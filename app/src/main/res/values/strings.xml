@@ -62,6 +62,7 @@
 	<string name="setting_clearcache">清除缓存</string>
 	<string name="setting_cleardata">清除数据</string>
 	<string name="setting_build">预警中心简介</string>
+    <string name="setting_recmmend">应用推荐</string>
 	<string name="setting_hotline1">气象服务热线</string>
 	<string name="setting_hotline2">运行保障热线</string>
 	<string name="setting_version_code">版本号</string>

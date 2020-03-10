@@ -1120,6 +1120,10 @@
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/shawn_dialog_location.xml"
     },
     {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi_iv_recommend.jpg.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/iv_recommend.jpg"
+    },
+    {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable_pgy_scroll_bar.xml.flat",
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable/pgy_scroll_bar.xml"
     },

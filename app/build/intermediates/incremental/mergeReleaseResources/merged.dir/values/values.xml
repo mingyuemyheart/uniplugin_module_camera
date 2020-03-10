@@ -892,6 +892,7 @@
     <string name="setting_hotline2">运行保障热线</string>
     <string name="setting_push">预警推送策略</string>
     <string name="setting_quit">退出</string>
+    <string name="setting_recmmend">应用推荐</string>
     <string name="setting_version">检测版本</string>
     <string name="setting_version_code">版本号</string>
     <string name="show_cid">当前应用的cid = </string>
