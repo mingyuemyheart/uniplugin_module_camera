@@ -102,7 +102,6 @@
     <list default="true" id="aa47194f-429f-4ccd-9dd4-d2cef8f2afbb" name="Default Changelist" comment="更新预警接口">
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterDir="false" />
@@ -4513,8 +4512,7 @@
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/com/warning/activity/ZixunDetailActivity.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/com/warning/fragment/WarningFragment$initWidget$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/com/warning/fragment/WarningFragment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/warning/activity/YiqingListActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/warning/activity/YiqingListActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_yiqing_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_yiqing_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/warning/fragment/Fragment5.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/warning/fragment/Fragment5.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

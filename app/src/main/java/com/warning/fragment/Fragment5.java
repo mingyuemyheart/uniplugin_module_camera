@@ -339,6 +339,61 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 						}
 					}
 				}
+
+
+				//适配geo数据层级不一致问题
+				entries = yiqingList.entrySet().iterator();
+				while(entries.hasNext()){
+					Map.Entry<String, YiqingDto> entry = entries.next();
+					YiqingDto dto = entry.getValue();
+					long count = Long.valueOf(dto.count);
+					int fillColor = 0;
+					if (count >= 2000) {
+						fillColor = 0xff912a2d;
+					} else if (count >= 1000) {
+						fillColor = 0xffe23e49;
+					} else if (count>= 100) {
+						fillColor = 0xffeb6830;
+					} else if (count >= 10) {
+						fillColor = 0xffef8a46;
+					} else if (count >= 1) {
+						fillColor = 0xfffdbe31;
+					} else {
+						fillColor = 0xffdcdcdc;
+					}
+					String result = CommonUtil.getJson(getActivity(), "world_geo/"+dto.mapid+".json");
+					if (!TextUtils.isEmpty(result)) {
+						try {
+							JSONObject obj = new JSONObject(result);
+							if (!obj.isNull("geometry")) {
+								JSONObject geometry = obj.getJSONObject("geometry");
+								List<Polygon> polygons = new ArrayList<>();
+								if (!geometry.isNull("coordinates")) {
+									JSONArray coordinates = geometry.getJSONArray("coordinates");
+									for (int i = 0; i < coordinates.length(); i++) {
+										JSONArray array1 = coordinates.getJSONArray(i);
+										PolygonOptions polylineOption = new PolygonOptions();
+										polylineOption.fillColor(fillColor);
+										polylineOption.strokeColor(0xcc000000).strokeWidth(3);
+										for (int j = 0; j < array1.length(); j++) {
+											JSONArray array2 = array1.getJSONArray(j);
+											double lat = array2.getDouble(1);
+											double lng = array2.getDouble(0);
+											if (lng < 179) {
+												polylineOption.add(new LatLng(lat, lng));
+											}
+										}
+										Polygon polygon = aMap.addPolygon(polylineOption);
+										polygons.add(polygon);
+									}
+								}
+								mapData.put(dto.mapid, polygons);
+							}
+						} catch (JSONException e) {
+							e.printStackTrace();
+						}
+					}
+				}
 			}
 		}).start();
 	}
