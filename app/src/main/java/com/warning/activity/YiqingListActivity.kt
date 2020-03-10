@@ -44,7 +44,7 @@ class YiqingListActivity : BaseActivity(), OnClickListener {
 	 */
 	private fun initWidget() {
 		llBack.setOnClickListener(this)
-		tvTitle.text = "全球疫情列表"
+		tvTitle.text = "全球新冠病例列表"
 
 		okhttpYiqing()
     }

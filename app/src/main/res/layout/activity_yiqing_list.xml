@@ -34,7 +34,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:minHeight="40dp"
-            android:text="国家"
+            android:text="国家、地区或领地"
             android:textColor="@color/white"
             android:textSize="@dimen/level_4" />
 
