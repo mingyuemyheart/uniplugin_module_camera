@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvNameZn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textColor="@color/text_color3"
+        android:textSize="@dimen/level_4" />
+
+    <TextView
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"/>
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/text_color3"
+        android:textSize="@dimen/level_4" />
+
+    <TextView
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"/>
+
+    <TextView
+        android:id="@+id/tvPopulation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/text_color3"
+        android:textSize="@dimen/level_4" />
+
+    <TextView
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"/>
+
+    <TextView
+        android:id="@+id/tvRatio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/text_color3"
+        android:textSize="@dimen/level_4" />
+
+    <TextView
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"/>
+
+    <TextView
+        android:id="@+id/tvDeathCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/text_color3"
+        android:textSize="@dimen/level_4" />
+
+    <TextView
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"/>
+
+    <TextView
+        android:id="@+id/tvInfection_mortality"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/text_color3"
+        android:textSize="@dimen/level_4" />
+
+</LinearLayout>

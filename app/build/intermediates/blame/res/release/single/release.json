@@ -208,6 +208,10 @@
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/layout/abc_screen_content_include.xml"
     },
     {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_activity_yiqing_percent.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/activity_yiqing_percent.xml"
+    },
+    {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
@@ -686,6 +690,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "/Users/sunxiaoming/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/d38ee2a06cea28bf109c2baccd44b5df/res/drawable-mdpi-v4/abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/layout_adapter_yiqing_percent.xml.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/layout/adapter_yiqing_percent.xml"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi_iv_sunny_unselected.png.flat",
@@ -2466,6 +2474,10 @@
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi_day19_mini.png.flat",
         "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/day19_mini.png"
+    },
+    {
+        "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-hdpi_iv_yiqing_percent.jpg.flat",
+        "source": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/src/main/res/drawable-hdpi/iv_yiqing_percent.jpg"
     },
     {
         "merged": "/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/res/merged/release/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",

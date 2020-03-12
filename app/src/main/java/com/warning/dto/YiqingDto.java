@@ -5,7 +5,7 @@ import android.os.Parcelable;
 
 public class YiqingDto implements Parcelable {
 
-    public String count, death_count, nameEn, nameZn, mapid;
+    public String count, death_count, nameEn, nameZn, mapid, ratio, death_rate, infection_mortality, population;
     public double lat, lng;
 
     public YiqingDto() {
@@ -23,6 +23,10 @@ public class YiqingDto implements Parcelable {
         dest.writeString(this.nameEn);
         dest.writeString(this.nameZn);
         dest.writeString(this.mapid);
+        dest.writeString(this.ratio);
+        dest.writeString(this.death_rate);
+        dest.writeString(this.infection_mortality);
+        dest.writeString(this.population);
         dest.writeDouble(this.lat);
         dest.writeDouble(this.lng);
     }
@@ -33,6 +37,10 @@ public class YiqingDto implements Parcelable {
         this.nameEn = in.readString();
         this.nameZn = in.readString();
         this.mapid = in.readString();
+        this.ratio = in.readString();
+        this.death_rate = in.readString();
+        this.infection_mortality = in.readString();
+        this.population = in.readString();
         this.lat = in.readDouble();
         this.lng = in.readDouble();
     }

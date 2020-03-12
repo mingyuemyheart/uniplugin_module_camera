@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.warning"
-    android:versionCode="80"
-    android:versionName="2.5.9" >
+    android:versionCode="81"
+    android:versionName="2.6.0" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -217,6 +217,9 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.warning.activity.YiqingListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.warning.activity.YiqingPercentActivity"
             android:screenOrientation="portrait" />
 
         <!-- umeng -->

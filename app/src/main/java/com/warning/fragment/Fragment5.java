@@ -53,6 +53,7 @@ import com.autonavi.ae.gmap.gloverlay.GLRctRouteOverlay;
 import com.warning.R;
 import com.warning.activity.WebviewActivity;
 import com.warning.activity.YiqingListActivity;
+import com.warning.activity.YiqingPercentActivity;
 import com.warning.dto.NewsDto;
 import com.warning.dto.WarningDto;
 import com.warning.dto.YiqingDto;
@@ -151,6 +152,8 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 		ivYiqingLegend = view.findViewById(R.id.ivYiqingLegend);
 		ImageView ivYiqingInfo = view.findViewById(R.id.ivYiqingInfo);
 		ivYiqingInfo.setOnClickListener(this);
+		ImageView ivYiqingPercent = view.findViewById(R.id.ivYiqingPercent);
+		ivYiqingPercent.setOnClickListener(this);
 		TextView tvList = view.findViewById(R.id.tvList);
 		tvList.setOnClickListener(this);
 		viewGroup = view.findViewById(R.id.viewGroup);
@@ -594,6 +597,9 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 				break;
 			case R.id.tvList:
 				startActivity(new Intent(getActivity(), YiqingListActivity.class));
+				break;
+			case R.id.ivYiqingPercent:
+				startActivity(new Intent(getActivity(), YiqingPercentActivity.class));
 				break;
 			case R.id.ivYiqingInfo:
 				Intent intent = new Intent(getActivity(), WebviewActivity.class);
