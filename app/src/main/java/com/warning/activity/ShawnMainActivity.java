@@ -28,6 +28,7 @@ import com.warning.R;
 import com.warning.adapter.MyPagerAdapter;
 import com.warning.adapter.ShawnLeftAdapter;
 import com.warning.common.CONST;
+import com.warning.common.PgyApplication;
 import com.warning.dto.WarningDto;
 import com.warning.fragment.Fragment1;
 import com.warning.fragment.Fragment2;
@@ -36,11 +37,22 @@ import com.warning.fragment.Fragment4;
 import com.warning.fragment.Fragment5;
 import com.warning.util.AutoUpdateUtil;
 import com.warning.util.CommonUtil;
+import com.warning.util.OkHttpUtil;
 import com.warning.util.StatisticUtil;
 import com.warning.view.MainViewPager;
 
+import org.jetbrains.annotations.NotNull;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Request;
+import okhttp3.Response;
 
 /**
  * 主页面
@@ -56,6 +68,8 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 	private MyBroadCastReceiver mReceiver;
 	private String locationId;
 	private String BROADCAST_ACTION_NAME = "";//四个fragment广播名字
+
+	private boolean isShowYiqing = false;
 	
 	//侧拉页面
 	private DrawerLayout drawerlayout;
@@ -69,6 +83,10 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.shawn_activity_main);
 		mContext = this;
+		okHttpYiqingState();
+	}
+
+	private void init() {
 		initBroadcast();
 		initWidget();
 		initViewPager();
@@ -128,7 +146,7 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 	
 	private void initWidget() {
 		AutoUpdateUtil.checkUpdate(this, mContext, "44", getString(R.string.app_name), true);
-		
+
 		LinearLayout ll1 = findViewById(R.id.ll1);
 		ll1.setOnClickListener(new MyOnClickListener(0));
 		LinearLayout ll2 = findViewById(R.id.ll2);
@@ -149,7 +167,13 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 		iv3 = findViewById(R.id.iv3);
 		iv4 = findViewById(R.id.iv4);
 		iv5 = findViewById(R.id.iv5);
-		
+
+		if (isShowYiqing) {
+			ll5.setVisibility(View.VISIBLE);
+		} else {
+			ll5.setVisibility(View.GONE);
+		}
+
 		drawerlayout = findViewById(R.id.drawerlayout);
 		drawerlayout.setVisibility(View.VISIBLE);
 		tvEdit = findViewById(R.id.tvEdit);
@@ -431,6 +455,46 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 				break;
 			}
 		}
+	}
+
+	private void okHttpYiqingState() {
+		final String url = "http://new.12379.tianqi.cn/Extra2019/get_world_yqstatus?uid="+UID;
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
+					@Override
+					public void onFailure(@NotNull Call call, @NotNull IOException e) {
+						init();
+					}
+					@Override
+					public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+						if (!response.isSuccessful()) {
+							return;
+						}
+						final String result = response.body().string();
+						if (!TextUtils.isEmpty(result)) {
+							runOnUiThread(new Runnable() {
+								@Override
+								public void run() {
+									try {
+										JSONObject obj = new JSONObject(result);
+										if (!obj.isNull("code")) {
+											if (TextUtils.equals(obj.getString("code"), "1")) {
+												isShowYiqing = true;
+											}
+										}
+									} catch (JSONException e) {
+										e.printStackTrace();
+									}
+									init();
+								}
+							});
+						}
+					}
+				});
+			}
+		}).start();
 	}
 
 }

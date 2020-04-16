@@ -46,6 +46,15 @@ public class PgyApplication extends Application{
     public static String yellowTag = "level-yellow";
     public static String blueTag = "level-blue";
 	public static String pushToken = "";
+
+	private static String appTheme = "0";
+
+	public static String getAppTheme() {
+		return appTheme;
+	}
+	public static void setTheme(String theme) {
+		appTheme = theme;
+	}
 	
 	@Override
 	public void onCreate() {

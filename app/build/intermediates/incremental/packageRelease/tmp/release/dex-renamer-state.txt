@@ -1,4 +1,4 @@
-#Thu Mar 12 08:17:58 CST 2020
+#Fri Apr 03 21:38:41 CST 2020
 base.0=/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/transforms/dexMerger/release/0
 path.1=classes2.dex
 renamed.1=classes2.dex

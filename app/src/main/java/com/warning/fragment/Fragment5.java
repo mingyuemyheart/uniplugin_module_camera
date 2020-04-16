@@ -61,6 +61,8 @@ import com.warning.util.CommonUtil;
 import com.warning.util.OkHttpUtil;
 import com.warning.view.MainViewPager;
 
+import net.tsz.afinal.FinalBitmap;
+
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -293,18 +295,18 @@ public class Fragment5 extends Fragment implements OnClickListener, OnMapClickLi
 					YiqingDto dto = entry.getValue();
 					long count = Long.valueOf(dto.count);
 					int fillColor = 0;
-					if (count >= 2000) {
-						fillColor = 0xff912a2d;
-					} else if (count >= 1000) {
-						fillColor = 0xffe23e49;
-					} else if (count>= 100) {
-						fillColor = 0xffeb6830;
-					} else if (count >= 10) {
-						fillColor = 0xffef8a46;
-					} else if (count >= 1) {
-						fillColor = 0xfffdbe31;
-					} else {
+					if (count < 1) {
 						fillColor = 0xffdcdcdc;
+					} else if (count < 10) {
+						fillColor = 0xfffdbe31;
+					} else if (count < 100) {
+						fillColor = 0xffef8a46;
+					} else if (count < 1000) {
+						fillColor = 0xffeb6830;
+					} else if (count < 5000) {
+						fillColor = 0xffe23e49;
+					} else {
+						fillColor = 0xff912a2d;
 					}
 					String result = CommonUtil.getJson(getActivity(), "world_geo/"+dto.mapid+".json");
 					if (!TextUtils.isEmpty(result)) {

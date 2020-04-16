@@ -24,6 +24,7 @@ import com.warning.util.OkHttpUtil
 import com.warning.util.StatisticUtil
 import kotlinx.android.synthetic.main.dialog_delete.*
 import okhttp3.*
+import org.json.JSONException
 import org.json.JSONObject
 import java.io.File
 import java.io.FileOutputStream
@@ -37,7 +38,7 @@ class WelcomeActivity : BaseActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_welcome)
-		checkMultiAuthority()
+		okHttpTheme()
 	}
 
 	/**
@@ -258,6 +259,38 @@ class WelcomeActivity : BaseActivity() {
 				}
 			}
 		}
+	}
+
+	/**
+	 * 获取主题
+	 */
+	private fun okHttpTheme() {
+		val url = "https://decision-admin.tianqi.cn/Home/work2019/warning_theme_flag"
+		Thread(Runnable {
+			OkHttpUtil.enqueue(Request.Builder().url(url).build(), object : Callback {
+				override fun onFailure(call: Call, e: IOException) {}
+				@Throws(IOException::class)
+				override fun onResponse(call: Call, response: Response) {
+					if (!response.isSuccessful) {
+						return
+					}
+					val result = response.body!!.string()
+					if (!TextUtils.isEmpty(result)) {
+						try {
+							val obj = JSONObject(result)
+							if (!obj.isNull("flag")) {
+								PgyApplication.setTheme(obj.getString("flag"))
+							}
+						} catch (e: JSONException) {
+							e.printStackTrace()
+						}
+					}
+				}
+			})
+		}).start()
+
+
+		checkMultiAuthority()
 	}
 
 }

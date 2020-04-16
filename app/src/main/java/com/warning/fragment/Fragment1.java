@@ -14,6 +14,7 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -68,6 +69,7 @@ import com.warning.util.OkHttpUtil;
 import com.warning.util.StatisticUtil;
 import com.warning.util.WeatherUtil;
 
+import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -88,6 +90,8 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Request;
 import okhttp3.Response;
+
+import static com.warning.activity.BaseActivity.UID;
 
 /**
  * 首页
@@ -119,6 +123,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
     private String locationId;//定位城市id
     private String infoCode = "0";
     private String adCode;
+    private TextView tvYiqing;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -204,7 +209,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
         ivMenu.setOnClickListener(this);
         ImageView ivMy = view.findViewById(R.id.ivMy);
         ivMy.setOnClickListener(this);
-        TextView tvYiqing = view.findViewById(R.id.tvYiqing);
+        tvYiqing = view.findViewById(R.id.tvYiqing);
         tvYiqing.setOnClickListener(this);
         reNews = view.findViewById(R.id.reNews);
         tvNews1Title = view.findViewById(R.id.tvNews1Title);
@@ -252,6 +257,13 @@ public class Fragment1 extends Fragment implements OnClickListener {
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(dm);
         height = dm.heightPixels;
 
+        RelativeLayout reContent = view.findViewById(R.id.reContent);
+        if (TextUtils.equals(PgyApplication.getAppTheme(), "1")) {
+            reContent.setBackgroundColor(Color.BLACK);
+        } else {
+            reContent.setBackgroundResource(R.drawable.gradient_main_bg);
+        }
+
         refresh();
     }
 
@@ -265,6 +277,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
             public void run() {
                 okHttpCode();
                 OkhttpWarning();
+                okHttpYiqingState();
             }
         }).start();
     }
@@ -440,6 +453,9 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                     } else {
                                         tvNews1Title.setVisibility(View.GONE);
                                         reNews.setBackgroundColor(0x10ffffff);
+                                    }
+                                    if (TextUtils.equals(PgyApplication.getAppTheme(), "1")) {
+                                        reNews.setBackgroundColor(Color.BLACK);
                                     }
                                     tvNews.setVisibility(View.GONE);
                                     tvNews1.setText(newsList.get(0).title+" >>");
@@ -1165,6 +1181,18 @@ public class Fragment1 extends Fragment implements OnClickListener {
         TextView tvWind = fView.findViewById(R.id.tvWind);
         TextView tvAqi = fView.findViewById(R.id.tvAqi);
 
+        ImageView ivTemp = fView.findViewById(R.id.ivTemp);
+        ImageView ivHumidity = fView.findViewById(R.id.ivHumidity);
+        ImageView ivWind = fView.findViewById(R.id.ivWind);
+        ImageView ivAqi = fView.findViewById(R.id.ivAqi);
+
+        if (TextUtils.equals(PgyApplication.getAppTheme(), "1")) {
+            ivTemp.setImageBitmap(CommonUtil.grayScaleImage(BitmapFactory.decodeResource(getResources(), R.drawable.iv_body)));
+            ivHumidity.setImageBitmap(CommonUtil.grayScaleImage(BitmapFactory.decodeResource(getResources(), R.drawable.iv_humidity)));
+            ivWind.setImageBitmap(CommonUtil.grayScaleImage(BitmapFactory.decodeResource(getResources(), R.drawable.iv_wind)));
+            ivAqi.setImageBitmap(CommonUtil.grayScaleImage(BitmapFactory.decodeResource(getResources(), R.drawable.iv_aqi)));
+        }
+
         JSONObject object = content.getWeatherFactInfo();
         try {
             if (!object.isNull("l7")) {
@@ -1192,7 +1220,11 @@ public class Fragment1 extends Fragment implements OnClickListener {
                     e.printStackTrace();
                 }
                 drawable.setLevel(Integer.valueOf(pheCode));
-                ivPhe.setBackground(drawable);
+                if (TextUtils.equals(PgyApplication.getAppTheme(), "1")) {
+                    ivPhe.setImageBitmap(CommonUtil.grayScaleImage(CommonUtil.drawableToBitmap(drawable)));
+                } else {
+                    ivPhe.setBackground(drawable);
+                }
                 tvPhe.setText(getString(WeatherUtil.getWeatherId(Integer.valueOf(pheCode))));
             }
             if (!object.isNull("l12")) {
@@ -1458,7 +1490,11 @@ public class Fragment1 extends Fragment implements OnClickListener {
         } else if (data.color.equals(CONST.unknown[0])) {
             bitmap = CommonUtil.getImageFromAssetsFile(getActivity(), "warning/default" + CONST.imageSuffix);
         }
-        ivWarning.setImageBitmap(bitmap);
+        if (TextUtils.equals(PgyApplication.getAppTheme(), "1")) {
+            ivWarning.setImageBitmap(CommonUtil.grayScaleImage(bitmap));
+        } else {
+            ivWarning.setImageBitmap(bitmap);
+        }
 
         llContainer.addView(view);
 
@@ -1587,7 +1623,11 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                         } else if (object.getString("severityCode").equals(CONST.unknown[0])) {
                                             bitmap = CommonUtil.getImageFromAssetsFile(getActivity(), "warning/default" + CONST.imageSuffix);
                                         }
-                                        ivWarning.setImageBitmap(bitmap);
+                                        if (TextUtils.equals(PgyApplication.getAppTheme(), "1")) {
+                                            ivWarning.setImageBitmap(CommonUtil.grayScaleImage(bitmap));
+                                        } else {
+                                            ivWarning.setImageBitmap(bitmap);
+                                        }
 
                                         if (!TextUtils.isEmpty(tvWarningIntro.getText().toString()) && !tvWarningIntro.getText().toString().contains("防御指南")) {
                                             queryWarningGuide(type, color);
@@ -1620,6 +1660,41 @@ public class Fragment1 extends Fragment implements OnClickListener {
             cursor.moveToPosition(i);
             tvWarningIntro.setText(tvWarningIntro.getText().toString()+"\n预警指南：\n" + cursor.getString(cursor.getColumnIndex("WarningGuide")));
         }
+    }
+
+    private void okHttpYiqingState() {
+        final String url = "http://new.12379.tianqi.cn/Extra2019/get_world_yqstatus?uid="+UID;
+        OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
+            @Override
+            public void onFailure(@NotNull Call call, @NotNull IOException e) {
+            }
+            @Override
+            public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+                if (!response.isSuccessful()) {
+                    return;
+                }
+                final String result = response.body().string();
+                if (!TextUtils.isEmpty(result)) {
+                    getActivity().runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            try {
+                                JSONObject obj = new JSONObject(result);
+                                if (!obj.isNull("code")) {
+                                    if (TextUtils.equals(obj.getString("code"), "1")) {
+                                        tvYiqing.setVisibility(View.VISIBLE);
+                                    } else {
+                                        tvYiqing.setVisibility(View.GONE);
+                                    }
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    });
+                }
+            }
+        });
     }
 
     @Override
