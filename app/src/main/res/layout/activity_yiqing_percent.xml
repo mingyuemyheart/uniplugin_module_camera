@@ -57,32 +57,32 @@
         <TextView
             android:layout_width="0.5dp"
             android:layout_height="match_parent"
-            android:background="@color/light_gray"/>
+            android:background="@color/light_gray" />
 
         <TextView
             android:id="@+id/tvPopulation"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:minHeight="40dp"
             android:layout_weight="1"
-            android:text="人口数量\n(百万)"
             android:gravity="center"
+            android:minHeight="40dp"
+            android:text="人口数量\n(百万)"
             android:textColor="@color/white"
             android:textSize="@dimen/level_4" />
 
         <TextView
             android:layout_width="0.5dp"
             android:layout_height="match_parent"
-            android:background="@color/light_gray"/>
+            android:background="@color/light_gray" />
 
         <TextView
             android:id="@+id/tvRatio"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:minHeight="40dp"
             android:layout_weight="1"
-            android:text="感染病例占百万人口比例"
             android:gravity="center"
+            android:minHeight="40dp"
+            android:text="感染病例占百万人口比例"
             android:textColor="@color/white"
             android:textSize="@dimen/level_4" />
 
@@ -105,15 +105,15 @@
         <TextView
             android:layout_width="0.5dp"
             android:layout_height="match_parent"
-            android:background="@color/light_gray"/>
+            android:background="@color/light_gray" />
 
         <TextView
             android:id="@+id/tvInfection_mortality"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:minHeight="40dp"
             android:layout_weight="1"
             android:gravity="center"
+            android:minHeight="40dp"
             android:text="感染死亡率"
             android:textColor="@color/white"
             android:textSize="@dimen/level_4" />
@@ -123,14 +123,14 @@
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:cacheColorHint="@color/transparent"
         android:divider="@color/light_gray"
         android:dividerHeight="0.5dp"
         android:listSelector="@color/transparent"
         android:overScrollMode="never"
         android:scrollbars="none"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/llTitle" />
 
 </android.support.constraint.ConstraintLayout>

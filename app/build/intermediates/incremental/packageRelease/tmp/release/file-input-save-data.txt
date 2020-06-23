@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Apr 03 21:38:41 CST 2020
+#Tue Jun 23 08:34:40 CST 2020
 20.base=/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/assets/release
 143.base=/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/assets/release
 237.path=lib/x86_64/libGNaviData.so
