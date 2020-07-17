@@ -79,7 +79,7 @@ public class PgyApplication extends Application{
 		PlatformConfig.setWeixin("wxa719cea9cb32cd8e", "078ee3ffe9d11633869619f90654b863");
 		PlatformConfig.setQQZone("1105801723", "ug9Dw1bhK5SySSAv");
 		PlatformConfig.setSinaWeibo("2992665318", "e4c88a5c72b95abc3661b11c38ff64a0", "http://sns.whalecloud.com/sina2/callback");
-		UMConfigure.setLogEnabled(true);
+		UMConfigure.setLogEnabled(false);
 
 		registerUmengPush();
 

@@ -826,7 +826,8 @@ public class DisplayPictureActivity extends BaseActivity implements OnClickListe
 								Intent intent = new Intent();
 								intent.putExtra("fileName", workTime);
 								setResult(RESULT_OK, intent);
-								finish();
+
+								uploadSuccessDialog();
 							}
 						}else {//上传失败
 							Toast.makeText(mContext, "上传失败！", Toast.LENGTH_SHORT).show();
@@ -847,6 +848,28 @@ public class DisplayPictureActivity extends BaseActivity implements OnClickListe
 				super.onFailure(t, errorNo, strMsg);
 				cancelDialog();
 				Toast.makeText(mContext, "上传失败！", Toast.LENGTH_SHORT).show();
+			}
+		});
+	}
+
+	/**
+	 * 上传视频成功对话框
+	 */
+	private void uploadSuccessDialog() {
+		LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		View view = inflater.inflate(R.layout.upload_success_dialog, null);
+		LinearLayout llPositive = (LinearLayout) view.findViewById(R.id.llPositive);
+
+		final Dialog dialog = new Dialog(mContext, R.style.CustomProgressDialog);
+		dialog.setContentView(view);
+		dialog.setCanceledOnTouchOutside(false);
+		dialog.show();
+
+		llPositive.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				dialog.dismiss();
+				exit();
 			}
 		});
 	}
@@ -879,28 +902,26 @@ public class DisplayPictureActivity extends BaseActivity implements OnClickListe
 		});
 	}
 
-	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event) {
+	private void exit() {
 		if (rePager.getVisibility() == View.VISIBLE) {
 			scaleColloseAnimation(rePager, index);
 			rePager.setVisibility(View.GONE);
-			return false;
 		}else {
 			finish();
 		}
-		return super.onKeyDown(keyCode, event);
+	}
+
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		exit();
+		return false;
 	}
 	
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
 		case R.id.llBack:
-			if (rePager.getVisibility() == View.VISIBLE) {
-				scaleColloseAnimation(rePager, index);
-				rePager.setVisibility(View.GONE);
-			}else {
-				finish();
-			}
+			exit();
 			break;
 		case R.id.tvRemove:
 			deleteDialog();
