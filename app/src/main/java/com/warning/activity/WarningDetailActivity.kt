@@ -246,7 +246,7 @@ class WarningDetailActivity : BaseActivity(), OnClickListener {
 		when(p0!!.id) {
 			R.id.llBack -> finish()
 			R.id.ivShare -> {
-				val bitmap1 = CommonUtil.captureScrollView(scrollView)
+				val bitmap1 = CommonUtil.captureView(scrollView)
 				val bitmap2 = BitmapFactory.decodeResource(resources, R.drawable.iv_share_bottom)
 				val bitmap = CommonUtil.mergeBitmap(this, bitmap1, bitmap2, false)
 				CommonUtil.clearBitmap(bitmap1)
