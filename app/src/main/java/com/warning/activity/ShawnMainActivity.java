@@ -1,5 +1,6 @@
 package com.warning.activity;
 
+import android.app.Dialog;
 import android.app.Fragment;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -14,6 +15,7 @@ import android.text.TextUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
@@ -29,6 +31,7 @@ import com.warning.adapter.MyPagerAdapter;
 import com.warning.adapter.ShawnLeftAdapter;
 import com.warning.common.CONST;
 import com.warning.common.PgyApplication;
+import com.warning.dto.NewsDto;
 import com.warning.dto.WarningDto;
 import com.warning.fragment.Fragment1;
 import com.warning.fragment.Fragment2;
@@ -83,7 +86,78 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.shawn_activity_main);
 		mContext = this;
+		//是否显示隐私政策
+		SharedPreferences sp1 = getSharedPreferences("SHOWPOLICY", Context.MODE_PRIVATE);
+		boolean isShow = sp1.getBoolean("isShow", true);
+		if (isShow) {
+			promptDialog(sp1);
+		}
 		okHttpYiqingState();
+	}
+
+	/**
+	 * 温馨提示对话框
+	 */
+	private void promptDialog(final SharedPreferences sp) {
+		LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		View view = inflater.inflate(R.layout.dialog_prompt, null);
+		TextView tvProtocal = view.findViewById(R.id.tvProtocal);
+		TextView tvPolicy = view.findViewById(R.id.tvPolicy);
+		TextView tvNegtive = view.findViewById(R.id.tvNegtive);
+		TextView tvPositive = view.findViewById(R.id.tvPositive);
+
+		final Dialog dialog = new Dialog(mContext, R.style.CustomProgressDialog);
+		dialog.setContentView(view);
+		dialog.show();
+
+		tvProtocal.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				SharedPreferences.Editor editor = sp.edit();
+				editor.putBoolean("isShow", false);
+				editor.apply();
+				Intent intent = new Intent(mContext, WebviewActivity.class);
+				Bundle bundle = new Bundle();
+				NewsDto data = new NewsDto();
+				data.title = "用户协议";
+				data.url = "http://12379.tianqi.cn/Public/12379_app_yhxy.html";
+				bundle.putParcelable("data", data);
+				intent.putExtras(bundle);
+				startActivity(intent);
+			}
+		});
+		tvPolicy.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				SharedPreferences.Editor editor = sp.edit();
+				editor.putBoolean("isShow", false);
+				editor.apply();
+				Intent intent = new Intent(mContext, WebviewActivity.class);
+				Bundle bundle = new Bundle();
+				NewsDto data = new NewsDto();
+				data.title = "隐私政策";
+				data.url = "http://12379.tianqi.cn/Public/12379_app_yszc.html";
+				bundle.putParcelable("data", data);
+				intent.putExtras(bundle);
+				startActivity(intent);
+			}
+		});
+		tvNegtive.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				dialog.dismiss();
+				finish();
+			}
+		});
+		tvPositive.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				dialog.dismiss();
+				SharedPreferences.Editor editor = sp.edit();
+				editor.putBoolean("isShow", false);
+				editor.apply();
+			}
+		});
 	}
 
 	private void init() {
