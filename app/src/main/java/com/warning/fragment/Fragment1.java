@@ -1562,40 +1562,64 @@ public class Fragment1 extends Fragment implements OnClickListener {
                                             tvWarningIntro.setText(object.getString("description"));
                                         }
 
-                                        String name = object.getString("headline");
-                                        if (!TextUtils.isEmpty(name)) {
-                                            String splitName = "发布";
-                                            if (name.contains("更新发布")) {
-                                                splitName = "更新发布";
-                                            } else if (name.contains("发布")) {
-                                                splitName = "发布";
-                                            } else if (name.contains("更新")) {
-                                                splitName = "更新";
-                                            }
-                                            String[] array = name.split(splitName);
-                                            if (array[1] != null) {
-                                                tvWarningName.setText(array[1]);
-                                                if (array[1].contains("[") && array[1].contains("]")) {
-                                                    tvWarningName.setText(array[1].substring(0, array[1].indexOf("[")));
+                                        if (!object.isNull("headline")) {
+                                            String name = object.getString("headline");
+                                            if (!TextUtils.isEmpty(name)) {
+                                                String splitName = "";
+                                                if (name.contains("更新发布")) {
+                                                    splitName = "更新发布";
+                                                } else if (name.contains("发布")) {
+                                                    splitName = "发布";
+                                                } else if (name.contains("更新")) {
+                                                    splitName = "更新";
+                                                } else if (name.contains("启动")) {
+                                                    splitName = "启动";
                                                 }
-                                            }
-                                            String warningName = tvWarningName.getText().toString();
-                                            if (!TextUtils.isEmpty(warningName)) {
-                                                if (warningName.length() >= 40) {
-                                                    warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24, 32)+"\n"+warningName.substring(32, 40)+"\n"+warningName.substring(40);
-                                                } else if (warningName.length() >= 32) {
-                                                    warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24, 32)+"\n"+warningName.substring(32);
-                                                } else if (warningName.length() >= 24) {
-                                                    warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24);
-                                                } else if (warningName.length() >= 16) {
-                                                    warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16);
-                                                } else if (warningName.length() >= 8) {
-                                                    warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8);
+                                                if (!TextUtils.isEmpty(splitName)) {
+                                                    String[] array = name.split(splitName);
+                                                    if (array[1] != null) {
+                                                        tvWarningName.setText(array[1]);
+                                                        if (array[1].contains("[") && array[1].contains("]")) {
+                                                            tvWarningName.setText(array[1].substring(0, array[1].indexOf("[")));
+                                                        }
+                                                    }
+                                                    String warningName = tvWarningName.getText().toString();
+                                                    if (!TextUtils.isEmpty(warningName)) {
+                                                        if (warningName.length() >= 40) {
+                                                            warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24, 32)+"\n"+warningName.substring(32, 40)+"\n"+warningName.substring(40);
+                                                        } else if (warningName.length() >= 32) {
+                                                            warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24, 32)+"\n"+warningName.substring(32);
+                                                        } else if (warningName.length() >= 24) {
+                                                            warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24);
+                                                        } else if (warningName.length() >= 16) {
+                                                            warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16);
+                                                        } else if (warningName.length() >= 8) {
+                                                            warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8);
+                                                        }
+                                                        tvWarningName.setText(warningName);
+                                                    }
+                                                    if (array[0] != null) {
+                                                        tvWarningTime.setText(tvWarningTime.getText().toString()+"  "+array[0] + "发布");
+                                                    }
+                                                } else {
+                                                    tvWarningName.setText(name);
+                                                    tvWarningTime.setText(tvWarningTime.getText().toString()+"  "+name + "发布");
+                                                    String warningName = tvWarningName.getText().toString();
+                                                    if (!TextUtils.isEmpty(warningName)) {
+                                                        if (warningName.length() >= 40) {
+                                                            warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24, 32)+"\n"+warningName.substring(32, 40)+"\n"+warningName.substring(40);
+                                                        } else if (warningName.length() >= 32) {
+                                                            warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24, 32)+"\n"+warningName.substring(32);
+                                                        } else if (warningName.length() >= 24) {
+                                                            warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16, 24)+"\n"+warningName.substring(24);
+                                                        } else if (warningName.length() >= 16) {
+                                                            warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8, 16)+"\n"+warningName.substring(16);
+                                                        } else if (warningName.length() >= 8) {
+                                                            warningName = warningName.substring(0, 8)+"\n"+warningName.substring(8);
+                                                        }
+                                                        tvWarningName.setText(warningName);
+                                                    }
                                                 }
-                                                tvWarningName.setText(warningName);
-                                            }
-                                            if (array[0] != null) {
-                                                tvWarningTime.setText(tvWarningTime.getText().toString()+"  "+array[0] + "发布");
                                             }
                                         }
 
