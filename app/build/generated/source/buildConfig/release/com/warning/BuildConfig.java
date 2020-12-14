@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.warning";
   public static final String BUILD_TYPE = "release";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 87;
-  public static final String VERSION_NAME = "2.6.6";
+  public static final int VERSION_CODE = 88;
+  public static final String VERSION_NAME = "2.6.7";
 }

@@ -22,7 +22,7 @@ import com.warning.common.PgyApplication
 import com.warning.util.AuthorityUtil
 import com.warning.util.OkHttpUtil
 import com.warning.util.StatisticUtil
-import kotlinx.android.synthetic.main.dialog_delete.*
+import kotlinx.android.synthetic.main.dialog_delete.view.*
 import okhttp3.*
 import org.json.JSONException
 import org.json.JSONObject
@@ -222,11 +222,11 @@ class WelcomeActivity : BaseActivity() {
 		dialog.setCanceledOnTouchOutside(false)
 		dialog.setContentView(view)
 		dialog.show()
-		
-		tvMessage.text = message
-		tvContent.text = content
-		tvContent.visibility = View.VISIBLE
-		llNegative.setOnClickListener {
+
+		view.tvMessage.text = message
+		view.tvContent.text = content
+		view.tvContent.visibility = View.VISIBLE
+		view.llNegative.setOnClickListener {
 			dialog.dismiss()
 			clearUserInfo()
 			val file = File(CONST.PORTRAIT_ADDR)
@@ -236,7 +236,7 @@ class WelcomeActivity : BaseActivity() {
 			startActivity(Intent(this, ShawnMainActivity::class.java))
 			finish()
 		}
-		llPositive.setOnClickListener {
+		view.llPositive.setOnClickListener {
 			dialog.dismiss()
 			startActivityForResult(Intent(this, LoginActivity::class.java), 1001)
 		}
