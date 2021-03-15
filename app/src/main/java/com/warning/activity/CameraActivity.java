@@ -533,7 +533,7 @@ public class CameraActivity extends Activity implements SurfaceHolder.Callback, 
 		mRecorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);// 视频源
 		mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC); // 录音源为麦克风
 		mRecorder.setProfile(CamcorderProfile.get(CamcorderProfile.QUALITY_720P));
-		mRecorder.setVideoFrameRate(20);
+//		mRecorder.setVideoFrameRate(20);
 		mRecorder.setVideoEncodingBitRate(3000000);
 		mRecorder.setPreviewDisplay(surfaceHolder.getSurface());// 预览
 	}

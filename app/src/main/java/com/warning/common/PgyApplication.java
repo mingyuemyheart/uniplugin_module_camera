@@ -19,6 +19,7 @@ import com.umeng.message.tag.TagManager;
 import com.umeng.socialize.PlatformConfig;
 import com.warning.activity.CheckWorksActivity;
 import com.warning.activity.WarningDetailActivity;
+import com.warning.util.CrashHandler;
 
 import org.android.agoo.huawei.HuaWeiRegister;
 import org.android.agoo.mezu.MeizuRegister;
@@ -59,6 +60,8 @@ public class PgyApplication extends Application{
 	@Override
 	public void onCreate() {
 		super.onCreate();
+		CrashHandler crashHandler = CrashHandler.getInstance();
+		crashHandler.init(getApplicationContext());
 
 		//初始化Imageloader
 		ImageLoaderConfiguration configuration = ImageLoaderConfiguration.createDefault(getApplicationContext()); 
