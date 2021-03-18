@@ -77,6 +77,14 @@
                     android:textSize="@dimen/level_4"
                     android:visibility="gone" />
 
+                <ImageView
+                    android:id="@+id/ivPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"/>
+
                 <TextView
                     android:id="@+id/tvPdf"
                     android:layout_width="match_parent"

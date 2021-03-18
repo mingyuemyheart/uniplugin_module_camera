@@ -82,6 +82,15 @@
                     android:textColor="@color/text_color4"
                     android:textSize="@dimen/level_4"
                     android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivPicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"/>
+
             </LinearLayout>
         </ScrollView>
     </android.support.v4.widget.SwipeRefreshLayout>

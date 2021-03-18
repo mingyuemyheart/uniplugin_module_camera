@@ -17,6 +17,7 @@ import com.warning.util.CommonUtil
 import com.warning.util.OkHttpUtil
 import kotlinx.android.synthetic.main.activity_warning_detail.*
 import kotlinx.android.synthetic.main.shawn_layout_title.*
+import net.tsz.afinal.FinalBitmap
 import okhttp3.Call
 import okhttp3.Callback
 import okhttp3.Request
@@ -180,6 +181,15 @@ class WarningDetailActivity : BaseActivity(), OnClickListener {
 								bitmap = CommonUtil.getImageFromAssetsFile(this@WarningDetailActivity,"warning/default"+CONST.imageSuffix)
 							}
 							imageView.setImageBitmap(bitmap)
+
+							if (!obje.isNull("identifier")) {
+								val identifier = obje.getString("identifier")
+								if (!TextUtils.isEmpty(identifier)) {
+									val imgUrl = "http://12379.tianqi.cn/Public/gw_html_imgs/$identifier.png"
+									val finalBitmap = FinalBitmap.create(this@WarningDetailActivity)
+									finalBitmap.display(ivPicture, imgUrl, null, 0)
+								}
+							}
 
 							if (!TextUtils.isEmpty(tvIntro.text.toString()) && !tvIntro.text.toString().contains("防御指南")) {
 								queryWarningGuide()

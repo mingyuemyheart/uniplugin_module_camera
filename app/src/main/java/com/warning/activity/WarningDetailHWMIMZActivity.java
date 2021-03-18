@@ -24,6 +24,8 @@ import com.warning.manager.DBManager;
 import com.warning.util.CommonUtil;
 import com.warning.util.OkHttpUtil;
 
+import net.tsz.afinal.FinalBitmap;
+
 import org.android.agoo.common.AgooConstants;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -44,7 +46,7 @@ public class WarningDetailHWMIMZActivity extends UmengNotifyClickActivity implem
 	private Context mContext = null;
 	private LinearLayout llBack = null;
 	private TextView tvTitle,tvName,tvTime,tvIntro,tvGuide;
-	private ImageView ivShare, imageView = null;//预警图标
+	private ImageView ivShare, imageView,ivPicture;//预警图标
 	private ScrollView scrollView = null;
 	private SwipeRefreshLayout refreshLayout = null;//下拉刷新布局
 	private String dataUrl;
@@ -83,6 +85,7 @@ public class WarningDetailHWMIMZActivity extends UmengNotifyClickActivity implem
 		tvTitle = (TextView) findViewById(R.id.tvTitle);
 		tvTitle.setText(getString(R.string.warning_detail));
 		imageView = (ImageView) findViewById(R.id.imageView);
+		ivPicture = findViewById(R.id.ivPicture);
 		ivShare = (ImageView) findViewById(R.id.ivShare);
 		ivShare.setOnClickListener(this);
 		ivShare.setVisibility(View.GONE);
@@ -192,6 +195,15 @@ public class WarningDetailHWMIMZActivity extends UmengNotifyClickActivity implem
 												}
 											}
 											imageView.setImageBitmap(bitmap);
+
+											if (!object.isNull("identifier")) {
+												String identifier = object.getString("identifier");
+												if (!TextUtils.isEmpty(identifier)) {
+													String imgUrl = String.format("http://12379.tianqi.cn/Public/gw_html_imgs/%s.png", identifier);
+													FinalBitmap finalBitmap = FinalBitmap.create(mContext);
+													finalBitmap.display(ivPicture, imgUrl, null, 0);
+												}
+											}
 
 											initDBManager(color, type);
 											scrollView.setVisibility(View.VISIBLE);
