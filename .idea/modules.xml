@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/12379-12379getui.iml" filepath="$PROJECT_DIR$/12379-12379getui.iml" group="12379-12379getui" />
-      <module fileurl="file://$PROJECT_DIR$/android-pdf-viewer/android-pdf-viewer.iml" filepath="$PROJECT_DIR$/android-pdf-viewer/android-pdf-viewer.iml" group="12379-12379getui/android-pdf-viewer" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="12379-12379getui/app" />
+      <module fileurl="file://$PROJECT_DIR$/12379-12379getui.iml" filepath="$PROJECT_DIR$/12379-12379getui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-pdf-viewer/12379-12379getui.android-pdf-viewer.iml" filepath="$PROJECT_DIR$/.idea/modules/android-pdf-viewer/12379-12379getui.android-pdf-viewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/12379-12379getui.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/12379-12379getui.app.iml" />
     </modules>
   </component>
 </project>
