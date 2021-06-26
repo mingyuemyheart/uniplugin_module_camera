@@ -281,6 +281,15 @@ class WelcomeActivity : BaseActivity() {
 							if (!obj.isNull("flag")) {
 								PgyApplication.setTheme(obj.getString("flag"))
 							}
+							if (!obj.isNull("top_img")) {
+								PgyApplication.setTop_img(obj.getString("top_img"))
+							}
+							if (!obj.isNull("top_img_url")) {
+								PgyApplication.setTop_img_url(obj.getString("top_img_url"))
+							}
+							if (!obj.isNull("top_img_title")) {
+								PgyApplication.setTop_img_title(obj.getString("top_img_title"))
+							}
 						} catch (e: JSONException) {
 							e.printStackTrace()
 						}
@@ -288,7 +297,6 @@ class WelcomeActivity : BaseActivity() {
 				}
 			})
 		}).start()
-
 
 		checkMultiAuthority()
 	}

@@ -129,7 +129,6 @@ OnMarkerClickListener, InfoWindowAdapter, OnCameraChangeListener{
 	private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 	private boolean isExpandMap = false;//是否放大地图
 	private ImageView ivLocation = null;
-	private ImageView ivRefresh = null;
 	private TextView tvList = null;
 	private AMapLocationClientOption mLocationOption = null;//声明mLocationOption对象
 	private AMapLocationClient mLocationClient = null;//声明AMapLocationClient类对象
@@ -227,8 +226,6 @@ OnMarkerClickListener, InfoWindowAdapter, OnCameraChangeListener{
 		arcMenu.setOnMenuItemClickListener(arcMenuListener);
 		ivLocation = (ImageView) view.findViewById(R.id.ivLocation);
 		ivLocation.setOnClickListener(this);
-		ivRefresh = (ImageView) view.findViewById(R.id.ivRefresh);
-		ivRefresh.setOnClickListener(this);
 		tvList = (TextView) view.findViewById(R.id.tvList);
 		tvList.setOnClickListener(this);
 		llPrompt = (LinearLayout) view.findViewById(R.id.llPrompt);
@@ -256,9 +253,7 @@ OnMarkerClickListener, InfoWindowAdapter, OnCameraChangeListener{
 //		refresh();
     }
 	
-	private void refresh() {
-		android.view.animation.Animation animation = AnimationUtils.loadAnimation(getActivity(), R.anim.round_animation);
-		ivRefresh.startAnimation(animation);
+	public void refresh() {
 		checkAuthority();
 		OkhttpWarning();
 		OkhttpZixun("http://new.12379.tianqi.cn/Extra/get_tfsj");
@@ -459,7 +454,6 @@ OnMarkerClickListener, InfoWindowAdapter, OnCameraChangeListener{
 														tvList.setVisibility(View.GONE);
 														arcMenu.setVisibility(View.GONE);
 														ivWarning.setVisibility(View.GONE);
-														ivRefresh.clearAnimation();
 														llPrompt.setVisibility(View.VISIBLE);
 														return;
 													}
@@ -483,7 +477,6 @@ OnMarkerClickListener, InfoWindowAdapter, OnCameraChangeListener{
 													tvList.setVisibility(View.VISIBLE);
 													arcMenu.setVisibility(View.VISIBLE);
 													ivWarning.setVisibility(View.VISIBLE);
-													ivRefresh.clearAnimation();
 													llPrompt.setVisibility(View.VISIBLE);
 
 													unselectedWarning();
@@ -1277,7 +1270,6 @@ OnMarkerClickListener, InfoWindowAdapter, OnCameraChangeListener{
 											}
 										}
 
-										ivRefresh.clearAnimation();
 										if (zixunList.size() > 0) {
 											ivZixun.setVisibility(View.VISIBLE);
 											removeMarkers(zixunMarkerList);
@@ -1636,7 +1628,6 @@ OnMarkerClickListener, InfoWindowAdapter, OnCameraChangeListener{
 														}
 													}
 
-													ivRefresh.clearAnimation();
 													if (zhibaoList.size() > 0) {
 														ivZhibao.setVisibility(View.VISIBLE);
 														removeMarkers(zhibaoMarkerList);
@@ -1861,9 +1852,6 @@ OnMarkerClickListener, InfoWindowAdapter, OnCameraChangeListener{
 				isExpandMap = true;
 				aMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(35.926628, 105.178100), 3.5f));
 			}
-			break;
-		case R.id.ivRefresh:
-			refresh();
 			break;
 		case R.id.tvList:
 			Intent intent = new Intent(getActivity(), ShawnWarningListActivity.class);

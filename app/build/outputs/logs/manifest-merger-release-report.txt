@@ -29,6 +29,7 @@ MERGED from [com.umeng.sdk:push:4.2.0] /Users/sunxiaoming/.gradle/caches/transfo
 MERGED from [com.umeng.sdk:push-huawei:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/139f13935a8a86f7405a522922630293/push-huawei-1.0.0/AndroidManifest.xml:2:1-24:12
 MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ee82bd47654f87f03dfefe71171e066e/push-xiaomi-1.0.0/AndroidManifest.xml:2:1-40:12
 MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/25f491093455bfa4faeecf328db6ea95/push-meizu-1.0.0/AndroidManifest.xml:2:1-32:12
+MERGED from [com.yanzhenjie:sofia:1.0.5] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/81630f23365a73386a0642eb8f2e79b2/sofia-1.0.5/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/15592c93530fc58fc097c8d969b5a5c3/support-fragment-28.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ec70a3a4f8a95dd9356a2124f9e414ab/animated-vector-drawable-28.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/4b57428a067bcc5bb60aecff79a55237/support-core-ui-28.0.0/AndroidManifest.xml:17:1-22:12
@@ -676,6 +677,8 @@ MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/
 MERGED from [com.umeng.sdk:push-xiaomi:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ee82bd47654f87f03dfefe71171e066e/push-xiaomi-1.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/25f491093455bfa4faeecf328db6ea95/push-meizu-1.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.umeng.sdk:push-meizu:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/25f491093455bfa4faeecf328db6ea95/push-meizu-1.0.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.yanzhenjie:sofia:1.0.5] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/81630f23365a73386a0642eb8f2e79b2/sofia-1.0.5/AndroidManifest.xml:20:5-22:41
+MERGED from [com.yanzhenjie:sofia:1.0.5] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/81630f23365a73386a0642eb8f2e79b2/sofia-1.0.5/AndroidManifest.xml:20:5-22:41
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/15592c93530fc58fc097c8d969b5a5c3/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/15592c93530fc58fc097c8d969b5a5c3/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ec70a3a4f8a95dd9356a2124f9e414ab/animated-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44

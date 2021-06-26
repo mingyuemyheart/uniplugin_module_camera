@@ -69,6 +69,8 @@ import com.warning.util.OkHttpUtil;
 import com.warning.util.StatisticUtil;
 import com.warning.util.WeatherUtil;
 
+import net.tsz.afinal.FinalBitmap;
+
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -118,7 +120,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
     private SimpleDateFormat sdf4 = new SimpleDateFormat("yyyy-MM-dd", Locale.CHINA);
     private SimpleDateFormat sdf5 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.CHINA);
     private SwipeRefreshLayout refreshLayout;//下拉刷新布局
-    private int height = 0;
     private ScrollView parentScrollView,childScrollView;
     private String locationId;//定位城市id
     private String infoCode = "0";
@@ -205,10 +206,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
     }
 
     private void initWidget(View view) {
-        ImageView ivMenu = view.findViewById(R.id.ivMenu);
-        ivMenu.setOnClickListener(this);
-        ImageView ivMy = view.findViewById(R.id.ivMy);
-        ivMy.setOnClickListener(this);
         tvYiqing = view.findViewById(R.id.tvYiqing);
         tvYiqing.setOnClickListener(this);
         reNews = view.findViewById(R.id.reNews);
@@ -253,10 +250,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
             }
         });
 
-        DisplayMetrics dm = new DisplayMetrics();
-        getActivity().getWindowManager().getDefaultDisplay().getMetrics(dm);
-        height = dm.heightPixels;
-
         RelativeLayout reContent = view.findViewById(R.id.reContent);
         if (TextUtils.equals(PgyApplication.getAppTheme(), "1")) {
             reContent.setBackgroundColor(Color.BLACK);
@@ -271,6 +264,7 @@ public class Fragment1 extends Fragment implements OnClickListener {
         progressBar.setVisibility(View.VISIBLE);
         llContainer.removeAllViews();
 
+        checkAuthority();
         removeThread();
         new Thread(new Runnable() {
             @Override
@@ -290,7 +284,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
         OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                checkAuthority();
             }
             @Override
             public void onResponse(Call call, Response response) throws IOException {
@@ -329,7 +322,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
                         e.printStackTrace();
                     }
                 }
-                checkAuthority();
             }
         });
     }
@@ -1725,14 +1717,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
     public void onClick(View v) {
         Intent intent;
         switch (v.getId()) {
-            case R.id.ivMenu:
-                Intent intentMenu = new Intent();
-                intentMenu.setAction(CONST.BROADCAST_DRAWER);
-                getActivity().sendBroadcast(intentMenu);
-                break;
-            case R.id.ivMy:
-                startActivity(new Intent(getActivity(), MyActivity.class));
-                break;
             case R.id.tvDis:
                 if (disList.size() == 1) {
                     intent = new Intent(getActivity(), WarningDetailActivity.class);

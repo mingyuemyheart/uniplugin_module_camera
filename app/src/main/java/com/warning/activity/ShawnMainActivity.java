@@ -8,7 +8,10 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.support.v4.widget.DrawerLayout;
 import android.text.TextUtils;
@@ -19,12 +22,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.warning.R;
 import com.warning.adapter.MyPagerAdapter;
@@ -43,6 +49,9 @@ import com.warning.util.CommonUtil;
 import com.warning.util.OkHttpUtil;
 import com.warning.util.StatisticUtil;
 import com.warning.view.MainViewPager;
+import com.yanzhenjie.sofia.Sofia;
+
+import net.tsz.afinal.FinalBitmap;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
@@ -71,8 +80,9 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 	private MyBroadCastReceiver mReceiver;
 	private String locationId;
 	private String BROADCAST_ACTION_NAME = "";//四个fragment广播名字
-
 	private boolean isShowYiqing = false;
+	private TextView tvTitle;
+	private ImageView ivTitle,ivMenu,ivMy;
 	
 	//侧拉页面
 	private DrawerLayout drawerlayout;
@@ -86,6 +96,15 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.shawn_activity_main);
 		mContext = this;
+		if (!TextUtils.isEmpty(PgyApplication.getTop_img())) {
+			Sofia.with(this)
+					.invasionNavigationBar()
+					.statusBarLightFont()//状态栏浅色字体
+					.invasionStatusBar()//内容入侵状态栏
+					.navigationBarBackground(ContextCompat.getColor(this, R.color.transparent))//导航栏背景色
+					.statusBarBackground(ContextCompat.getColor(this, R.color.transparent));//状态
+		}
+
 		//是否显示隐私政策
 		SharedPreferences sp1 = getSharedPreferences("SHOWPOLICY", Context.MODE_PRIVATE);
 		boolean isShow = sp1.getBoolean("isShow", true);
@@ -221,6 +240,14 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 	private void initWidget() {
 		AutoUpdateUtil.checkUpdate(this, mContext, "44", getString(R.string.app_name), true);
 
+		ivMenu = findViewById(R.id.ivMenu);
+		ivMenu.setOnClickListener(this);
+		ivMy = findViewById(R.id.ivMy);
+		ivTitle = findViewById(R.id.ivTitle);
+		tvTitle = findViewById(R.id.tvTitle);
+		RelativeLayout reTitle = findViewById(R.id.reTitle);
+		ImageView ivBanner = findViewById(R.id.ivBanner);
+		ivBanner.setOnClickListener(this);
 		LinearLayout ll1 = findViewById(R.id.ll1);
 		ll1.setOnClickListener(new MyOnClickListener(0));
 		LinearLayout ll2 = findViewById(R.id.ll2);
@@ -241,6 +268,16 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 		iv3 = findViewById(R.id.iv3);
 		iv4 = findViewById(R.id.iv4);
 		iv5 = findViewById(R.id.iv5);
+
+		if (!TextUtils.isEmpty(PgyApplication.getTop_img())) {
+			FinalBitmap finalBitmap = FinalBitmap.create(this);
+			finalBitmap.display(ivBanner, PgyApplication.getTop_img(), null, 0);
+			ivBanner.setVisibility(View.VISIBLE);
+			reTitle.setBackgroundColor(Color.TRANSPARENT);
+		} else {
+			ivBanner.setVisibility(View.GONE);
+			reTitle.setBackgroundColor(getResources().getColor(R.color.title_bg));
+		}
 
 		if (isShowYiqing) {
 			ll5.setVisibility(View.VISIBLE);
@@ -293,6 +330,12 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 						sendBroadcast(intent);
 						BROADCAST_ACTION_NAME += Fragment1.class.getName();
 					}
+					ivMenu.setVisibility(View.VISIBLE);
+					ivTitle.setVisibility(View.VISIBLE);
+					ivMy.setVisibility(View.VISIBLE);
+					ivMy.setImageResource(R.drawable.iv_person);
+					ivMy.setOnClickListener(v -> startActivity(new Intent(mContext, MyActivity.class)));
+					tvTitle.setText("");
 					drawerlayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
 					iv1.setImageResource(R.drawable.iv_fragment1_press);
 					iv2.setImageResource(R.drawable.iv_fragment2);
@@ -311,6 +354,9 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 						sendBroadcast(intent);
 						BROADCAST_ACTION_NAME += Fragment5.class.getName();
 					}
+					ivMenu.setVisibility(View.GONE);
+					ivTitle.setVisibility(View.GONE);
+					tvTitle.setText(getString(R.string.fragment5));
 					drawerlayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 					iv1.setImageResource(R.drawable.iv_fragment1);
 					iv2.setImageResource(R.drawable.iv_fragment2);
@@ -329,6 +375,17 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 						sendBroadcast(intent);
 						BROADCAST_ACTION_NAME += Fragment2.class.getName();
 					}
+					ivMenu.setVisibility(View.GONE);
+					ivTitle.setVisibility(View.GONE);
+					ivMy.setVisibility(View.VISIBLE);
+					ivMy.setImageResource(R.drawable.iv_refresh);
+					ivMy.setOnClickListener(v -> {
+						Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.round_animation);
+						ivMy.startAnimation(animation);
+						new Handler().postDelayed(() -> ivMy.clearAnimation(), 1000);
+						((Fragment2) fragment2).refresh();
+					});
+					tvTitle.setText(getString(R.string.fragment2));
 					drawerlayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 					iv1.setImageResource(R.drawable.iv_fragment1);
 					iv2.setImageResource(R.drawable.iv_fragment2_press);
@@ -347,6 +404,10 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 						sendBroadcast(intent);
 						BROADCAST_ACTION_NAME += Fragment3.class.getName();
 					}
+					ivMenu.setVisibility(View.GONE);
+					ivTitle.setVisibility(View.GONE);
+					ivMy.setVisibility(View.GONE);
+					tvTitle.setText(getString(R.string.fragment3));
 					drawerlayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 					iv1.setImageResource(R.drawable.iv_fragment1);
 					iv2.setImageResource(R.drawable.iv_fragment2);
@@ -365,6 +426,12 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 						sendBroadcast(intent);
 						BROADCAST_ACTION_NAME += Fragment4.class.getName();
 					}
+					ivMenu.setVisibility(View.GONE);
+					ivTitle.setVisibility(View.GONE);
+					ivMy.setVisibility(View.VISIBLE);
+					ivMy.setImageResource(R.drawable.iv_camera);
+					ivMy.setOnClickListener(v -> ((Fragment4) fragment4).checkAuthority());
+					tvTitle.setText(getString(R.string.fragment4));
 					drawerlayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 					iv1.setImageResource(R.drawable.iv_fragment1);
 					iv2.setImageResource(R.drawable.iv_fragment2);
@@ -457,6 +524,19 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
+		case R.id.ivBanner:
+			if (TextUtils.isEmpty(PgyApplication.getTop_img_title()) || TextUtils.isEmpty(PgyApplication.getTop_img_url())) {
+				return;
+			}
+			NewsDto dto = new NewsDto();
+			dto.title = PgyApplication.getTop_img_title();
+			dto.url = PgyApplication.getTop_img_url();
+			Intent intent = new Intent(this, WebviewActivity.class);
+			Bundle bundle = new Bundle();
+			bundle.putParcelable("data", dto);
+			intent.putExtras(bundle);
+			startActivity(intent);
+			break;
 		case R.id.ivMenu:
 			if (drawerlayout.isDrawerOpen(reLeft)) {
 				drawerlayout.closeDrawer(reLeft);
@@ -465,9 +545,6 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 				//统计点击次数
 				StatisticUtil.submitClickCount("3", "城市订阅");
 			}
-			break;
-		case R.id.ivMy:
-			startActivity(new Intent(mContext, MyActivity.class));
 			break;
 			
 			//侧拉页面
@@ -493,7 +570,7 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 				Toast.makeText(mContext, getString(R.string.most_add_city), Toast.LENGTH_SHORT).show();
 				return;
 			}else {
-				Intent intent = new Intent(mContext, CityActivity.class);
+				intent = new Intent(mContext, CityActivity.class);
 				intent.putExtra("cityId", locationId);
 				startActivityForResult(intent, 1001);
 			}

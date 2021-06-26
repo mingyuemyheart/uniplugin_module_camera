@@ -5,45 +5,10 @@
     android:id="@+id/reContent"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:id="@+id/reTitle"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/title_bg"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/ivMenu"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="5dp"
-            android:padding="10dp"
-            android:src="@drawable/iv_add_white" />
-
-        <ImageView
-            android:id="@+id/ivTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_centerInParent="true"
-            android:src="@drawable/iv_logo" />
-
-        <ImageView
-            android:id="@+id/ivMy"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="5dp"
-            android:padding="10dp"
-            android:src="@drawable/iv_person" />
-    </RelativeLayout>
-
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/reTitle"
         android:orientation="vertical">
 
         <ScrollView

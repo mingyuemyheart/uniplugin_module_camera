@@ -56,6 +56,32 @@ public class PgyApplication extends Application{
 	public static void setTheme(String theme) {
 		appTheme = theme;
 	}
+
+	private static String top_img,top_img_url,top_img_title;
+
+	public static String getTop_img() {
+		return top_img;
+	}
+
+	public static void setTop_img(String top_img) {
+		PgyApplication.top_img = top_img;
+	}
+
+	public static String getTop_img_url() {
+		return top_img_url;
+	}
+
+	public static void setTop_img_url(String top_img_url) {
+		PgyApplication.top_img_url = top_img_url;
+	}
+
+	public static String getTop_img_title() {
+		return top_img_title;
+	}
+
+	public static void setTop_img_title(String top_img_title) {
+		PgyApplication.top_img_title = top_img_title;
+	}
 	
 	@Override
 	public void onCreate() {

@@ -460,6 +460,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color sofia_navigation
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -1182,7 +1183,7 @@ id ivAdd
 id ivAqi
 id ivArrow
 id ivBackLand
-id ivCamera
+id ivBanner
 id ivChangeLand
 id ivCheck
 id ivClear
@@ -1285,6 +1286,7 @@ id message
 id middle
 id multiply
 id nGridView
+id navigation_view
 id never
 id none
 id normal
@@ -1371,6 +1373,7 @@ id src_over
 id standard
 id start
 id status_bar_latest_event_content
+id status_view
 id submenuarrow
 id submit_area
 id surfaceView
@@ -1645,6 +1648,7 @@ layout shawn_layout_title
 layout shawn_layout_title2
 layout shawn_layout_warning_detail
 layout socialize_share_menu_item
+layout sofia_host_layout
 layout station_marker_view
 layout support_simple_spinner_dropdown_item
 layout three_level_warning

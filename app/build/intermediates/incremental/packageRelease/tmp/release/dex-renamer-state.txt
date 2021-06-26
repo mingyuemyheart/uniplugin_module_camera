@@ -1,4 +1,4 @@
-#Wed May 26 18:57:24 CST 2021
+#Sat Jun 26 18:57:22 CST 2021
 base.1=/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/dex/release/out/classes2.dex
 path.1=classes2.dex
 base.0=/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/dex/release/out/classes.dex

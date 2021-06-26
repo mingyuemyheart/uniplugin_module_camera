@@ -59,9 +59,8 @@ import okhttp3.Response;
 
 import static com.warning.activity.BaseActivity.TOKEN;
 
-public class Fragment4 extends Fragment implements OnRefreshListener, OnClickListener{
+public class Fragment4 extends Fragment implements OnRefreshListener {
 	
-	private ImageView ivCamera = null;
 	private ListView mListView = null;
 	private VideoWallAdapter mAdapter = null;
 	private List<PhotoDto> zhibaoList = new ArrayList<>();
@@ -139,8 +138,6 @@ public class Fragment4 extends Fragment implements OnRefreshListener, OnClickLis
 	}
 	
 	private void initWidget(View view) {
-		ivCamera = (ImageView) view.findViewById(R.id.ivCamera);
-		ivCamera.setOnClickListener(this);
 		tvPrompt = (TextView) view.findViewById(R.id.tvPrompt);
 		
 //		refresh();
@@ -415,18 +412,6 @@ public class Fragment4 extends Fragment implements OnRefreshListener, OnClickLis
 		}).start();
 	}
 	
-	@Override
-	public void onClick(View v) {
-		switch (v.getId()) {
-		case R.id.ivCamera:
-			checkAuthority();
-			break;
-
-		default:
-			break;
-		}
-	}
-
 	//需要申请的所有权限
 	public static String[] allPermissions = new String[] {
 			Manifest.permission.ACCESS_COARSE_LOCATION,
@@ -441,7 +426,7 @@ public class Fragment4 extends Fragment implements OnRefreshListener, OnClickLis
 	/**
 	 * 申请相机权限
 	 */
-	private void checkAuthority() {
+	public void checkAuthority() {
 		if (Build.VERSION.SDK_INT < 23) {
 			if (TextUtils.isEmpty(TOKEN)) {
 				startActivityForResult(new Intent(getActivity(), LoginActivity.class), 1);

@@ -20,8 +20,8 @@ android {
         applicationId "com.warning"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 91
-        versionName "2.7.0"
+        versionCode 94
+        versionName "2.7.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
 
@@ -100,6 +100,7 @@ dependencies {
     implementation 'com.amap.api:search:5.7.0'
     implementation 'com.amap.api:location:4.7.0'
     implementation project(':android-pdf-viewer')
+    implementation 'com.yanzhenjie:sofia:1.0.5'
 
     //阿里云
     implementation 'com.aliyun.dpa:oss-android-sdk:2.3.0'
