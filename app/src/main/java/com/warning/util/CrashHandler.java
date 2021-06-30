@@ -11,6 +11,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.warning.common.CONST;
+import com.warning.common.PgyApplication;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -190,18 +191,16 @@ public class CrashHandler implements UncaughtExceptionHandler {
             long timestamp = System.currentTimeMillis();
             String time = formatter.format(new Date());
             String fileName = "crash-" + time + "-" + timestamp + ".txt";
-            if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-                String path = mContext.getExternalFilesDir(null)+"/12379/crash/";
-                File dir = new File(path);
-                if (!dir.exists()) {
-                    dir.mkdirs();
-                }
-                FileOutputStream fos = new FileOutputStream(path + fileName);
-                fos.write(sb.toString().getBytes());
-                fos.close();
-
-                okHttpCrash(path + fileName);
+            String path = mContext.getExternalFilesDir(null)+"/crash/";
+            File dir = new File(path);
+            if (!dir.exists()) {
+                dir.mkdirs();
             }
+            FileOutputStream fos = new FileOutputStream(path + fileName);
+            fos.write(sb.toString().getBytes());
+            fos.close();
+
+            okHttpCrash(path + fileName);
             return fileName;
         } catch (Exception e) {
             Log.e(TAG, "an error occured while writing file...", e);
@@ -220,6 +219,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
             builder.addFormDataPart("appid", CONST.APPID);
             builder.addFormDataPart("platform", "Android");
             builder.addFormDataPart("other_param", CommonUtil.getVersion(mContext));
+            builder.addFormDataPart("other_param1", CONST.USERNAME);
             if (!TextUtils.isEmpty(filePath)) {
                 File file = new File(filePath);
                 if (file.exists()) {

@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.warning"
     android:targetSandboxVersion="2"
-    android:versionCode="94"
-    android:versionName="2.7.3" >
+    android:versionCode="95"
+    android:versionName="2.7.4" >
 
     <uses-sdk
         android:minSdkVersion="21"

@@ -22,7 +22,10 @@ import com.warning.common.PgyApplication
 import com.warning.util.AuthorityUtil
 import com.warning.util.OkHttpUtil
 import com.warning.util.StatisticUtil
+import com.yanzhenjie.sofia.Sofia
+import kotlinx.android.synthetic.main.activity_welcome.*
 import kotlinx.android.synthetic.main.dialog_delete.view.*
+import net.tsz.afinal.FinalBitmap
 import okhttp3.*
 import org.json.JSONException
 import org.json.JSONObject
@@ -38,6 +41,12 @@ class WelcomeActivity : BaseActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_welcome)
+		Sofia.with(this)
+				.invasionNavigationBar()
+				.statusBarLightFont() //状态栏浅色字体
+				.invasionStatusBar() //内容入侵状态栏
+				.navigationBarBackground(ContextCompat.getColor(this, R.color.transparent)) //导航栏背景色
+				.statusBarBackground(ContextCompat.getColor(this, R.color.transparent)) //状态
 		okHttpTheme()
 	}
 
@@ -275,23 +284,32 @@ class WelcomeActivity : BaseActivity() {
 						return
 					}
 					val result = response.body!!.string()
-					if (!TextUtils.isEmpty(result)) {
-						try {
-							val obj = JSONObject(result)
-							if (!obj.isNull("flag")) {
-								PgyApplication.setTheme(obj.getString("flag"))
+					runOnUiThread {
+						if (!TextUtils.isEmpty(result)) {
+							try {
+								val obj = JSONObject(result)
+								if (!obj.isNull("flag")) {
+									PgyApplication.setTheme(obj.getString("flag"))
+								}
+								if (!obj.isNull("launch_img")) {
+									val imgUrl = obj.getString("launch_img")
+									if (!TextUtils.isEmpty(imgUrl)) {
+										val finalBitmap = FinalBitmap.create(this@WelcomeActivity)
+										finalBitmap.display(imageView, imgUrl, null, 0)
+									}
+								}
+								if (!obj.isNull("top_img")) {
+									PgyApplication.setTop_img(obj.getString("top_img"))
+								}
+								if (!obj.isNull("top_img_url")) {
+									PgyApplication.setTop_img_url(obj.getString("top_img_url"))
+								}
+								if (!obj.isNull("top_img_title")) {
+									PgyApplication.setTop_img_title(obj.getString("top_img_title"))
+								}
+							} catch (e: JSONException) {
+								e.printStackTrace()
 							}
-							if (!obj.isNull("top_img")) {
-								PgyApplication.setTop_img(obj.getString("top_img"))
-							}
-							if (!obj.isNull("top_img_url")) {
-								PgyApplication.setTop_img_url(obj.getString("top_img_url"))
-							}
-							if (!obj.isNull("top_img_title")) {
-								PgyApplication.setTop_img_title(obj.getString("top_img_title"))
-							}
-						} catch (e: JSONException) {
-							e.printStackTrace()
 						}
 					}
 				}

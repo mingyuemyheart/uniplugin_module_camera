@@ -20,8 +20,8 @@ android {
         applicationId "com.warning"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 94
-        versionName "2.7.3"
+        versionCode 95
+        versionName "2.7.4"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
 
