@@ -52,7 +52,6 @@ import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationClientOption.AMapLocationMode;
 import com.amap.api.location.AMapLocationListener;
 import com.warning.R;
-import com.warning.activity.MyActivity;
 import com.warning.activity.ShawnWarningListActivity;
 import com.warning.activity.WarningDetailActivity;
 import com.warning.activity.WebviewActivity;
@@ -68,8 +67,6 @@ import com.warning.util.CommonUtil;
 import com.warning.util.OkHttpUtil;
 import com.warning.util.StatisticUtil;
 import com.warning.util.WeatherUtil;
-
-import net.tsz.afinal.FinalBitmap;
 
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONArray;
@@ -742,7 +739,6 @@ public class Fragment1 extends Fragment implements OnClickListener {
 
     /**
      * 设置umeng推送的tags
-     *
      * @param warningId
      */
     private void setPushTags(String warningId) {
@@ -764,61 +760,49 @@ public class Fragment1 extends Fragment implements OnClickListener {
         boolean state8 = checkSp.getBoolean("state8", true);
         String tag1 = "", tag2 = "", tag3 = "", tag4 = "", tag5 = "", tag6 = "", tag7 = "", tag8 = "";
         if (state1) {
-            tag1 = PgyApplication.nationTag + ",";
+            tag1 = PgyApplication.nationTag;
         } else {
             tag1 = "";
         }
         if (state2) {
-            tag2 = PgyApplication.proTag + ",";
+            tag2 = PgyApplication.proTag;
         } else {
             tag2 = "";
         }
         if (state3) {
-            tag3 = PgyApplication.cityTag + ",";
+            tag3 = PgyApplication.cityTag;
         } else {
             tag3 = "";
         }
         if (state4) {
-            tag4 = PgyApplication.disTag + ",";
+            tag4 = PgyApplication.disTag;
         } else {
             tag4 = "";
         }
         if (state5) {
-            tag5 = PgyApplication.redTag + ",";
+            tag5 = PgyApplication.redTag;
         } else {
             tag5 = "";
         }
         if (state6) {
-            tag6 = PgyApplication.orangeTag + ",";
+            tag6 = PgyApplication.orangeTag;
         } else {
             tag6 = "";
         }
         if (state7) {
-            tag7 = PgyApplication.yellowTag + ",";
+            tag7 = PgyApplication.yellowTag;
         } else {
             tag7 = "";
         }
         if (state8) {
-            tag8 = PgyApplication.blueTag + ",";
+            tag8 = PgyApplication.blueTag;
         } else {
             tag8 = "";
         }
 
-        SharedPreferences sp = getActivity().getSharedPreferences("TAGS", Context.MODE_PRIVATE);
-        String tempTags = sp.getString("tags", "");
-//		String tags = tag1+tag2+tag3+tag4+tag5+tag6+tag7+tag8+"test_android_shawn,";
-        String tags = tag1 + tag2 + tag3 + tag4 + tag5 + tag6 + tag7 + tag8;
-        if (!TextUtils.isEmpty(tags) && TextUtils.equals(tags.substring(tags.length() - 1), ",")) {
-            tags = tags.substring(0, tags.length() - 1);
-            if (TextUtils.equals(tags, tempTags)) {
-                return;
-            }
-
+        String tags = tag1+","+tag2+","+tag3+","+tag4+","+tag5+","+tag6+","+tag7+","+tag8;
+        if (!TextUtils.isEmpty(tags)) {
             PgyApplication.addPushTags(tags);
-
-            Editor editor = sp.edit();
-            editor.putString("tags", tags);
-            editor.apply();
         }
     }
 

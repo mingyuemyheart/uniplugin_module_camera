@@ -243,6 +243,9 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 		ivMenu = findViewById(R.id.ivMenu);
 		ivMenu.setOnClickListener(this);
 		ivMy = findViewById(R.id.ivMy);
+		ivMy.setVisibility(View.VISIBLE);
+		ivMy.setImageResource(R.drawable.iv_person);
+		ivMy.setOnClickListener(v -> startActivity(new Intent(mContext, MyActivity.class)));
 		ivTitle = findViewById(R.id.ivTitle);
 		tvTitle = findViewById(R.id.tvTitle);
 		RelativeLayout reTitle = findViewById(R.id.reTitle);
@@ -616,7 +619,7 @@ public class ShawnMainActivity extends BaseActivity implements OnClickListener{
 				OkHttpUtil.enqueue(new Request.Builder().url(url).build(), new Callback() {
 					@Override
 					public void onFailure(@NotNull Call call, @NotNull IOException e) {
-						init();
+						runOnUiThread(() -> init());
 					}
 					@Override
 					public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {

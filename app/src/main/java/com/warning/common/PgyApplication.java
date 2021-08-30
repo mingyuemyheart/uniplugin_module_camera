@@ -3,6 +3,7 @@ package com.warning.common;
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -96,7 +97,6 @@ public class PgyApplication extends Application{
 		initUmeng();
 
 		closeAndroidPDialog();
-
 	}
 
 	/**
@@ -238,26 +238,51 @@ public class PgyApplication extends Application{
 		}
 	}
 
+	public static String TAGS = "";
 	/**
 	 * 设置推送标签
 	 */
-	public static void addPushTags(String tags) {
+	public static void addPushTags(String newTags) {
+		Log.e("newTags", newTags);
 		if (mPushAgent != null) {
-			mPushAgent.getTagManager().addTags(new TagManager.TCallBack() {
+			mPushAgent.getTagManager().getTags(new TagManager.TagListCallBack() {
 				@Override
-				public void onMessage(boolean b, ITagManager.Result result) {
-					mPushAgent.getTagManager().getTags(new TagManager.TagListCallBack() {
-						@Override
-						public void onMessage(boolean b, List<String> list) {
-							String tags = "";
-							for (int i = 0; i < list.size(); i++) {
-								tags += list.get(i)+",";
-							}
-							Log.e("tgas", tags);
+				public void onMessage(boolean b, List<String> list) {
+					String oldTags = "";
+					for (int i = 0; i < list.size(); i++) {
+						if (newTags.contains(list.get(i))) {
+							continue;
 						}
-					});
+						oldTags += list.get(i)+",";
+					}
+					Log.e("oldTags", oldTags);
+					mPushAgent.getTagManager().deleteTags(new TagManager.TCallBack() {
+						@Override
+						public void onMessage(boolean b, ITagManager.Result result) {
+							mPushAgent.getTagManager().addTags(new TagManager.TCallBack() {
+								@Override
+								public void onMessage(boolean b, ITagManager.Result result) {
+									mPushAgent.getTagManager().getTags(new TagManager.TagListCallBack() {
+										@Override
+										public void onMessage(boolean b, List<String> list) {
+											String tags = "";
+											for (int i = 0; i < list.size(); i++) {
+												if (i == list.size()-1) {
+													tags += list.get(i);
+												} else {
+													tags += list.get(i)+",";
+												}
+											}
+											TAGS = tags;
+											Log.e("Tags", tags);
+										}
+									});
+								}
+							}, newTags);
+						}
+					}, oldTags);
 				}
-			}, tags);
+			});
 		}
 	}
 
