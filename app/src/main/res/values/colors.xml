@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#001e32</color>//标题栏颜色
-    <color name="colorPrimaryDark">#001e32</color>//状态栏颜色
+    <color name="colorPrimary">#000000</color>//标题栏颜色
+    <color name="colorPrimaryDark">#000000</color>//状态栏颜色
     <color name="colorAccent">#A3A7AC</color>//按钮选中颜色
 
     <color name="text_color1">#d6d6d6</color>
@@ -19,8 +19,7 @@
     <color name="content_bg">#0b2637</color>
     <color name="scrollbar_color">#353C48</color>
     <color name="red">#fe2624</color>
-    <color name="orange">#ecdf04</color>
-    <color name="yellow">#fea228</color>
+    <color name="orange">#fea228</color>
     <color name="blue">#0a6ba1</color>
     
 </resources>

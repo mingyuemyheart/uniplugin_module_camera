@@ -52,8 +52,8 @@
                 android:id="@+id/tvNegtive"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/cancel"
-                android:textColor="@color/blue"
+                android:text="取消"
+                android:textColor="@color/text_color4"
                 android:textSize="@dimen/level_4" />
         </LinearLayout>
 
@@ -75,8 +75,8 @@
                 android:id="@+id/tvPositive"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sure"
-                android:textColor="@color/blue"
+                android:text="确定"
+                android:textColor="@color/orange"
                 android:textSize="@dimen/level_4" />
         </LinearLayout>
     </LinearLayout>

@@ -4,13 +4,13 @@
 
     <item>
         <shape>
-            <solid android:color="#2e5b9e" />
+            <solid android:color="#fe2624" />
 
-            <corners android:radius="5dp" />
+            <corners android:radius="10dp" />
 
             <size
-                android:height="100dp"
-                android:width="100dp" />
+                android:height="20dp"
+                android:width="20dp" />
 
         </shape>
     </item>

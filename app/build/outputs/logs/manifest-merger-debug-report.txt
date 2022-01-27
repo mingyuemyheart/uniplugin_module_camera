@@ -1,0 +1,256 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:31:9-39:20
+	android:grantUriPermissions
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:35:13-47
+	android:authorities
+		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:33:13-64
+	android:exported
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:32:13-62
+manifest
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:2:1-74:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/1fe0abab0ca7663bf7157462b9bc8abb/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/540778289d06c4fa11d81e37391dd9c8/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/01a9fb3be8ce56617b5b173766f9a32b/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/2184d643e3dc48ec088093bf4703920b/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/a520967086ccd84018f9a66fbba3d080/appcompat-resources-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/5afbd2e3ff40e1a24c8cdb6837a4ab67/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/fade21b6694cfeb68ad0ef3199ce3e4f/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/05262f07e46b417e039eb5ae9f0de398/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/3d5e39545d4f06e27dccf8e0fd93a524/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/181f7461973af8f178012410b1340b04/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/9720615832e33c09e80adec3949b7160/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/088d7d849f49f07ab53816da761fdba5/activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/7da3bd7dc30f532c7dd6822fc53d0cd6/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ca3ac447b8c6e554bbc3ca315b4dcd73/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/3db22d1e2e19178b84c0650596482ae1/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/90103bf4bd44dc5e356d32430d0e4a40/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ca6c92c0412375108e40c258555cdb04/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/68eff87d696ed4c13840b7b9185e72ab/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/67f0a30572940b788eb06865cc4e5cfd/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/07795795a894ffcd575360448d878f33/core-1.3.1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/d8508a3248c27b2f368880f7828c0b34/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/f6c967d4d0430ad205dda58018793e9b/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/21b3db2190fa0fa216576375ad80ae54/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/75fb746d84c0a1a4c5ff7277dfd70d80/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/7e92cdd294dbda435b317748899b64a9/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/628128fe67f31f513c0449e18c2df100/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/358676f876d126cdb93dc2ae9e640f56/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/2ae806ece2580bf69becc3d2183e441c/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ff8e00f72654800a11574b55f214c01b/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/b5a6f850a8cbad14b557755a4a739154/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/01db54804b66b2b8f058ea79386ae547/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/99cdd22df1372f469fb8c2408d666ead/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:2:1-74:12
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:2:1-74:12
+	package
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:3:5-25
+		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:2:1-74:12
+		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:2:1-74:12
+		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:6:5-80
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:6:22-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:7:5-75
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:7:22-72
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:8:22-68
+uses-permission#android.permission.CAMERA
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:9:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:10:5-69
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:10:22-66
+uses-feature#android.hardware.autofocus
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:12:5-63
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:12:19-60
+uses-feature#android.hardware.camera
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:13:5-60
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:13:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:14:5-70
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:14:19-67
+application
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:16:5-72:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/1fe0abab0ca7663bf7157462b9bc8abb/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/1fe0abab0ca7663bf7157462b9bc8abb/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.3.1] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/07795795a894ffcd575360448d878f33/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/07795795a894ffcd575360448d878f33/core-1.3.1/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/f6c967d4d0430ad205dda58018793e9b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/f6c967d4d0430ad205dda58018793e9b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.1] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/07795795a894ffcd575360448d878f33/core-1.3.1/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:21:9-35
+	android:label
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:19:9-41
+	android:icon
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:18:9-38
+	android:allowBackup
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:17:9-35
+	android:theme
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:22:9-40
+	android:networkSecurityConfig
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:20:9-69
+	android:usesCleartextTraffic
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:23:9-44
+uses-library#org.apache.http.legacy
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:27:13-50
+activity#com.camera.activity.PictureActivity
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:41:9-50:20
+	android:screenOrientation
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:44:13-49
+	android:launchMode
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:43:13-44
+	android:theme
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:45:13-71
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:42:13-53
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:46:13-49:29
+action#android.intent.action.MAIN
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:47:17-69
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:47:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:48:17-77
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:48:27-74
+activity#com.camera.activity.DisplayVideoActivity
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:61:9-65:52
+	android:screenOrientation
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:65:13-49
+	android:launchMode
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:64:13-44
+	android:configChanges
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:63:13-83
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:62:13-58
+activity#com.camera.activity.DisplayPictureActivity
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:66:9-70:52
+	android:screenOrientation
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:70:13-49
+	android:launchMode
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:69:13-44
+	android:configChanges
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:68:13-83
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:67:13-60
+uses-sdk
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/1fe0abab0ca7663bf7157462b9bc8abb/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/1fe0abab0ca7663bf7157462b9bc8abb/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/540778289d06c4fa11d81e37391dd9c8/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/540778289d06c4fa11d81e37391dd9c8/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/01a9fb3be8ce56617b5b173766f9a32b/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/01a9fb3be8ce56617b5b173766f9a32b/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/2184d643e3dc48ec088093bf4703920b/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/2184d643e3dc48ec088093bf4703920b/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/a520967086ccd84018f9a66fbba3d080/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/a520967086ccd84018f9a66fbba3d080/appcompat-resources-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/5afbd2e3ff40e1a24c8cdb6837a4ab67/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/5afbd2e3ff40e1a24c8cdb6837a4ab67/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/fade21b6694cfeb68ad0ef3199ce3e4f/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/fade21b6694cfeb68ad0ef3199ce3e4f/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/05262f07e46b417e039eb5ae9f0de398/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/05262f07e46b417e039eb5ae9f0de398/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/3d5e39545d4f06e27dccf8e0fd93a524/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/3d5e39545d4f06e27dccf8e0fd93a524/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/181f7461973af8f178012410b1340b04/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/181f7461973af8f178012410b1340b04/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/9720615832e33c09e80adec3949b7160/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/9720615832e33c09e80adec3949b7160/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/088d7d849f49f07ab53816da761fdba5/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/088d7d849f49f07ab53816da761fdba5/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/7da3bd7dc30f532c7dd6822fc53d0cd6/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/7da3bd7dc30f532c7dd6822fc53d0cd6/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ca3ac447b8c6e554bbc3ca315b4dcd73/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ca3ac447b8c6e554bbc3ca315b4dcd73/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/3db22d1e2e19178b84c0650596482ae1/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/3db22d1e2e19178b84c0650596482ae1/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/90103bf4bd44dc5e356d32430d0e4a40/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/90103bf4bd44dc5e356d32430d0e4a40/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ca6c92c0412375108e40c258555cdb04/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ca6c92c0412375108e40c258555cdb04/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/68eff87d696ed4c13840b7b9185e72ab/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/68eff87d696ed4c13840b7b9185e72ab/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/67f0a30572940b788eb06865cc4e5cfd/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/67f0a30572940b788eb06865cc4e5cfd/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.1] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/07795795a894ffcd575360448d878f33/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/07795795a894ffcd575360448d878f33/core-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/d8508a3248c27b2f368880f7828c0b34/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/d8508a3248c27b2f368880f7828c0b34/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/f6c967d4d0430ad205dda58018793e9b/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/f6c967d4d0430ad205dda58018793e9b/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/21b3db2190fa0fa216576375ad80ae54/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/21b3db2190fa0fa216576375ad80ae54/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/75fb746d84c0a1a4c5ff7277dfd70d80/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/75fb746d84c0a1a4c5ff7277dfd70d80/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/7e92cdd294dbda435b317748899b64a9/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/7e92cdd294dbda435b317748899b64a9/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/628128fe67f31f513c0449e18c2df100/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/628128fe67f31f513c0449e18c2df100/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/358676f876d126cdb93dc2ae9e640f56/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/358676f876d126cdb93dc2ae9e640f56/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/2ae806ece2580bf69becc3d2183e441c/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/2ae806ece2580bf69becc3d2183e441c/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ff8e00f72654800a11574b55f214c01b/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/ff8e00f72654800a11574b55f214c01b/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/b5a6f850a8cbad14b557755a4a739154/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/b5a6f850a8cbad14b557755a4a739154/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/01db54804b66b2b8f058ea79386ae547/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/01db54804b66b2b8f058ea79386ae547/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/99cdd22df1372f469fb8c2408d666ead/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/99cdd22df1372f469fb8c2408d666ead/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:36:13-38:54
+	android:resource
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:38:17-51
+	android:name
+		ADDED from /Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:37:17-67

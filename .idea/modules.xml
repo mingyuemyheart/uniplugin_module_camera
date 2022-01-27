@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/12379-12379getui.iml" filepath="$PROJECT_DIR$/12379-12379getui.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android-pdf-viewer/12379-12379getui.android-pdf-viewer.iml" filepath="$PROJECT_DIR$/.idea/modules/android-pdf-viewer/12379-12379getui.android-pdf-viewer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/12379-12379getui.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/12379-12379getui.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uniplugin_module_camera.iml" filepath="$PROJECT_DIR$/.idea/modules/uniplugin_module_camera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/uniplugin_module_camera.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/uniplugin_module_camera.app.iml" />
     </modules>
   </component>
 </project>

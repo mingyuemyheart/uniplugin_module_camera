@@ -1,264 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/content_bg"
-    android:orientation="vertical" >
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <include
-        android:id="@+id/reTitle"
-        layout="@layout/shawn_layout_title" />
-
-    <ScrollView
-        android:layout_below="@+id/reTitle"
-        android:overScrollMode="never"
+    <GridView
+        android:id="@+id/gridView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="none" >
+        app:layout_constraintTop_toTopOf="parent"
+        android:cacheColorHint="@color/transparent"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:horizontalSpacing="2dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:overScrollMode="never"
+        android:padding="2dp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/light_gray">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSelect"
+            app:layout_constraintEnd_toStartOf="@+id/clDelete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivSelect"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/icon_delete"/>
+
+            <TextView
+                android:id="@+id/tvSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:layout_marginTop="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/ivSelect"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/level_5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDelete"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            app:layout_constraintStart_toEndOf="@+id/clSelect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-            <com.warning.view.ScrollviewGridview
-                android:id="@+id/gridView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:cacheColorHint="@color/transparent"
-                android:fadingEdge="none"
-                android:gravity="center"
-                android:horizontalSpacing="0.5dp"
-                android:listSelector="@color/transparent"
-                android:numColumns="3"
-                android:overScrollMode="never"
-                android:padding="0.5dp"
-                android:scrollbars="none"
-                android:stretchMode="columnWidth"
-                android:verticalSpacing="0.5dp" />
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/icon_delete"/>
 
             <TextView
-                android:id="@+id/tvPosition"
+                android:id="@+id/tvDelete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:textColor="@color/text_color1"
-                android:textSize="@dimen/level_5" />
+                android:text="删除"
+                android:layout_marginTop="2dp"
+                app:layout_constraintTop_toBottomOf="@+id/ivDelete"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/level_5"/>
 
-            <TextView
-                android:id="@+id/tvDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="3dp"
-                android:textColor="@color/text_color1"
-                android:textSize="@dimen/level_5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:gravity="center"
-                android:text="热门推荐"
-                android:textColor="@color/text_color4"
-                android:textSize="@dimen/level_4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <com.warning.view.ScrollviewGridview
-                android:id="@+id/gridView1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/bg_weather_type"
-                android:cacheColorHint="@color/transparent"
-                android:fadingEdge="none"
-                android:gravity="center"
-                android:horizontalSpacing="5dp"
-                android:listSelector="@color/transparent"
-                android:numColumns="4"
-                android:overScrollMode="never"
-                android:paddingBottom="5dp"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp"
-                android:paddingTop="10dp"
-                android:scrollbars="none"
-                android:stretchMode="columnWidth"
-                android:verticalSpacing="5dp" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:layout_toLeftOf="@+id/tvEvent"
-                    android:text="*"
-                    android:textColor="@color/red"
-                    android:textSize="@dimen/level_3" />
-
-                <TextView
-                    android:id="@+id/tvEvent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="事件类型"
-                    android:textColor="@color/text_color4"
-                    android:textSize="@dimen/level_4" />
-            </RelativeLayout>
-
-            <com.warning.view.ScrollviewGridview
-                android:id="@+id/gridView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:background="@drawable/bg_weather_type"
-                android:cacheColorHint="@color/transparent"
-                android:fadingEdge="none"
-                android:gravity="center"
-                android:horizontalSpacing="0dp"
-                android:listSelector="@color/transparent"
-                android:numColumns="4"
-                android:overScrollMode="never"
-                android:paddingBottom="10dp"
-                android:paddingTop="15dp"
-                android:scrollbars="none"
-                android:stretchMode="columnWidth"
-                android:verticalSpacing="0dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="10dip"
-                android:background="#041e31"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingTop="5dp" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="5dp"
-                    android:text="*"
-                    android:textColor="@color/red"
-                    android:textSize="@dimen/level_3" />
-
-                <EditText
-                    android:id="@+id/etTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/transparent"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/text_color4"
-                    android:textSize="@dimen/level_4" />
-            </LinearLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="10dip"
-                android:background="#041e31" >
-
-                <EditText
-                    android:id="@+id/etContent"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/transparent"
-                    android:gravity="top|left"
-                    android:hint="请输入详细内容（选填）"
-                    android:maxLength="200"
-                    android:minLines="5"
-                    android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"
-                    android:paddingRight="10dp"
-                    android:paddingTop="5dp"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/text_color4"
-                    android:textSize="@dimen/level_4" />
-
-                <TextView
-                    android:id="@+id/tvTextCount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@+id/etContent"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginRight="10dp"
-                    android:text="(200字以内)"
-                    android:textColor="@color/text_color4"
-                    android:textSize="@dimen/level_5" />
-            </RelativeLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="20dip"
-                android:gravity="center_vertical"
-                android:orientation="horizontal" >
-
-                <TextView
-                    android:id="@+id/tvRemove"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dip"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/selector_cancel"
-                    android:gravity="center"
-                    android:text="删除"
-                    android:textColor="#960c1b"
-                    android:textSize="@dimen/level_4" />
-
-                <TextView
-                    android:id="@+id/tvUpload"
-                    android:layout_width="match_parent"
-                    android:layout_height="35dip"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/selector_login"
-                    android:gravity="center"
-                    android:text="上传"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/level_4"
-                    android:visibility="gone" />
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
-
-    <RelativeLayout
-        android:id="@+id/rePager"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/reTitle"
         android:background="@color/light_gray"
         android:visibility="gone" >
 
-        <android.support.v4.view.ViewPager
+        <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <LinearLayout
             android:id="@+id/viewGroup"
             android:layout_width="match_parent"
-            android:layout_height="20dip"
-            android:layout_alignParentBottom="true"
+            android:layout_height="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             android:gravity="center_horizontal"
-            android:orientation="horizontal" >
-        </LinearLayout>
-    </RelativeLayout>
+            android:orientation="horizontal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

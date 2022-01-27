@@ -6,8 +6,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="8dip"
-        android:layout_height="8dip"
-        android:src="@drawable/iv_unselect" />
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:src="@drawable/icon_select_press" />
 
 </LinearLayout>

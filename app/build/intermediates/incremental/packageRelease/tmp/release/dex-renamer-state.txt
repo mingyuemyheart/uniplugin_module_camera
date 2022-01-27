@@ -1,7 +1,0 @@
-#Mon Aug 30 16:44:25 CST 2021
-base.1=/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/dex/release/out/classes2.dex
-path.1=classes2.dex
-base.0=/Users/sunxiaoming/Downloads/AndroidStudioProjects/12379-12379getui/app/build/intermediates/dex/release/out/classes.dex
-renamed.1=classes2.dex
-renamed.0=classes.dex
-path.0=classes.dex

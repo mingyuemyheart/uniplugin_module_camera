@@ -1,0 +1,142 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.camera"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:5:5-81
+11-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:6:5-80
+12-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:7:5-75
+13-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:7:22-72
+14    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+14-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:8:5-71
+14-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:8:22-68
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:9:5-65
+15-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:9:22-62
+16    <uses-permission android:name="android.permission.FLASHLIGHT" />
+16-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:10:5-69
+16-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:10:22-66
+17
+18    <uses-feature android:name="android.hardware.autofocus" />
+18-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:12:5-63
+18-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:12:19-60
+19    <uses-feature android:name="android.hardware.camera" />
+19-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:13:5-60
+19-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:13:19-57
+20    <uses-feature android:name="android.hardware.camera.autofocus" />
+20-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:14:5-70
+20-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:14:19-67
+21
+22    <application
+22-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:16:5-72:19
+23        android:allowBackup="true"
+23-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:17:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.3.1] /Users/sunxiaoming/.gradle/caches/transforms-2/files-2.1/07795795a894ffcd575360448d878f33/core-1.3.1/AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:icon="@drawable/icon"
+26-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:18:9-38
+27        android:label="@string/app_name"
+27-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:19:9-41
+28        android:networkSecurityConfig="@xml/network_security_config"
+28-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:20:9-69
+29        android:supportsRtl="true"
+29-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:21:9-35
+30        android:testOnly="true"
+31        android:theme="@style/AppTheme"
+31-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:22:9-40
+32        android:usesCleartextTraffic="true" >
+32-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:23:9-44
+33
+34        <!-- 解决android28以后无法使用apache http协议 -->
+35        <uses-library
+35-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:26:9-28:40
+36            android:name="org.apache.http.legacy"
+36-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:27:13-50
+37            android:required="false" />
+37-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:28:13-37
+38
+39        <!-- 自动更新下载完成广播 -->
+40        <provider
+41            android:name="androidx.core.content.FileProvider"
+41-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:32:13-62
+42            android:authorities="com.camera.FileProvider"
+42-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:33:13-64
+43            android:exported="false"
+43-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:34:13-37
+44            android:grantUriPermissions="true" >
+44-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:35:13-47
+45            <meta-data
+45-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:36:13-38:54
+46                android:name="android.support.FILE_PROVIDER_PATHS"
+46-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:37:17-67
+47                android:resource="@xml/file_paths" />
+47-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:38:17-51
+48        </provider>
+49
+50        <activity
+50-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:41:9-50:20
+51            android:name="com.camera.activity.PictureActivity"
+51-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:42:13-53
+52            android:launchMode="singleTask"
+52-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:43:13-44
+53            android:screenOrientation="portrait"
+53-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:44:13-49
+54            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+54-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:45:13-71
+55            <intent-filter>
+55-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:46:13-49:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:47:17-69
+56-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:47:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:48:17-77
+58-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:48:27-74
+59            </intent-filter>
+60        </activity>
+61        <!-- <activity -->
+62        <!-- android:name=".activity.VideoActivity" -->
+63        <!-- android:launchMode="singleTask" -->
+64        <!-- android:screenOrientation="landscape" -->
+65        <!-- android:theme="@android:style/Theme.NoTitleBar.Fullscreen" > -->
+66        <!-- <intent-filter> -->
+67        <!-- <action android:name="android.intent.action.MAIN" /> -->
+68        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+69        <!-- </intent-filter> -->
+70        <!-- </activity> -->
+71        <activity
+71-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:61:9-65:52
+72            android:name="com.camera.activity.DisplayVideoActivity"
+72-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:62:13-58
+73            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+73-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:63:13-83
+74            android:launchMode="singleTask"
+74-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:64:13-44
+75            android:screenOrientation="nosensor" />
+75-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:65:13-49
+76        <activity
+76-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:66:9-70:52
+77            android:name="com.camera.activity.DisplayPictureActivity"
+77-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:67:13-60
+78            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+78-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:68:13-83
+79            android:launchMode="singleTask"
+79-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:69:13-44
+80            android:screenOrientation="portrait" />
+80-->/Users/sunxiaoming/Downloads/AndroidStudioProjects/uniplugin_module_camera/app/src/main/AndroidManifest.xml:70:13-49
+81    </application>
+82
+83</manifest>
